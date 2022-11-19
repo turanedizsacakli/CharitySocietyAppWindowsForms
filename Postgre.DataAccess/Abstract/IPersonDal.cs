@@ -1,14 +1,10 @@
 ﻿using Postgre.Entities.Concrete;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Postgre.DataAccess.Abstract
+namespace Postgre.DataAccess.Concrete
 {
     public interface IPersonDal
     {
-        //List<Person> GetAll();
+        List<Person> GetAll();
     }
 }

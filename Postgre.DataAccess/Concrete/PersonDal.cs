@@ -1,5 +1,4 @@
-﻿using Postgre.DataAccess.Abstract;
-using Postgre.Entities.Concrete;
+﻿using Postgre.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,12 +9,12 @@ namespace Postgre.DataAccess.Concrete
 {
     public class PersonDal : IPersonDal
     {
-        //public List<Person> GetAll()
-        //{
-        //    using (resource)
-        //    {
-
-        //    }
-        //}
+        public List<Person> GetAll()
+        {
+            using (PostgreContext context = new PostgreContext())
+            {
+                return context.People.ToList();
+            }
+        }
     }
 }
