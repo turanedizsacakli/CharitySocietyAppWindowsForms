@@ -11,9 +11,14 @@ namespace Postgre.DataAccess.Concrete
 {
     public class PostgreContext : DbContext
     {
-        public PostgreContext() : base("Name=PostgreContext")
+        public PostgreContext() : base(nameOrConnectionString:"PostgreConnectionString")
         {
 
+        }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.HasDefaultSchema("public");
+            base.OnModelCreating(modelBuilder);
         }
         public DbSet<Person> People { get; set; }
 

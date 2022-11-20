@@ -90,6 +90,11 @@
     <Compile Include="Abstract\IPersonDal.cs" />
     <Compile Include="Concrete\PersonDal.cs" />
     <Compile Include="Concrete\PostgreContext.cs" />
+    <Compile Include="Migrations\202211200446322_firstMigrate.cs" />
+    <Compile Include="Migrations\202211200446322_firstMigrate.designer.cs">
+      <DependentUpon>202211200446322_firstMigrate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -101,6 +106,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202211200446322_firstMigrate.resx">
+      <DependentUpon>202211200446322_firstMigrate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -36,3 +36,5 @@ C:\Users\ASUS\Desktop\CharitySocietyAppWindowsFrorms\CharitySocietyAppWindowsFro
 C:\Users\ASUS\Desktop\CharitySocietyAppWindowsFrorms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.csproj.CopyComplete
 C:\Users\ASUS\Desktop\CharitySocietyAppWindowsFrorms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.dll
 C:\Users\ASUS\Desktop\CharitySocietyAppWindowsFrorms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.pdb
+C:\Users\ASUS\Desktop\CharitySocietyAppWindowsFrorms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.Migrations.firstMigrate.resources
+C:\Users\ASUS\Desktop\CharitySocietyAppWindowsFrorms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.csproj.GenerateResource.cache
