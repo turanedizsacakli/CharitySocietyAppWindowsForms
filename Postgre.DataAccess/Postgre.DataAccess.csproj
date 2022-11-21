@@ -87,7 +87,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IEntityRepository.cs" />
     <Compile Include="Abstract\IPersonDal.cs" />
+    <Compile Include="Abstract\T.cs" />
+    <Compile Include="Concrete\EntityRepositoryBase.cs" />
     <Compile Include="Concrete\PersonDal.cs" />
     <Compile Include="Concrete\PostgreContext.cs" />
     <Compile Include="Migrations\202211200446322_firstMigrate.cs" />

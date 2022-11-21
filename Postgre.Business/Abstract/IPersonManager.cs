@@ -6,5 +6,6 @@ namespace Postgre.Business.Concrete
     public interface IPersonManager
     {
         List<Person> GetAll();
+        //Person Get(int id);
     }
 }
