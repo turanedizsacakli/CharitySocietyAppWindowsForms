@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Postgre.Business.Concrete
 {
-    public class PersonManager : IPersonManager
+    public class PersonManager : IPersonService
     {
         private IPersonDal _personDal;
 

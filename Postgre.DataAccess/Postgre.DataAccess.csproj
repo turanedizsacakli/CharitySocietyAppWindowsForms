@@ -88,14 +88,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IEntityRepository.cs" />
+    <Compile Include="Abstract\ICategoryDal.cs" />
     <Compile Include="Abstract\IPersonDal.cs" />
-    <Compile Include="Abstract\T.cs" />
+    <Compile Include="Concrete\CategoryDal.cs" />
     <Compile Include="Concrete\EntityRepositoryBase.cs" />
     <Compile Include="Concrete\PersonDal.cs" />
     <Compile Include="Concrete\PostgreContext.cs" />
-    <Compile Include="Migrations\202211200446322_firstMigrate.cs" />
-    <Compile Include="Migrations\202211200446322_firstMigrate.designer.cs">
-      <DependentUpon>202211200446322_firstMigrate.cs</DependentUpon>
+    <Compile Include="Migrations\202211221934073_toSolveBugs.cs" />
+    <Compile Include="Migrations\202211221934073_toSolveBugs.designer.cs">
+      <DependentUpon>202211221934073_toSolveBugs.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -111,8 +112,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202211200446322_firstMigrate.resx">
-      <DependentUpon>202211200446322_firstMigrate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202211221934073_toSolveBugs.resx">
+      <DependentUpon>202211221934073_toSolveBugs.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

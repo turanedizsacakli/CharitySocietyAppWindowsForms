@@ -54,6 +54,8 @@
             this.tbxLocalIdNumber = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dgwPerson = new System.Windows.Forms.DataGridView();
+            this.cbxCategory = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.gbxAdd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwPerson)).BeginInit();
             this.SuspendLayout();
@@ -309,11 +311,30 @@
             this.dgwPerson.Size = new System.Drawing.Size(1026, 155);
             this.dgwPerson.TabIndex = 32;
             // 
+            // cbxCategory
+            // 
+            this.cbxCategory.FormattingEnabled = true;
+            this.cbxCategory.Location = new System.Drawing.Point(145, 16);
+            this.cbxCategory.Name = "cbxCategory";
+            this.cbxCategory.Size = new System.Drawing.Size(176, 24);
+            this.cbxCategory.TabIndex = 38;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(78, 23);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 16);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Kategori";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1185, 532);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cbxCategory);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.GetById);
             this.Controls.Add(this.lblSearch);
@@ -324,6 +345,7 @@
             this.Controls.Add(this.dgwPerson);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.gbxAdd.ResumeLayout(false);
             this.gbxAdd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwPerson)).EndInit();
@@ -360,6 +382,8 @@
         private System.Windows.Forms.TextBox tbxLocalIdNumber;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dgwPerson;
+        private System.Windows.Forms.ComboBox cbxCategory;
+        private System.Windows.Forms.Label label3;
     }
 }
 

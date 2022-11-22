@@ -126,6 +126,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Postgre.Business\Postgre.Business.csproj">
+      <Project>{8FB2FDDA-EF38-4C9F-B766-FB74B9A5FB72}</Project>
+      <Name>Postgre.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Postgre.DataAccess\Postgre.DataAccess.csproj">
+      <Project>{D77827DE-C95F-40F6-9FC5-959D74F49965}</Project>
+      <Name>Postgre.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Postgre.Entities\Postgre.Entities.csproj">
+      <Project>{C9A7DB72-EE6A-404B-AA89-B9576E8CED55}</Project>
+      <Name>Postgre.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

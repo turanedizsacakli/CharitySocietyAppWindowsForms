@@ -31,5 +31,9 @@ namespace Postgre.Entities.Concrete
         public string BirthCountry { get; set; }
         [Column("localid")]
         public string LocalId { get; set; }
+
+     
+        public int CategoryId { get; set; }
+        public virtual Category Category { get; set; }
     }
 }
