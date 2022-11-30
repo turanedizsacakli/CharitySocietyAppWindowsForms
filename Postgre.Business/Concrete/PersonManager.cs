@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Postgre.Business.Concrete
 {
-    public class PersonManager : IPersonManager
+    public class PersonManager : IPersonService
     {
         private IPersonDal _personDal;
 
@@ -17,9 +17,29 @@ namespace Postgre.Business.Concrete
             this._personDal = personDal;
         }
 
+        public void Add(Person person)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(Person person)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Person Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Person> GetAll()
         {
             return _personDal.GetAll();
+        }
+
+        public void Update(Person person)
+        {
+            throw new NotImplementedException();
         }
     }
 }

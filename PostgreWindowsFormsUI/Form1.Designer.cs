@@ -54,6 +54,7 @@
             this.tbxLocalIdNumber = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dgwPerson = new System.Windows.Forms.DataGridView();
+            this.cbxCategory = new System.Windows.Forms.ComboBox();
             this.gbxAdd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwPerson)).BeginInit();
             this.SuspendLayout();
@@ -74,7 +75,7 @@
             this.GetById.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GetById.Name = "GetById";
             this.GetById.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.GetById.Size = new System.Drawing.Size(133, 22);
+            this.GetById.Size = new System.Drawing.Size(133, 31);
             this.GetById.TabIndex = 37;
             this.GetById.Text = "Get By Id";
             this.GetById.UseVisualStyleBackColor = true;
@@ -82,7 +83,7 @@
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(658, 16);
+            this.lblSearch.Location = new System.Drawing.Point(658, 19);
             this.lblSearch.Name = "lblSearch";
             this.lblSearch.Size = new System.Drawing.Size(59, 16);
             this.lblSearch.TabIndex = 36;
@@ -90,7 +91,7 @@
             // 
             // tbxSearch
             // 
-            this.tbxSearch.Location = new System.Drawing.Point(723, 12);
+            this.tbxSearch.Location = new System.Drawing.Point(727, 16);
             this.tbxSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxSearch.Name = "tbxSearch";
             this.tbxSearch.Size = new System.Drawing.Size(379, 22);
@@ -309,11 +310,20 @@
             this.dgwPerson.Size = new System.Drawing.Size(1161, 155);
             this.dgwPerson.TabIndex = 32;
             // 
+            // cbxCategory
+            // 
+            this.cbxCategory.FormattingEnabled = true;
+            this.cbxCategory.Location = new System.Drawing.Point(12, 16);
+            this.cbxCategory.Name = "cbxCategory";
+            this.cbxCategory.Size = new System.Drawing.Size(206, 24);
+            this.cbxCategory.TabIndex = 38;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1185, 532);
+            this.Controls.Add(this.cbxCategory);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.GetById);
             this.Controls.Add(this.lblSearch);
@@ -323,7 +333,7 @@
             this.Controls.Add(this.gbxAdd);
             this.Controls.Add(this.dgwPerson);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "CHARITY SOCIETY APP";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gbxAdd.ResumeLayout(false);
             this.gbxAdd.PerformLayout();
@@ -361,6 +371,7 @@
         private System.Windows.Forms.TextBox tbxLocalIdNumber;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dgwPerson;
+        private System.Windows.Forms.ComboBox cbxCategory;
     }
 }
 

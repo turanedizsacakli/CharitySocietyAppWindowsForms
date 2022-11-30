@@ -17,12 +17,14 @@ namespace PostgreWindowsFormsUI
         public Form1()
         {
             InitializeComponent();
-            _personManager = new PersonManager(new PersonDal());
+            _personService = new PersonManager(new PersonDal());
         }
-        private IPersonManager _personManager;
+        private IPersonService _personService;
         private void Form1_Load(object sender, EventArgs e)
         {
-            dgwPerson.DataSource= _personManager.GetAll();
+            dgwPerson.DataSource= _personService.GetAll();
         }
+
+       
     }
 }

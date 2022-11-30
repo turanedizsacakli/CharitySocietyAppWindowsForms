@@ -1,9 +1,9 @@
 ﻿using Postgre.Entities.Concrete;
 using System.Collections.Generic;
 
-namespace Postgre.DataAccess.Concrete
+namespace Postgre.Business.Concrete
 {
-    public interface IPersonDal
+    public interface IPersonService
     {
         void Add(Person person);
         void Update(Person person);
