@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,22 +42,20 @@ namespace Postgre.DataAccess.Concrete
             }
         }
 
-        public Person Get(int id)
+        public Person Get(Expression<Func<Person, bool>> filter)
         {
-            using (PostgreContext context=new PostgreContext())
+            using (PostgreContext context = new PostgreContext())
             {
-                return context.People.SingleOrDefault(p => p.PersonId == id);
+                return context.People.SingleOrDefault(filter);
             }
         }
 
-        public List<Person> GetAll()
+        public List<Person> GetAll(Expression<Func<Person, bool>> filter = null)
         {
             using (PostgreContext context = new PostgreContext())
             {
                 return context.People.ToList();
             }
         }
-
-       
     }
 }

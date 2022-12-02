@@ -87,6 +87,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IServiceRepository.cs" />
     <Compile Include="Abstract\IPersonService.cs" />
     <Compile Include="Concrete\PersonManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

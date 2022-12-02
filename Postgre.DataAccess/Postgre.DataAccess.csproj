@@ -87,9 +87,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IEntityRepository.cs" />
     <Compile Include="Abstract\IPersonDal.cs" />
     <Compile Include="Concrete\PersonDal.cs" />
     <Compile Include="Concrete\PostgreContext.cs" />
+    <Compile Include="Concrete\PostgreEntityRepositoryBase.cs" />
     <Compile Include="Migrations\202211292345434_initOne.cs" />
     <Compile Include="Migrations\202211292345434_initOne.designer.cs">
       <DependentUpon>202211292345434_initOne.cs</DependentUpon>

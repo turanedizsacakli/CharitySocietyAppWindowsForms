@@ -1,14 +1,11 @@
-﻿using Postgre.Entities.Concrete;
+﻿using Postgre.Business.Abstract;
+using Postgre.Entities.Concrete;
 using System.Collections.Generic;
 
 namespace Postgre.Business.Concrete
 {
-    public interface IPersonService
+    public interface IPersonService: IServiceRepository<Person>
     {
-        void Add(Person person);
-        void Update(Person person);
-        void Delete(Person person);
-        Person Get(int id);
-        List<Person> GetAll();
+
     }
 }

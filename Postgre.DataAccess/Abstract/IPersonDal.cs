@@ -1,14 +1,11 @@
-﻿using Postgre.Entities.Concrete;
+﻿using Postgre.DataAccess.Abstract;
+using Postgre.Entities.Concrete;
 using System.Collections.Generic;
 
 namespace Postgre.DataAccess.Concrete
 {
-    public interface IPersonDal
+    public interface IPersonDal : IEntityRepository<Person>
     {
-        void Add(Person person);
-        void Update(Person person);
-        void Delete(Person person);
-        Person Get(int id);
-        List<Person> GetAll();
+
     }
 }
