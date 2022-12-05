@@ -1,4 +1,5 @@
-﻿using Postgre.Business.Concrete;
+﻿using Postgre.Business.Abstract;
+using Postgre.Business.Concrete;
 using Postgre.DataAccess.Concrete;
 using System;
 using System.Collections.Generic;
@@ -20,11 +21,24 @@ namespace PostgreWindowsFormsUI
             _personService = new PersonManager(new PersonDal());
         }
         private IPersonService _personService;
+        public ICategoryService _categoryService;
         private void Form1_Load(object sender, EventArgs e)
         {
-            dgwPerson.DataSource= _personService.GetAll();
+            LoadPeople();
+            LoadCategories();
         }
 
-       
+        private void LoadPeople()
+        {
+            dgwPerson.DataSource = _personService.GetAll();
+        }
+
+        private void LoadCategories()
+        {
+            cbxCategory.DataSource = _categoryService.GetAll();
+            cbxCategory.DisplayMember = "CategoryName";
+            cbxCategory.ValueMember = "CategoryId";
+        }
+
     }
 }

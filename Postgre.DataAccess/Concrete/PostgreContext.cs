@@ -21,6 +21,7 @@ namespace Postgre.DataAccess.Concrete
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<Person> People { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
     }
 }

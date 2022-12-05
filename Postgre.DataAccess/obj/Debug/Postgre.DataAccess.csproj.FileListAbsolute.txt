@@ -78,3 +78,4 @@ D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.D
 D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.csproj.CopyComplete
 D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.dll
 D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.pdb
+D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.Migrations.categories.resources
