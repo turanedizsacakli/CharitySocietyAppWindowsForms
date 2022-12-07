@@ -40,5 +40,18 @@ namespace PostgreWindowsFormsUI
             cbxCategory.ValueMember = "CategoryId";
         }
 
+        private void cbxCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                dgwPerson.DataSource=_categoryService.GetByCategoryId(Convert.ToInt32(cbxCategory.SelectedValue));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
+        }
     }
 }

@@ -317,6 +317,7 @@
             this.cbxCategory.Name = "cbxCategory";
             this.cbxCategory.Size = new System.Drawing.Size(206, 24);
             this.cbxCategory.TabIndex = 38;
+            this.cbxCategory.SelectedIndexChanged += new System.EventHandler(this.cbxCategory_SelectedIndexChanged);
             // 
             // Form1
             // 

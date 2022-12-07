@@ -9,5 +9,6 @@ namespace Postgre.Business.Abstract
 {
     public interface ICategoryService : IServiceRepository<Category>
     {
+        List<Person> GetByCategoryId(int categoryId);
     }
 }

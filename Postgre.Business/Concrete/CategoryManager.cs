@@ -38,6 +38,11 @@ namespace Postgre.Business.Concrete
             return _categoryDal.GetAll();
         }
 
+        public List<Person> GetByCategoryId(int categoryId)
+        {
+            return _categoryDal.GetAll(p=>p.categoryId == CategoryId);
+        }
+
         public void Update(Category entity)
         {
             throw new NotImplementedException();
