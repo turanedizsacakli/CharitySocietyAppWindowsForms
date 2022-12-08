@@ -4,8 +4,8 @@ using System.Collections.Generic;
 
 namespace Postgre.Business.Concrete
 {
-    public interface IPersonService: IServiceRepository<Person>
+    public interface IPersonService : IServiceRepository<Person>
     {
-
+        List<Person> GetByCategoryId(int categoryID);
     }
 }

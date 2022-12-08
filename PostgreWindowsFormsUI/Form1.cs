@@ -19,9 +19,10 @@ namespace PostgreWindowsFormsUI
         {
             InitializeComponent();
             _personService = new PersonManager(new PersonDal());
+            _categoryService= new CategoryManager(new CategoryDal());
         }
         private IPersonService _personService;
-        public ICategoryService _categoryService;
+        private ICategoryService _categoryService;
         private void Form1_Load(object sender, EventArgs e)
         {
             LoadPeople();
@@ -44,14 +45,13 @@ namespace PostgreWindowsFormsUI
         {
             try
             {
-                dgwPerson.DataSource=_categoryService.GetByCategoryId(Convert.ToInt32(cbxCategory.SelectedValue));
+                dgwPerson.DataSource = _personService.GetByCategoryId(Convert.ToInt32(cbxCategory.SelectedValue));
             }
-            catch (Exception)
+            catch 
             {
 
-                throw;
             }
-            
+
         }
     }
 }

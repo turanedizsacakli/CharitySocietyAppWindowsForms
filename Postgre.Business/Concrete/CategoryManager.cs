@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 namespace Postgre.Business.Concrete
 {
     public class CategoryManager : ICategoryService
+
     {
         private ICategoryDal _categoryDal;
 
@@ -18,34 +19,9 @@ namespace Postgre.Business.Concrete
             _categoryDal = categoryDal;
         }
 
-        public void Add(Category entity)
-        {
-            _categoryDal.Add(entity);
-        }
-
-        public void Delete(Category entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Category Get(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public List<Category> GetAll()
         {
             return _categoryDal.GetAll();
-        }
-
-        public List<Person> GetByCategoryId(int categoryId)
-        {
-            return _categoryDal.GetAll(p=>p.categoryId == CategoryId);
-        }
-
-        public void Update(Category entity)
-        {
-            throw new NotImplementedException();
         }
     }
 }

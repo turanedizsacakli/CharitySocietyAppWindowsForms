@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Postgre.Business.Abstract
 {
-    public interface ICategoryService : IServiceRepository<Category>
+    public interface ICategoryService 
     {
-        List<Person> GetByCategoryId(int categoryId);
+       List<Category> GetAll();
     }
 }
