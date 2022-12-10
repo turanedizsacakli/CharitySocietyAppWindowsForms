@@ -25,8 +25,9 @@ namespace PostgreWindowsFormsUI
         private ICategoryService _categoryService;
         private void Form1_Load(object sender, EventArgs e)
         {
-            LoadPeople();
             LoadCategories();
+            LoadPeople();
+
         }
 
         private void LoadPeople()
@@ -46,6 +47,10 @@ namespace PostgreWindowsFormsUI
             try
             {
                 dgwPerson.DataSource = _personService.GetByCategoryId(Convert.ToInt32(cbxCategory.SelectedValue));
+                if (Convert.ToInt32(cbxCategory.SelectedValue) == 1)
+                {
+                    LoadPeople();
+                }
             }
             catch 
             {
@@ -53,5 +58,19 @@ namespace PostgreWindowsFormsUI
             }
 
         }
+
+        private void tbxSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(tbxSearch.Text))
+            {
+                dgwPerson.DataSource = _personService.GetByCategoryName(tbxSearch.Text);
+
+            }
+            else
+            {
+                LoadPeople();
+            }
+        }
+
     }
 }

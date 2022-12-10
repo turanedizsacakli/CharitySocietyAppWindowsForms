@@ -42,6 +42,11 @@ namespace Postgre.Business.Concrete
             return _personDal.GetAll(p=>p.CategoryId==categoryID);
         }
 
+        public List<Person> GetByCategoryName(string searchKey)
+        {
+            return _personDal.GetAll(p=>p.Name.ToLower().Contains(searchKey.ToLower()) );
+        }
+
         public void Update(Person person)
         {
             throw new NotImplementedException();
