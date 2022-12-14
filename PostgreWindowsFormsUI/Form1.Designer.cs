@@ -35,6 +35,7 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.gbxAdd = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cbxUrgency = new System.Windows.Forms.ComboBox();
@@ -55,19 +56,21 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dgwPerson = new System.Windows.Forms.DataGridView();
             this.cbxCategory = new System.Windows.Forms.ComboBox();
+            this.cbxCategoryId = new System.Windows.Forms.ComboBox();
             this.gbxAdd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwPerson)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(1002, 401);
+            this.btnAdd.Location = new System.Drawing.Point(1002, 265);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(104, 30);
             this.btnAdd.TabIndex = 30;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // GetById
             // 
@@ -100,7 +103,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(1002, 345);
+            this.btnUpdate.Location = new System.Drawing.Point(1002, 299);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -111,7 +114,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(1002, 265);
+            this.btnDelete.Location = new System.Drawing.Point(1002, 339);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(104, 66);
@@ -121,6 +124,8 @@
             // 
             // gbxAdd
             // 
+            this.gbxAdd.Controls.Add(this.cbxCategoryId);
+            this.gbxAdd.Controls.Add(this.label3);
             this.gbxAdd.Controls.Add(this.label4);
             this.gbxAdd.Controls.Add(this.label1);
             this.gbxAdd.Controls.Add(this.cbxUrgency);
@@ -148,10 +153,19 @@
             this.gbxAdd.TabStop = false;
             this.gbxAdd.Text = "Add A Product";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(408, 184);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(73, 16);
+            this.label3.TabIndex = 32;
+            this.label3.Text = "Kategorisi :";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 206);
+            this.label4.Location = new System.Drawing.Point(35, 197);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(117, 16);
             this.label4.TabIndex = 31;
@@ -169,7 +183,7 @@
             // cbxUrgency
             // 
             this.cbxUrgency.FormattingEnabled = true;
-            this.cbxUrgency.Location = new System.Drawing.Point(195, 203);
+            this.cbxUrgency.Location = new System.Drawing.Point(195, 194);
             this.cbxUrgency.Name = "cbxUrgency";
             this.cbxUrgency.Size = new System.Drawing.Size(133, 24);
             this.cbxUrgency.TabIndex = 30;
@@ -177,7 +191,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(33, 166);
+            this.label7.Location = new System.Drawing.Point(33, 157);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(87, 16);
             this.label7.TabIndex = 12;
@@ -185,7 +199,7 @@
             // 
             // tbxMotherName
             // 
-            this.tbxMotherName.Location = new System.Drawing.Point(195, 118);
+            this.tbxMotherName.Location = new System.Drawing.Point(195, 109);
             this.tbxMotherName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxMotherName.Name = "tbxMotherName";
             this.tbxMotherName.Size = new System.Drawing.Size(133, 22);
@@ -203,7 +217,7 @@
             // lblCategoryId
             // 
             this.lblCategoryId.AutoSize = true;
-            this.lblCategoryId.Location = new System.Drawing.Point(35, 124);
+            this.lblCategoryId.Location = new System.Drawing.Point(35, 115);
             this.lblCategoryId.Name = "lblCategoryId";
             this.lblCategoryId.Size = new System.Drawing.Size(63, 16);
             this.lblCategoryId.TabIndex = 10;
@@ -262,7 +276,7 @@
             // 
             // tbxNationality
             // 
-            this.tbxNationality.Location = new System.Drawing.Point(195, 74);
+            this.tbxNationality.Location = new System.Drawing.Point(195, 65);
             this.tbxNationality.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxNationality.Name = "tbxNationality";
             this.tbxNationality.Size = new System.Drawing.Size(133, 22);
@@ -278,7 +292,7 @@
             // 
             // tbxBirthCountry
             // 
-            this.tbxBirthCountry.Location = new System.Drawing.Point(195, 163);
+            this.tbxBirthCountry.Location = new System.Drawing.Point(195, 154);
             this.tbxBirthCountry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxBirthCountry.Name = "tbxBirthCountry";
             this.tbxBirthCountry.Size = new System.Drawing.Size(133, 22);
@@ -295,7 +309,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(35, 80);
+            this.label5.Location = new System.Drawing.Point(35, 71);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 16);
             this.label5.TabIndex = 8;
@@ -319,6 +333,14 @@
             this.cbxCategory.Size = new System.Drawing.Size(206, 24);
             this.cbxCategory.TabIndex = 38;
             this.cbxCategory.SelectedIndexChanged += new System.EventHandler(this.cbxCategory_SelectedIndexChanged);
+            // 
+            // cbxCategoryId
+            // 
+            this.cbxCategoryId.FormattingEnabled = true;
+            this.cbxCategoryId.Location = new System.Drawing.Point(570, 181);
+            this.cbxCategoryId.Name = "cbxCategoryId";
+            this.cbxCategoryId.Size = new System.Drawing.Size(133, 24);
+            this.cbxCategoryId.TabIndex = 33;
             // 
             // Form1
             // 
@@ -374,6 +396,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dgwPerson;
         private System.Windows.Forms.ComboBox cbxCategory;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cbxCategoryId;
     }
 }
 

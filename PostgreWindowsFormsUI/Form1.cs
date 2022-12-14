@@ -1,6 +1,7 @@
 ﻿using Postgre.Business.Abstract;
 using Postgre.Business.Concrete;
 using Postgre.DataAccess.Concrete;
+using Postgre.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,12 +28,23 @@ namespace PostgreWindowsFormsUI
         {
             LoadCategories();
             LoadPeople();
+            LoadUrgencyAndCategory();
+            
+        }
 
+        private void LoadUrgencyAndCategory()
+        {
+            cbxUrgency.Items.Add("A");
+            cbxUrgency.Items.Add("B");
+            cbxUrgency.Items.Add("C");
+            cbxCategoryId.Items.Add("Yardım Ailesi");
+            cbxCategoryId.Items.Add("Yetim Ailesi");
         }
 
         private void LoadPeople()
         {
             dgwPerson.DataSource = _personService.GetAll();
+            
         }
 
         private void LoadCategories()
@@ -46,17 +58,16 @@ namespace PostgreWindowsFormsUI
         {
             try
             {
-                dgwPerson.DataSource = _personService.GetByCategoryId(Convert.ToInt32(cbxCategory.SelectedValue));
                 if (Convert.ToInt32(cbxCategory.SelectedValue) == 1)
                 {
                     LoadPeople();
                 }
+                else
+                {
+                    dgwPerson.DataSource = _personService.GetByCategoryId(Convert.ToInt32(cbxCategory.SelectedValue));
+                }
             }
-            catch 
-            {
-
-            }
-
+            catch {   }
         }
 
         private void tbxSearch_TextChanged(object sender, EventArgs e)
@@ -72,5 +83,25 @@ namespace PostgreWindowsFormsUI
             }
         }
 
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+            
+            _personService.Add(new Person { 
+                Name = tbxSearch.Text, 
+                Surname=tbxSurname.Text, 
+                Nationality= tbxNationality.Text,
+                LocalId= tbxLocalIdNumber.Text,
+                MotherName=tbxMotherName.Text, 
+                FatherName=tbxFatherName.Text, 
+                Birthday=tbxBirthday.Text, 
+                BirthCountry=tbxBirthCountry.Text,
+                CategoryId= cbxCategory.SelectedIndex +1,
+                //you will add urgency!!! be careful about it....
+            });
+            LoadPeople();
+        }
+
+       
     }
 }

@@ -11,7 +11,6 @@ namespace Postgre.Business.Concrete
     public class PersonManager : IPersonService
     {
         private IPersonDal _personDal;
-
         public PersonManager(IPersonDal personDal)
         {
             this._personDal = personDal;
@@ -19,12 +18,17 @@ namespace Postgre.Business.Concrete
 
         public void Add(Person person)
         {
-            throw new NotImplementedException();
+            _personDal.Add(person);
+        }
+
+        public void Update(Person person)
+        {
+            _personDal.Update(person);
         }
 
         public void Delete(Person person)
         {
-            throw new NotImplementedException();
+            _personDal.Delete(person);
         }
 
         public Person Get(int id)
@@ -39,17 +43,14 @@ namespace Postgre.Business.Concrete
 
         public List<Person> GetByCategoryId(int categoryID)
         {
-            return _personDal.GetAll(p=>p.CategoryId==categoryID);
+            return _personDal.GetAll(p => p.CategoryId == categoryID);
         }
 
         public List<Person> GetByCategoryName(string searchKey)
         {
-            return _personDal.GetAll(p=>p.Name.ToLower().Contains(searchKey.ToLower()) );
+            return _personDal.GetAll(p => p.Name.ToLower().Contains(searchKey.ToLower()));
         }
 
-        public void Update(Person person)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }
