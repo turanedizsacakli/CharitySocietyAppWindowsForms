@@ -93,6 +93,8 @@
     <Compile Include="Concrete\CategoryManager.cs" />
     <Compile Include="Concrete\PersonManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Responses\CategoryResponses\GetAllCategoryResponse.cs" />
+    <Compile Include="Responses\PersonResponses\GetAllPersonResponse.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -107,6 +109,9 @@
       <Project>{C9A7DB72-EE6A-404B-AA89-B9576E8CED55}</Project>
       <Name>Postgre.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Requests\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

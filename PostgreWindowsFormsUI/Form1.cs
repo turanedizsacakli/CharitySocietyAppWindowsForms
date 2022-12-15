@@ -19,89 +19,76 @@ namespace PostgreWindowsFormsUI
         public Form1()
         {
             InitializeComponent();
-            _personService = new PersonManager(new PersonDal());
-            _categoryService= new CategoryManager(new CategoryDal());
+            //_personService = new PersonManager(new PersonDal());
+            //_categoryService = new CategoryManager(new CategoryDal());
         }
-        private IPersonService _personService;
-        private ICategoryService _categoryService;
+        //private IPersonService _personService;
+        //private ICategoryService _categoryService;
         private void Form1_Load(object sender, EventArgs e)
         {
-            LoadCategories();
-            LoadPeople();
-            LoadUrgencyAndCategory();
-            
+            //LoadCategories();
+            //LoadPeople();
+    
         }
 
-        private void LoadUrgencyAndCategory()
+
+
+private void SearchButton_Click(object sender, EventArgs e)
         {
-            cbxUrgency.Items.Add("A");
-            cbxUrgency.Items.Add("B");
-            cbxUrgency.Items.Add("C");
-            cbxCategoryId.Items.Add("Yardım Ailesi");
-            cbxCategoryId.Items.Add("Yetim Ailesi");
+SearchForm searchForm= new SearchForm();
+            searchForm.Show();
         }
 
-        private void LoadPeople()
+        private void AddButton_Click(object sender, EventArgs e)
         {
-            dgwPerson.DataSource = _personService.GetAll();
-            
+            ActionForm actionForm= new ActionForm();
+            actionForm.Show();
         }
 
-        private void LoadCategories()
+        private void UpdateButton_Click(object sender, EventArgs e)
         {
-            cbxCategory.DataSource = _categoryService.GetAll();
-            cbxCategory.DisplayMember = "CategoryName";
-            cbxCategory.ValueMember = "CategoryId";
+            ActionForm actionForm = new ActionForm();
+            actionForm.Show();
         }
 
-        private void cbxCategory_SelectedIndexChanged(object sender, EventArgs e)
+        private void DeleteButton_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (Convert.ToInt32(cbxCategory.SelectedValue) == 1)
-                {
-                    LoadPeople();
-                }
-                else
-                {
-                    dgwPerson.DataSource = _personService.GetByCategoryId(Convert.ToInt32(cbxCategory.SelectedValue));
-                }
-            }
-            catch {   }
+            ActionForm actionForm = new ActionForm();
+            actionForm.Show();
         }
 
-        private void tbxSearch_TextChanged(object sender, EventArgs e)
+        private void DistrictButton_Click(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(tbxSearch.Text))
-            {
-                dgwPerson.DataSource = _personService.GetByCategoryName(tbxSearch.Text);
-
-            }
-            else
-            {
-                LoadPeople();
-            }
+            MessageBox.Show("yakında eklenecek...");
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void CharityButton_Click(object sender, EventArgs e)
         {
-
-            
-            _personService.Add(new Person { 
-                Name = tbxSearch.Text, 
-                Surname=tbxSurname.Text, 
-                Nationality= tbxNationality.Text,
-                LocalId= tbxLocalIdNumber.Text,
-                MotherName=tbxMotherName.Text, 
-                FatherName=tbxFatherName.Text, 
-                Birthday=tbxBirthday.Text, 
-                BirthCountry=tbxBirthCountry.Text,
-                CategoryId= cbxCategory.SelectedIndex +1,
-                //you will add urgency!!! be careful about it....
-            });
-            LoadPeople();
+            MessageBox.Show("yakında eklenecek...");
         }
 
-       
+
+
+
+
+        // there are comments because i can try to get all category search from main form and so i didnt 
+        // remove the codes of the get all category
+
+        //private void LoadPeople()
+        //{
+        //    dgwPerson.DataSource = _personService.GetAll();
+
+        //}
+
+        //private void LoadCategories()
+        //{
+        //    cbxCategory.DataSource = _categoryService.GetAll();
+        //    cbxCategory.DisplayMember = "CategoryName";
+        //    cbxCategory.ValueMember = "CategoryId";
+        //}
+
+
+
+
     }
 }
