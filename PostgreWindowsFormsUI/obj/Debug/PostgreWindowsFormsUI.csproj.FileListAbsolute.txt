@@ -144,3 +144,5 @@ C:\Users\ASUS\Desktop\uygulamaKopyası\PostgreWindowsFormsUI\bin\Debug\System.Va
 C:\Users\ASUS\Desktop\uygulamaKopyası\PostgreWindowsFormsUI\obj\Debug\PostgreWindowsFormsUI.csproj.CopyComplete
 C:\Users\ASUS\Desktop\uygulamaKopyası\PostgreWindowsFormsUI\obj\Debug\PostgreWindowsFormsUI.SearchForm.resources
 C:\Users\ASUS\Desktop\uygulamaKopyası\PostgreWindowsFormsUI\obj\Debug\PostgreWindowsFormsUI.ActionForm.resources
+D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\PostgreWindowsFormsUI\obj\Debug\PostgreWindowsFormsUI.ActionForm.resources
+D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\PostgreWindowsFormsUI\obj\Debug\PostgreWindowsFormsUI.SearchForm.resources

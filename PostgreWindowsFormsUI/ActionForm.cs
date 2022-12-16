@@ -22,16 +22,14 @@ namespace PostgreWindowsFormsUI
             _personService = new PersonManager(new PersonDal());
             _categoryService = new CategoryManager(new CategoryDal());
         }
+
         private IPersonService _personService;
         private ICategoryService _categoryService;
-        private void AddForm_Load(object sender, EventArgs e)
+
+        private void ActionForm_Load(object sender, EventArgs e)
         {
-
-
             LoadUrgencyAndCategory();
-
         }
-
         private void LoadUrgencyAndCategory()
         {
             cbxUrgency.Items.Add("A");
@@ -41,12 +39,8 @@ namespace PostgreWindowsFormsUI
             cbxCategoryId.Items.Add("Yetim Ailesi");
         }
 
-
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
-
             _personService.Add(new Person
             {
                 Name = tbxName.Text,
@@ -60,11 +54,9 @@ namespace PostgreWindowsFormsUI
                 CategoryId = cbxCategoryId.SelectedIndex + 1,
                 //you will add urgency!!! be careful about it....
             });
-
             ClearAll();
+            MessageBox.Show("KİŞİ EKLENDİ...");
         }
-
-
         private void ClearAll()
         {
             tbxName.Text = "";
@@ -77,14 +69,26 @@ namespace PostgreWindowsFormsUI
             tbxBirthCountry.Text = "";
         }
 
-        private void toolStripContainer1_ContentPanel_Load(object sender, EventArgs e)
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
+            SearchForm searchForm = new SearchForm();
 
-        }
 
-        private void AddForm_Load_1(object sender, EventArgs e)
-        {
+            _personService.Update(new Person
+            {
+                //PersonId
+                Name = tbxName.Text,
+                Surname = tbxSurname.Text,
+                Nationality = tbxNationality.Text,
+                FatherName = tbxFatherName.Text,
+                MotherName = tbxMotherName.Text,
+                Birthday = tbxBirthday.Text,
+                BirthCountry = tbxBirthCountry.Text,
+                LocalId = tbxLocalIdNumber.Text,
+                CategoryId = cbxCategoryId.SelectedIndex + 1,
+            });
 
+            MessageBox.Show("KİŞİ GÜNCELLENDİ...");
         }
     }
 }

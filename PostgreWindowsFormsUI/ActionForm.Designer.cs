@@ -28,7 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.gbxAdd = new System.Windows.Forms.GroupBox();
+            this.tbxId = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.cbxCategoryId = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,14 +54,46 @@
             this.tbxBirthCountry = new System.Windows.Forms.TextBox();
             this.tbxLocalIdNumber = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
             this.gbxAdd.SuspendLayout();
             this.SuspendLayout();
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(853, 50);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(164, 84);
+            this.btnAdd.TabIndex = 39;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(853, 138);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnUpdate.Size = new System.Drawing.Size(164, 84);
+            this.btnUpdate.TabIndex = 40;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(853, 232);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(164, 141);
+            this.btnDelete.TabIndex = 41;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
             // gbxAdd
             // 
+            this.gbxAdd.Controls.Add(this.tbxId);
+            this.gbxAdd.Controls.Add(this.label8);
             this.gbxAdd.Controls.Add(this.cbxCategoryId);
             this.gbxAdd.Controls.Add(this.label3);
             this.gbxAdd.Controls.Add(this.label4);
@@ -77,14 +114,31 @@
             this.gbxAdd.Controls.Add(this.tbxBirthCountry);
             this.gbxAdd.Controls.Add(this.tbxLocalIdNumber);
             this.gbxAdd.Controls.Add(this.label5);
-            this.gbxAdd.Location = new System.Drawing.Point(2, 11);
+            this.gbxAdd.Location = new System.Drawing.Point(12, 21);
             this.gbxAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbxAdd.Name = "gbxAdd";
             this.gbxAdd.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbxAdd.Size = new System.Drawing.Size(786, 365);
-            this.gbxAdd.TabIndex = 34;
+            this.gbxAdd.TabIndex = 38;
             this.gbxAdd.TabStop = false;
-            this.gbxAdd.Text = "Add A Product";
+            this.gbxAdd.Text = "Kişisel Bilgiler";
+            // 
+            // tbxId
+            // 
+            this.tbxId.Location = new System.Drawing.Point(177, 26);
+            this.tbxId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxId.Name = "tbxId";
+            this.tbxId.Size = new System.Drawing.Size(133, 22);
+            this.tbxId.TabIndex = 35;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(10, 29);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(103, 16);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "Kayıt Numarası :";
             // 
             // cbxCategoryId
             // 
@@ -256,49 +310,18 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Uyruk : ";
             // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(946, 31);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(61, 30);
-            this.btnAdd.TabIndex = 35;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(946, 74);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnUpdate.Size = new System.Drawing.Size(61, 30);
-            this.btnUpdate.TabIndex = 36;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(946, 117);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(61, 66);
-            this.btnDelete.TabIndex = 37;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // AddForm
+            // ActionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1066, 541);
+            this.ClientSize = new System.Drawing.Size(1094, 440);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.gbxAdd);
-            this.Name = "AddForm";
-            this.Text = "AddForm";
-            this.Load += new System.EventHandler(this.AddForm_Load_1);
+            this.Name = "ActionForm";
+            this.Text = "ActionForm";
+            this.Load += new System.EventHandler(this.ActionForm_Load);
             this.gbxAdd.ResumeLayout(false);
             this.gbxAdd.PerformLayout();
             this.ResumeLayout(false);
@@ -307,29 +330,31 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gbxAdd;
-        private System.Windows.Forms.ComboBox cbxCategoryId;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbxUrgency;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox tbxMotherName;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lblCategoryId;
-        private System.Windows.Forms.TextBox tbxBirthday;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.TextBox tbxName;
-        private System.Windows.Forms.TextBox tbxSurname;
-        private System.Windows.Forms.Label lblUnitPrice;
-        private System.Windows.Forms.TextBox tbxNationality;
-        private System.Windows.Forms.TextBox tbxFatherName;
-        private System.Windows.Forms.TextBox tbxBirthCountry;
-        private System.Windows.Forms.TextBox tbxLocalIdNumber;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.GroupBox gbxAdd;
+        public System.Windows.Forms.TextBox tbxId;
+        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.ComboBox cbxCategoryId;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.ComboBox cbxUrgency;
+        private System.Windows.Forms.Label label7;
+        public System.Windows.Forms.TextBox tbxMotherName;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblCategoryId;
+        public System.Windows.Forms.TextBox tbxBirthday;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblName;
+        public System.Windows.Forms.TextBox tbxName;
+        public System.Windows.Forms.TextBox tbxSurname;
+        private System.Windows.Forms.Label lblUnitPrice;
+        public System.Windows.Forms.TextBox tbxNationality;
+        public System.Windows.Forms.TextBox tbxFatherName;
+        public System.Windows.Forms.TextBox tbxBirthCountry;
+        public System.Windows.Forms.TextBox tbxLocalIdNumber;
+        private System.Windows.Forms.Label label5;
     }
 }

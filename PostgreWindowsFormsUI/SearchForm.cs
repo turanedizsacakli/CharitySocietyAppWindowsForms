@@ -22,20 +22,13 @@ namespace PostgreWindowsFormsUI
             _categoryService = new CategoryManager(new CategoryDal());
         }
 
-
-        private void SearchForm_Load(object sender, EventArgs e)
+        private void Form2_Load(object sender, EventArgs e)
         {
             LoadCategories();
             LoadPeople();
         }
-
-
         private IPersonService _personService;
         private ICategoryService _categoryService;
-
-
-
-
         private void LoadPeople()
         {
             dgwPerson.DataSource = _personService.GetAll();
@@ -47,7 +40,6 @@ namespace PostgreWindowsFormsUI
             cbxCategory.DisplayMember = "CategoryName";
             cbxCategory.ValueMember = "CategoryId";
         }
-
         private void cbxCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
@@ -75,6 +67,11 @@ namespace PostgreWindowsFormsUI
             {
                 LoadPeople();
             }
+        }
+
+        private void dgwPerson_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            tbxSearch.Text = dgwPerson.CurrentRow.Cells[2].Value.ToString();
         }
     }
 }

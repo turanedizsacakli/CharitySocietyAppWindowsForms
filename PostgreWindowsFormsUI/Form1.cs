@@ -28,20 +28,34 @@ namespace PostgreWindowsFormsUI
         {
             //LoadCategories();
             //LoadPeople();
-    
+
         }
 
-
-
-private void SearchButton_Click(object sender, EventArgs e)
+        private void CallForms(Form frm)
         {
-SearchForm searchForm= new SearchForm();
-            searchForm.Show();
+
+            logo.Visible = false;
+            frm.MdiParent = this;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            //Panel.Controls.Add(frm);
+            frm.Show();
+        }
+
+        private void SearchButton_Click(object sender, EventArgs e)
+        {
+            //SearchForm searchForm= new SearchForm();
+            //searchForm.Show();
+            SearchForm form = new SearchForm();
+            CallForms(form);
+            //usable styles...
+            //form.FormBorderStyle = FormBorderStyle.Fixed3D;
+            //form.FormBorderStyle = FormBorderStyle.Sizable;
+
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            ActionForm actionForm= new ActionForm();
+            ActionForm actionForm = new ActionForm();
             actionForm.Show();
         }
 
@@ -66,28 +80,6 @@ SearchForm searchForm= new SearchForm();
         {
             MessageBox.Show("yakında eklenecek...");
         }
-
-
-
-
-
-        // there are comments because i can try to get all category search from main form and so i didnt 
-        // remove the codes of the get all category
-
-        //private void LoadPeople()
-        //{
-        //    dgwPerson.DataSource = _personService.GetAll();
-
-        //}
-
-        //private void LoadCategories()
-        //{
-        //    cbxCategory.DataSource = _categoryService.GetAll();
-        //    cbxCategory.DisplayMember = "CategoryName";
-        //    cbxCategory.ValueMember = "CategoryId";
-        //}
-
-
 
 
     }
