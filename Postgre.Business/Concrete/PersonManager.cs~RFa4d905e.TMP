@@ -1,7 +1,4 @@
-﻿using FluentValidation;
-using Postgre.Business.Utilities;
-using Postgre.Business.ValidationRules.FluentValidation;
-using Postgre.DataAccess.Concrete;
+﻿using Postgre.DataAccess.Concrete;
 using Postgre.Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -21,7 +18,6 @@ namespace Postgre.Business.Concrete
 
         public void Add(Person person)
         {
-            ValidationTool.Validate(new PersonValidator(),person);
             _personDal.Add(person);
         }
 

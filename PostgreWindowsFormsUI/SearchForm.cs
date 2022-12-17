@@ -61,7 +61,6 @@ namespace PostgreWindowsFormsUI
             if (!String.IsNullOrEmpty(tbxSearch.Text))
             {
                 dgwPerson.DataSource = _personService.GetByCategoryName(tbxSearch.Text);
-
             }
             else
             {
@@ -71,7 +70,21 @@ namespace PostgreWindowsFormsUI
 
         private void dgwPerson_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            tbxSearch.Text = dgwPerson.CurrentRow.Cells[2].Value.ToString();
+            ActionForm form=new ActionForm();
+            var Row = dgwPerson.CurrentRow;
+            form.Show();
+            form.tbxId.Text = Row.Cells[0].Value.ToString();
+            form.tbxName.Text = Row.Cells[1].Value.ToString();
+            form.tbxSurname.Text = Row.Cells[2].Value.ToString();
+            form.tbxFatherName.Text = Row.Cells[3].Value.ToString();
+            form.tbxMotherName.Text = Row.Cells[4].Value.ToString();
+            form.tbxNationality.Text = Row.Cells[5].Value.ToString();
+            form.tbxBirthday.Text= Row.Cells[6].Value.ToString();
+            form.tbxBirthCountry.Text = Row.Cells[7].Value.ToString();
+            form.tbxLocalIdNumber.Text = Row.Cells[8].Value.ToString();
+            form.cbxCategoryId.Text= Row.Cells[9].Value.ToString();
+            SearchForm searchForm= new SearchForm();
+            searchForm.Hide();
         }
     }
 }

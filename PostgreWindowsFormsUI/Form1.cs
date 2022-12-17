@@ -28,7 +28,6 @@ namespace PostgreWindowsFormsUI
         {
             //LoadCategories();
             //LoadPeople();
-
         }
 
         private void CallForms(Form frm)
@@ -40,7 +39,7 @@ namespace PostgreWindowsFormsUI
             //Panel.Controls.Add(frm);
             frm.Show();
         }
-
+      
         private void SearchButton_Click(object sender, EventArgs e)
         {
             //SearchForm searchForm= new SearchForm();
@@ -56,19 +55,23 @@ namespace PostgreWindowsFormsUI
         private void AddButton_Click(object sender, EventArgs e)
         {
             ActionForm actionForm = new ActionForm();
-            actionForm.Show();
+            //actionForm.Show();
+            
+            CallForms(actionForm);
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
             ActionForm actionForm = new ActionForm();
-            actionForm.Show();
+            //actionForm.Show();
+            CallForms(actionForm);
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             ActionForm actionForm = new ActionForm();
-            actionForm.Show();
+            //actionForm.Show();
+            CallForms(actionForm);
         }
 
         private void DistrictButton_Click(object sender, EventArgs e)
