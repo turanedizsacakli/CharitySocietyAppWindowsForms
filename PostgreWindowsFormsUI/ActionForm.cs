@@ -1,5 +1,6 @@
 ﻿using Postgre.Business.Abstract;
 using Postgre.Business.Concrete;
+using Postgre.Business.DependencyResolvers;
 using Postgre.DataAccess.Concrete;
 using Postgre.Entities.Concrete;
 using System;
@@ -19,8 +20,10 @@ namespace PostgreWindowsFormsUI
         public ActionForm()
         {
             InitializeComponent();
-            _personService = new PersonManager(new PersonDal());
-            _categoryService = new CategoryManager(new CategoryDal());
+            _personService = InstanceFactory.GetInstance<IPersonService>();
+            _categoryService = InstanceFactory.GetInstance<ICategoryService>();
+            //_personService = new PersonManager(new PersonDal());
+            //_categoryService = new CategoryManager(new CategoryDal());
         }
 
         private IPersonService _personService;

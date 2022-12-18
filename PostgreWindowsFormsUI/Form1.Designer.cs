@@ -94,7 +94,7 @@ namespace PostgreWindowsFormsUI
             this.toolStripContainer1.ContentPanel.Controls.Add(this.DeleteButton);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.AddButton);
             this.toolStripContainer1.ContentPanel.Controls.Add(this.DistrictButton);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(207, 575);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(207, 550);
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 37);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.Size = new System.Drawing.Size(207, 575);

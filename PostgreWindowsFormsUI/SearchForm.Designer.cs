@@ -92,7 +92,7 @@
             // 
             // toolStripContainer1.ContentPanel
             // 
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(207, 575);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(207, 550);
             this.toolStripContainer1.Location = new System.Drawing.Point(1, 32);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.Size = new System.Drawing.Size(207, 575);
@@ -111,7 +111,7 @@
             this.Controls.Add(this.tbxSearch);
             this.Controls.Add(this.dgwPerson);
             this.Name = "SearchForm";
-            this.Text = "Form2";
+            this.Text = "Search Form";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwPerson)).EndInit();
             this.toolStripContainer1.ResumeLayout(false);

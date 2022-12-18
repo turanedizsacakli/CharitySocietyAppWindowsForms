@@ -146,3 +146,7 @@ C:\Users\ASUS\Desktop\uygulamaKopyası\PostgreWindowsFormsUI\obj\Debug\PostgreWi
 C:\Users\ASUS\Desktop\uygulamaKopyası\PostgreWindowsFormsUI\obj\Debug\PostgreWindowsFormsUI.ActionForm.resources
 D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\PostgreWindowsFormsUI\obj\Debug\PostgreWindowsFormsUI.ActionForm.resources
 D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\PostgreWindowsFormsUI\obj\Debug\PostgreWindowsFormsUI.SearchForm.resources
+D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\PostgreWindowsFormsUI\bin\Debug\Ninject.dll
+D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\PostgreWindowsFormsUI\bin\Debug\FluentValidation.dll
+D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\PostgreWindowsFormsUI\bin\Debug\Ninject.xml
+D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\PostgreWindowsFormsUI\bin\Debug\FluentValidation.xml

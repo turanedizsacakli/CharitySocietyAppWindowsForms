@@ -80,3 +80,7 @@ D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.B
 D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.Business\obj\Debug\Postgre.Business.csproj.CopyComplete
 D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.Business\obj\Debug\Postgre.Business.dll
 D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.Business\obj\Debug\Postgre.Business.pdb
+D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.Business\bin\Debug\FluentValidation.dll
+D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.Business\bin\Debug\Ninject.dll
+D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.Business\bin\Debug\FluentValidation.xml
+D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.Business\bin\Debug\Ninject.xml
