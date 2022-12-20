@@ -118,5 +118,6 @@ namespace PostgreWindowsFormsUI
             _searchForm.Show();
         }
 
+    
     }
 }
