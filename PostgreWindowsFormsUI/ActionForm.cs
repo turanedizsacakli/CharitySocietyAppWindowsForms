@@ -26,12 +26,14 @@ namespace PostgreWindowsFormsUI
             //_categoryService = new CategoryManager(new CategoryDal());
         }
 
+        
         private IPersonService _personService;
         private ICategoryService _categoryService;
 
         private void ActionForm_Load(object sender, EventArgs e)
         {
             LoadUrgencyAndCategory();
+           
         }
         private void LoadUrgencyAndCategory()
         {
@@ -66,8 +68,6 @@ namespace PostgreWindowsFormsUI
             {
                 MessageBox.Show(exception.Message);
             }
-
-           
         }
         private void ClearAll()
         {
@@ -118,6 +118,25 @@ namespace PostgreWindowsFormsUI
             _searchForm.Show();
         }
 
-    
+        private void tbxHowManyChildren_TextChanged(object sender, EventArgs e)
+        {
+            //i couldnt find a way to do that...
+            try
+            {
+                if (Convert.ToInt32(tbxHowManyChildren.Text) == 1 || tbxHowManyChildren.Text == null || tbxHowManyChildren.Text == "0") { gbxC2.Visible = false; gbxC3.Visible = false; gbxC4.Visible = false; gbxC5.Visible = false; gbxC6.Visible = false; }
+                if (Convert.ToInt32(tbxHowManyChildren.Text) == 2) { gbxC2.Visible = true; gbxC3.Visible = false; gbxC4.Visible = false; gbxC5.Visible = false; gbxC6.Visible = false; }
+                if (Convert.ToInt32(tbxHowManyChildren.Text) == 3) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = false; gbxC5.Visible = false; gbxC6.Visible = false; }
+                if (Convert.ToInt32(tbxHowManyChildren.Text) == 4) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = true; gbxC5.Visible = false; gbxC6.Visible = false; }
+                if (Convert.ToInt32(tbxHowManyChildren.Text) == 5) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = true; gbxC5.Visible = true; gbxC6.Visible = false; }
+                if (Convert.ToInt32(tbxHowManyChildren.Text) == 6) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = true; gbxC5.Visible = true; gbxC6.Visible = true; }
+            }
+            catch (Exception )
+            {
+                //exception.Message = "lütfen çocuk sayısını giriniz ya da boş bırakınız...";
+                //MessageBox.Show(exception.Message);
+                MessageBox.Show("lütfen çocuk sayısını giriniz ya da boş bırakınız...");
+            }
+            
+        }
     }
 }

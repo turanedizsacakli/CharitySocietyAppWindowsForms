@@ -33,37 +33,45 @@ namespace PostgreWindowsFormsUI
         private void CallForms(Form frm)
         {
 
-            logo.Visible = false;
+            //logo.Visible = false;
             frm.MdiParent = this;
             frm.FormBorderStyle = FormBorderStyle.None;
-            //Panel.Controls.Add(frm);
+            MainPanel.Controls.Add(frm);
+            frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
       
+        private void CloseFroms(Form frm)
+        {
+            frm.Hide();
+        }
+        SearchForm _form = new SearchForm();
         private void SearchButton_Click(object sender, EventArgs e)
         {
             //SearchForm searchForm= new SearchForm();
             //searchForm.Show();
-            SearchForm form = new SearchForm();
-            CallForms(form);
+            
+            CloseFroms(_actionForm);
+            CallForms(_form);
             //usable styles...
             //form.FormBorderStyle = FormBorderStyle.Fixed3D;
             //form.FormBorderStyle = FormBorderStyle.Sizable;
 
         }
-
+        ActionForm _actionForm = new ActionForm();
         private void AddButton_Click(object sender, EventArgs e)
         {
-            ActionForm actionForm = new ActionForm();
-            //actionForm.Show();
             
-            CallForms(actionForm);
+            //actionForm.Show();
+            CloseFroms(_form);
+            CallForms(_actionForm);
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
             ActionForm actionForm = new ActionForm();
             //actionForm.Show();
+            CloseFroms(_form);
             CallForms(actionForm);
         }
 
@@ -71,6 +79,7 @@ namespace PostgreWindowsFormsUI
         {
             ActionForm actionForm = new ActionForm();
             //actionForm.Show();
+            CloseFroms(_form);
             CallForms(actionForm);
         }
 

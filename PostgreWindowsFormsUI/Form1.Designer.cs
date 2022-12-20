@@ -34,18 +34,16 @@ namespace PostgreWindowsFormsUI
             this.UpdateButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.DistrictButton = new System.Windows.Forms.Button();
-            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.CharityButton = new System.Windows.Forms.Button();
             this.AddButton = new System.Windows.Forms.Button();
-            this.logo = new System.Windows.Forms.PictureBox();
-            this.toolStripContainer1.ContentPanel.SuspendLayout();
-            this.toolStripContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            this.MainPanel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // SearchButton
             // 
-            this.SearchButton.Location = new System.Drawing.Point(12, 12);
+            this.SearchButton.Location = new System.Drawing.Point(22, 74);
             this.SearchButton.Name = "SearchButton";
             this.SearchButton.Size = new System.Drawing.Size(163, 84);
             this.SearchButton.TabIndex = 0;
@@ -55,7 +53,7 @@ namespace PostgreWindowsFormsUI
             // 
             // UpdateButton
             // 
-            this.UpdateButton.Location = new System.Drawing.Point(12, 192);
+            this.UpdateButton.Location = new System.Drawing.Point(22, 254);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(163, 84);
             this.UpdateButton.TabIndex = 2;
@@ -65,7 +63,7 @@ namespace PostgreWindowsFormsUI
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(12, 282);
+            this.DeleteButton.Location = new System.Drawing.Point(22, 344);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(163, 84);
             this.DeleteButton.TabIndex = 3;
@@ -75,7 +73,7 @@ namespace PostgreWindowsFormsUI
             // 
             // DistrictButton
             // 
-            this.DistrictButton.Location = new System.Drawing.Point(9, 372);
+            this.DistrictButton.Location = new System.Drawing.Point(19, 434);
             this.DistrictButton.Name = "DistrictButton";
             this.DistrictButton.Size = new System.Drawing.Size(163, 83);
             this.DistrictButton.TabIndex = 4;
@@ -83,27 +81,9 @@ namespace PostgreWindowsFormsUI
             this.DistrictButton.UseVisualStyleBackColor = true;
             this.DistrictButton.Click += new System.EventHandler(this.DistrictButton_Click);
             // 
-            // toolStripContainer1
-            // 
-            // 
-            // toolStripContainer1.ContentPanel
-            // 
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.SearchButton);
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.CharityButton);
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.UpdateButton);
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.DeleteButton);
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.AddButton);
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.DistrictButton);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(207, 550);
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 37);
-            this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(207, 575);
-            this.toolStripContainer1.TabIndex = 42;
-            this.toolStripContainer1.Text = "toolStripContainer1";
-            // 
             // CharityButton
             // 
-            this.CharityButton.Location = new System.Drawing.Point(12, 461);
+            this.CharityButton.Location = new System.Drawing.Point(22, 523);
             this.CharityButton.Name = "CharityButton";
             this.CharityButton.Size = new System.Drawing.Size(163, 84);
             this.CharityButton.TabIndex = 5;
@@ -113,7 +93,7 @@ namespace PostgreWindowsFormsUI
             // 
             // AddButton
             // 
-            this.AddButton.Location = new System.Drawing.Point(12, 102);
+            this.AddButton.Location = new System.Drawing.Point(22, 164);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(163, 84);
             this.AddButton.TabIndex = 1;
@@ -121,34 +101,40 @@ namespace PostgreWindowsFormsUI
             this.AddButton.UseVisualStyleBackColor = true;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
-            // logo
+            // MainPanel
             // 
-            this.logo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.logo.BackgroundImage = global::PostgreWindowsFormsUI.Properties.Resources.logo400x400;
-            this.logo.Location = new System.Drawing.Point(475, 49);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(539, 481);
-            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.logo.TabIndex = 43;
-            this.logo.TabStop = false;
+            this.MainPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MainPanel.Location = new System.Drawing.Point(0, 0);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(1357, 624);
+            this.MainPanel.TabIndex = 44;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.SearchButton);
+            this.panel1.Controls.Add(this.CharityButton);
+            this.panel1.Controls.Add(this.DistrictButton);
+            this.panel1.Controls.Add(this.UpdateButton);
+            this.panel1.Controls.Add(this.AddButton);
+            this.panel1.Controls.Add(this.DeleteButton);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 624);
+            this.panel1.TabIndex = 45;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1357, 624);
-            this.Controls.Add(this.logo);
-            this.Controls.Add(this.toolStripContainer1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.MainPanel);
             this.IsMdiContainer = true;
             this.Name = "Form1";
             this.Text = "CHARITY SOCIETY APP";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.toolStripContainer1.ContentPanel.ResumeLayout(false);
-            this.toolStripContainer1.ResumeLayout(false);
-            this.toolStripContainer1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -163,10 +149,10 @@ namespace PostgreWindowsFormsUI
         private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.Button DistrictButton;
         private System.Windows.Forms.Button DeleteButton;
-        private System.Windows.Forms.ToolStripContainer toolStripContainer1;
         private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Button CharityButton;
-        private System.Windows.Forms.PictureBox logo;
+        private System.Windows.Forms.Panel MainPanel;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

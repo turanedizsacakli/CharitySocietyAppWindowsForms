@@ -103,6 +103,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1255, 620);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.cbxCategory);
@@ -112,6 +114,7 @@
             this.Controls.Add(this.dgwPerson);
             this.Name = "SearchForm";
             this.Text = "Search Form";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwPerson)).EndInit();
             this.toolStripContainer1.ResumeLayout(false);
