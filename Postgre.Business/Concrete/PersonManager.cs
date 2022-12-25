@@ -40,7 +40,6 @@ namespace Postgre.Business.Concrete
             {
 
             }
-            
         }
 
         public Person Get(int id)
@@ -63,6 +62,14 @@ namespace Postgre.Business.Concrete
             return _personDal.GetAll(p => p.Name.ToLower().Contains(searchKey.ToLower()));
         }
 
+        public List<Person> GetByUrgencyId(int urgencyId)
+        {
+            return _personDal.GetAll(p=> p.UrgencyId== urgencyId);
+        }
 
+        //public List<Person> GetByUrgencyName(string searchKey)
+        //{
+        //    //return _personDal.GetAll(p => p.UrgencyName = searchKey);
+        //}
     }
 }

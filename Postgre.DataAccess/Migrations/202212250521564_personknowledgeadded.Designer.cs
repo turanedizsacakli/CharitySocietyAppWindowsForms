@@ -7,13 +7,13 @@ namespace Postgre.DataAccess.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.0")]
-    public sealed partial class initOne : IMigrationMetadata
+    public sealed partial class personknowledgeadded : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(initOne));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(personknowledgeadded));
         
         string IMigrationMetadata.Id
         {
-            get { return "202211292345434_initOne"; }
+            get { return "202212250521564_personknowledgeadded"; }
         }
         
         string IMigrationMetadata.Source

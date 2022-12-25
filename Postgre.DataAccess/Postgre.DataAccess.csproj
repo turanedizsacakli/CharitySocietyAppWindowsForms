@@ -87,20 +87,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IAddressDal.cs" />
     <Compile Include="Abstract\ICategoryDal.cs" />
     <Compile Include="Abstract\IEntityRepository.cs" />
     <Compile Include="Abstract\IPersonDal.cs" />
+    <Compile Include="Abstract\IPersonKnowledgeDal.cs" />
+    <Compile Include="Abstract\IUrgencyDal.cs" />
+    <Compile Include="Concrete\AddressDal.cs" />
     <Compile Include="Concrete\CategoryDal.cs" />
     <Compile Include="Concrete\PersonDal.cs" />
+    <Compile Include="Concrete\PersonKnowledgeDal.cs" />
     <Compile Include="Concrete\PostgreContext.cs" />
     <Compile Include="Concrete\PostgreEntityRepositoryBase.cs" />
-    <Compile Include="Migrations\202211292345434_initOne.cs" />
-    <Compile Include="Migrations\202211292345434_initOne.designer.cs">
-      <DependentUpon>202211292345434_initOne.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202212052327229_categories.cs" />
-    <Compile Include="Migrations\202212052327229_categories.designer.cs">
-      <DependentUpon>202212052327229_categories.cs</DependentUpon>
+    <Compile Include="Concrete\UrgencyDal.cs" />
+    <Compile Include="Migrations\202212250521564_personknowledgeadded.cs" />
+    <Compile Include="Migrations\202212250521564_personknowledgeadded.designer.cs">
+      <DependentUpon>202212250521564_personknowledgeadded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -116,11 +118,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202211292345434_initOne.resx">
-      <DependentUpon>202211292345434_initOne.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202212052327229_categories.resx">
-      <DependentUpon>202212052327229_categories.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202212250521564_personknowledgeadded.resx">
+      <DependentUpon>202212250521564_personknowledgeadded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

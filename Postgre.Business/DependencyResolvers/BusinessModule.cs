@@ -20,6 +20,11 @@ namespace Postgre.Business.DependencyResolvers
             Bind<ICategoryDal>().To<CategoryDal>();
             Bind<IPersonDal>().To<PersonDal>();
 
+            Bind<IAddressService>().To<AddressManager>();
+            Bind<IUrgencyService>().To<UrgencyManager>();
+            Bind<IAddressDal>().To<AddressDal>();
+            Bind<IUrgencyDal>().To<UrgencyDal>();
+
         }
     }
 }

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.cbxCategory = new System.Windows.Forms.ComboBox();
-            this.GetById = new System.Windows.Forms.Button();
             this.lblSearch = new System.Windows.Forms.Label();
             this.tbxSearch = new System.Windows.Forms.TextBox();
             this.dgwPerson = new System.Windows.Forms.DataGridView();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
+            this.cbxUrgency = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgwPerson)).BeginInit();
             this.toolStripContainer1.SuspendLayout();
             this.SuspendLayout();
@@ -46,17 +46,6 @@
             this.cbxCategory.Size = new System.Drawing.Size(206, 24);
             this.cbxCategory.TabIndex = 49;
             this.cbxCategory.SelectedIndexChanged += new System.EventHandler(this.cbxCategory_SelectedIndexChanged);
-            // 
-            // GetById
-            // 
-            this.GetById.Location = new System.Drawing.Point(426, 32);
-            this.GetById.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.GetById.Name = "GetById";
-            this.GetById.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.GetById.Size = new System.Drawing.Size(72, 31);
-            this.GetById.TabIndex = 48;
-            this.GetById.Text = "Get By Id";
-            this.GetById.UseVisualStyleBackColor = true;
             // 
             // lblSearch
             // 
@@ -99,6 +88,15 @@
             this.toolStripContainer1.TabIndex = 50;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
+            // cbxUrgency
+            // 
+            this.cbxUrgency.FormattingEnabled = true;
+            this.cbxUrgency.Location = new System.Drawing.Point(461, 33);
+            this.cbxUrgency.Name = "cbxUrgency";
+            this.cbxUrgency.Size = new System.Drawing.Size(206, 24);
+            this.cbxUrgency.TabIndex = 51;
+            this.cbxUrgency.SelectedIndexChanged += new System.EventHandler(this.cbxUrgency_SelectedIndexChanged);
+            // 
             // SearchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -106,9 +104,9 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1255, 620);
+            this.Controls.Add(this.cbxUrgency);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.cbxCategory);
-            this.Controls.Add(this.GetById);
             this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.tbxSearch);
             this.Controls.Add(this.dgwPerson);
@@ -127,10 +125,10 @@
         #endregion
 
         private System.Windows.Forms.ComboBox cbxCategory;
-        private System.Windows.Forms.Button GetById;
         private System.Windows.Forms.Label lblSearch;
         public System.Windows.Forms.TextBox tbxSearch;
-        private System.Windows.Forms.DataGridView dgwPerson;
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
+        private System.Windows.Forms.ComboBox cbxUrgency;
+        public System.Windows.Forms.DataGridView dgwPerson;
     }
 }

@@ -22,6 +22,8 @@ namespace Postgre.DataAccess.Concrete
         }
         public DbSet<Person> People { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Address> Addresses{ get; set; }
+        public DbSet<Urgency> Urgencies{ get; set; }
 
     }
 }

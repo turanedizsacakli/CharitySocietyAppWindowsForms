@@ -72,10 +72,50 @@ D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.D
 D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\bin\Debug\System.ValueTuple.xml
 D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.csproj.AssemblyReference.cache
-D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.Migrations.initOne.resources
-D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.csproj.GenerateResource.cache
 D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.csproj.CoreCompileInputs.cache
 D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.csproj.CopyComplete
 D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.dll
 D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.pdb
-D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.Migrations.categories.resources
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\Postgre.DataAccess.dll.config
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\Postgre.DataAccess.dll
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\Postgre.DataAccess.pdb
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\EntityFramework6.Npgsql.dll
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\Npgsql.dll
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\Postgre.Entities.dll
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\System.Buffers.dll
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\System.Memory.dll
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\System.Text.Json.dll
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\System.ValueTuple.dll
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\Postgre.Entities.pdb
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\Postgre.Entities.dll.config
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\EntityFramework6.Npgsql.xml
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\Npgsql.pdb
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\Npgsql.xml
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\System.Buffers.xml
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\System.Memory.xml
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\System.Text.Json.xml
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\bin\Debug\System.ValueTuple.xml
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.csproj.CopyComplete
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.dll
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.pdb
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.Migrations.AddressAndUrgency.resources
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.Migrations.EntityPersonUpdate.resources
+D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.Migrations.personknowledgeadded.resources
+D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.csproj.GenerateResource.cache

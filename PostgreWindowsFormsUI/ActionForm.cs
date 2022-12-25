@@ -22,26 +22,37 @@ namespace PostgreWindowsFormsUI
             InitializeComponent();
             _personService = InstanceFactory.GetInstance<IPersonService>();
             _categoryService = InstanceFactory.GetInstance<ICategoryService>();
+            _addressService = InstanceFactory.GetInstance<IAddressService>();
+            _urgencyService = InstanceFactory.GetInstance<IUrgencyService>();
             //_personService = new PersonManager(new PersonDal());
             //_categoryService = new CategoryManager(new CategoryDal());
         }
 
-        
         private IPersonService _personService;
         private ICategoryService _categoryService;
+        private IAddressService _addressService;
+        private IUrgencyService _urgencyService;
 
         private void ActionForm_Load(object sender, EventArgs e)
         {
             LoadUrgencyAndCategory();
-           
+
         }
         private void LoadUrgencyAndCategory()
         {
+            SearchForm searchForm= new SearchForm();
             cbxUrgency.Items.Add("A");
             cbxUrgency.Items.Add("B");
             cbxUrgency.Items.Add("C");
             cbxCategoryId.Items.Add("Yardım Ailesi");
             cbxCategoryId.Items.Add("Yetim Ailesi");
+            tbxId.Text = Convert.ToString(1);
+            var rowCount = searchForm.dgwPerson.Rows.Count;
+            //id numarası...
+            var realId= Convert.ToString(rowCount + 1);
+            //tbxId.Text = (string)searchForm.dgwPerson.Rows[rowCount].Cells[0].Value;
+            Console.WriteLine(realId);
+            //tbxId.Text = Convert.ToString(rowCount + 1);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -59,8 +70,26 @@ namespace PostgreWindowsFormsUI
                     Birthday = tbxBirthday.Text,
                     BirthCountry = tbxBirthCountry.Text,
                     CategoryId = cbxCategoryId.SelectedIndex + 1,
+                    AddressId=Convert.ToInt32( tbxId.Text),
+
                     //you will add urgency!!! be careful about it....
                 });
+
+                _addressService.Add(new Address
+                {
+                    AppealDate = tbxAppealDate.Text,
+                    DetectDate = tbxDetectDate.Text,
+                    Country = cbxCountry.SelectedText,
+                    City = cbxCity.SelectedText,
+                    District = tbxDistrict.Text,
+                    Hometown = cbxHometown.SelectedText,
+                    PhoneNumberTwo = tbxPhoneOne.Text,
+                    PhoneNumberOne = tbxPhoneTwo.Text,
+                    Street = tbxStreet.Text,
+                    Build = tbxBuild.Text,
+                    BuildNumber = tbxBuildNumber.Text
+                });
+
                 ClearAll();
                 MessageBox.Show("KİŞİ EKLENDİ...");
             }
@@ -85,21 +114,21 @@ namespace PostgreWindowsFormsUI
         {
             try
             {
-            _personService.Update(new Person
-                        {
-                            PersonId = Convert.ToInt32(tbxId.Text),
-                            Name = tbxName.Text,
-                            Surname = tbxSurname.Text,
-                            Nationality = tbxNationality.Text,
-                            FatherName = tbxFatherName.Text,
-                            MotherName = tbxMotherName.Text,
-                            Birthday = tbxBirthday.Text,
-                            BirthCountry = tbxBirthCountry.Text,
-                            LocalId = tbxLocalIdNumber.Text,
-                            CategoryId = cbxCategoryId.SelectedIndex + 1,
-                        });
+                _personService.Update(new Person
+                {
+                    PersonId = Convert.ToInt32(tbxId.Text),
+                    Name = tbxName.Text,
+                    Surname = tbxSurname.Text,
+                    Nationality = tbxNationality.Text,
+                    FatherName = tbxFatherName.Text,
+                    MotherName = tbxMotherName.Text,
+                    Birthday = tbxBirthday.Text,
+                    BirthCountry = tbxBirthCountry.Text,
+                    LocalId = tbxLocalIdNumber.Text,
+                    CategoryId = cbxCategoryId.SelectedIndex + 1,
+                });
 
-                        MessageBox.Show("KİŞİ GÜNCELLENDİ...");
+                MessageBox.Show("KİŞİ GÜNCELLENDİ...");
             }
             catch (Exception exception)
             {
@@ -112,7 +141,7 @@ namespace PostgreWindowsFormsUI
         {
             _personService.Delete(new Person
             {
-                PersonId=Convert.ToInt32(tbxId.Text)
+                PersonId = Convert.ToInt32(tbxId.Text)
             });
             MessageBox.Show("Kişi Silindi...");
             _searchForm.Show();
@@ -130,13 +159,13 @@ namespace PostgreWindowsFormsUI
                 if (Convert.ToInt32(tbxHowManyChildren.Text) == 5) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = true; gbxC5.Visible = true; gbxC6.Visible = false; }
                 if (Convert.ToInt32(tbxHowManyChildren.Text) == 6) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = true; gbxC5.Visible = true; gbxC6.Visible = true; }
             }
-            catch (Exception )
+            catch (Exception)
             {
                 //exception.Message = "lütfen çocuk sayısını giriniz ya da boş bırakınız...";
                 //MessageBox.Show(exception.Message);
                 MessageBox.Show("lütfen çocuk sayısını giriniz ya da boş bırakınız...");
             }
-            
+
         }
     }
 }

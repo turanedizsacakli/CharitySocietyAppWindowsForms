@@ -93,11 +93,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IAddressService.cs" />
     <Compile Include="Abstract\ICategoryService.cs" />
+    <Compile Include="Abstract\IPersonKnowledgeService.cs" />
     <Compile Include="Abstract\IServiceRepository.cs" />
     <Compile Include="Abstract\IPersonService.cs" />
+    <Compile Include="Abstract\IUrgencyService.cs" />
+    <Compile Include="Concrete\AddressManager.cs" />
     <Compile Include="Concrete\CategoryManager.cs" />
+    <Compile Include="Concrete\PersonKnowledgeManager.cs" />
     <Compile Include="Concrete\PersonManager.cs" />
+    <Compile Include="Concrete\UrgencyManager.cs" />
     <Compile Include="DependencyResolvers\BusinessModule.cs" />
     <Compile Include="DependencyResolvers\InstanceFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

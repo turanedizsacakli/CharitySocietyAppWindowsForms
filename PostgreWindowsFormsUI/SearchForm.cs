@@ -20,20 +20,37 @@ namespace PostgreWindowsFormsUI
             InitializeComponent();
             _personService = new PersonManager(new PersonDal());
             _categoryService = new CategoryManager(new CategoryDal());
+            _addressService = new AddressManager(new AddressDal());
+            _urgencyService = new UrgencyManager(new UrgencyDal());
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
             LoadCategories();
             LoadPeople();
+            LoadUrgency();
+            
+
+            //dgwPerson[0, dgwPerson.RowCount - 1].Cells[0].Value.ToString();
+            //dgwPerson.FirstDisplayedScrollingRowIndex = dgwPerson.RowCount - 1;
+            //.Selected = true;
+            //dgwPerson.CurrentRow.Cells[rowCount].Value;
         }
+
         private IPersonService _personService;
         private ICategoryService _categoryService;
+        private IAddressService _addressService;
+        private IUrgencyService _urgencyService;
         private void LoadPeople()
         {
             dgwPerson.DataSource = _personService.GetAll();
         }
-
+        private void LoadUrgency()
+        {
+            cbxUrgency.DataSource = _urgencyService.GetAll();
+            cbxUrgency.DisplayMember = "UrgencyName";
+            cbxUrgency.ValueMember = "UrgencyId";
+        }
         private void LoadCategories()
         {
             cbxCategory.DataSource = _categoryService.GetAll();
@@ -56,6 +73,22 @@ namespace PostgreWindowsFormsUI
             catch { }
         }
 
+        private void cbxUrgency_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Convert.ToInt32(cbxUrgency.SelectedValue) == 1)
+                {
+                    LoadPeople();
+                }
+                else
+                {
+                    dgwPerson.DataSource = _personService.GetByUrgencyId(Convert.ToInt32(cbxUrgency.SelectedValue));
+                }
+            }
+            catch { }
+        }
+
         private void tbxSearch_TextChanged(object sender, EventArgs e)
         {
             if (!String.IsNullOrEmpty(tbxSearch.Text))
@@ -70,8 +103,10 @@ namespace PostgreWindowsFormsUI
 
         private void dgwPerson_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            ActionForm form=new ActionForm();
+            
+            ActionForm form = new ActionForm();
             var Row = dgwPerson.CurrentRow;
+
             form.Show();
             form.tbxId.Text = Row.Cells[0].Value.ToString();
             form.tbxName.Text = Row.Cells[1].Value.ToString();
@@ -79,12 +114,17 @@ namespace PostgreWindowsFormsUI
             form.tbxFatherName.Text = Row.Cells[3].Value.ToString();
             form.tbxMotherName.Text = Row.Cells[4].Value.ToString();
             form.tbxNationality.Text = Row.Cells[5].Value.ToString();
-            form.tbxBirthday.Text= Row.Cells[6].Value.ToString();
+            form.tbxBirthday.Text = Row.Cells[6].Value.ToString();
             form.tbxBirthCountry.Text = Row.Cells[7].Value.ToString();
             form.tbxLocalIdNumber.Text = Row.Cells[8].Value.ToString();
-            form.cbxCategoryId.Text= Row.Cells[9].Value.ToString();
-            SearchForm searchForm= new SearchForm();
+            form.cbxCategoryId.Text = Row.Cells[9].Value.ToString();
+            
+            SearchForm searchForm = new SearchForm();
             searchForm.Hide();
         }
+
+        
+        
+
     }
 }

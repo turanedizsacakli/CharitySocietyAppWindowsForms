@@ -88,8 +88,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IEntity.cs" />
+    <Compile Include="Concrete\Address.cs" />
     <Compile Include="Concrete\Category.cs" />
+    <Compile Include="Concrete\PersonKnowledge.cs" />
     <Compile Include="Concrete\Person.cs" />
+    <Compile Include="Concrete\Urgency.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

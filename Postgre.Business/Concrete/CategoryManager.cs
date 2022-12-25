@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 namespace Postgre.Business.Concrete
 {
     public class CategoryManager : ICategoryService
-
     {
         private ICategoryDal _categoryDal;
 

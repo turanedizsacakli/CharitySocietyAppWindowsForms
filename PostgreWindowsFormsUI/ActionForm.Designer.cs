@@ -32,54 +32,55 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbxHometown = new System.Windows.Forms.ComboBox();
+            this.cbxCountry = new System.Windows.Forms.ComboBox();
+            this.cbxCity = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxPhoneTwo = new System.Windows.Forms.TextBox();
+            this.tbxFullAddress = new System.Windows.Forms.TextBox();
+            this.tbxPhoneOne = new System.Windows.Forms.TextBox();
+            this.tbxAppealDate = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbxBuildNumber = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tbxDistrict = new System.Windows.Forms.TextBox();
+            this.tbxStreet = new System.Windows.Forms.TextBox();
+            this.tbxBuild = new System.Windows.Forms.TextBox();
+            this.tbxDetectDate = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label52 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtbKnowledge = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gbxAdd = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tbxHowManyChildren = new System.Windows.Forms.TextBox();
+            this.cbxMarital = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.tbxWork = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.tbxStuff = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.tbxOutgoing = new System.Windows.Forms.TextBox();
+            this.tbxDebt = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.tbxAid = new System.Windows.Forms.TextBox();
+            this.tbxStudent = new System.Windows.Forms.TextBox();
+            this.tbxIncome = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.tbxBlood = new System.Windows.Forms.TextBox();
             this.tbxId = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cbxCategoryId = new System.Windows.Forms.ComboBox();
@@ -103,161 +104,161 @@
             this.tbxLocalIdNumber = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.tbxPartnerBirthday = new System.Windows.Forms.TextBox();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.tbxPartnerName = new System.Windows.Forms.TextBox();
-            this.label46 = new System.Windows.Forms.Label();
-            this.tbxPartnerSurname = new System.Windows.Forms.TextBox();
-            this.tbxPartnerMother = new System.Windows.Forms.TextBox();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.tbxPartnerNationality = new System.Windows.Forms.TextBox();
-            this.label44 = new System.Windows.Forms.Label();
-            this.tbxPartnerFather = new System.Windows.Forms.TextBox();
-            this.tbxPartnerBirthCity = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.tbxPartnerLocalId = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.tbxPartnerJob = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
             this.gbxC1 = new System.Windows.Forms.GroupBox();
+            this.label102 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.txbChildLocalId = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.tbxChildBirthCity = new System.Windows.Forms.TextBox();
-            this.tbxChildFather = new System.Windows.Forms.TextBox();
+            this.tbxChildOneLocalId = new System.Windows.Forms.TextBox();
+            this.tbxChildOneId = new System.Windows.Forms.TextBox();
+            this.tbxChildOneBirthCity = new System.Windows.Forms.TextBox();
+            this.tbxChildOneFather = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
-            this.tbxChildNationality = new System.Windows.Forms.TextBox();
+            this.tbxChildOneNationality = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.tbxChildMother = new System.Windows.Forms.TextBox();
-            this.tbxChildSurname = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.tbxChildName = new System.Windows.Forms.TextBox();
+            this.tbxChildOneMother = new System.Windows.Forms.TextBox();
+            this.tbxChildOneSurname = new System.Windows.Forms.TextBox();
+            this.tbxChildOneName = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.tbxChildBirthday = new System.Windows.Forms.TextBox();
+            this.tbxChildOneBirthday = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label103 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.tbxPartnerJob = new System.Windows.Forms.TextBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.tbxPartnerLocalId = new System.Windows.Forms.TextBox();
+            this.tbxPartnerId = new System.Windows.Forms.TextBox();
+            this.tbxPartnerBirthCity = new System.Windows.Forms.TextBox();
+            this.tbxPartnerFather = new System.Windows.Forms.TextBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.tbxPartnerNationality = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.tbxPartnerMother = new System.Windows.Forms.TextBox();
+            this.tbxPartnerSurname = new System.Windows.Forms.TextBox();
+            this.tbxPartnerName = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.tbxPartnerBirthday = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
             this.gbxC2 = new System.Windows.Forms.GroupBox();
+            this.label46 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.textBox41 = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
-            this.textBox44 = new System.Windows.Forms.TextBox();
-            this.textBox45 = new System.Windows.Forms.TextBox();
+            this.tbxChildTwoLocalId = new System.Windows.Forms.TextBox();
+            this.tbxChildTwoId = new System.Windows.Forms.TextBox();
+            this.tbxChildTwoBirthCity = new System.Windows.Forms.TextBox();
+            this.tbxChildTwoFatherName = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
-            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.tbxChildTwoNationality = new System.Windows.Forms.TextBox();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
-            this.textBox47 = new System.Windows.Forms.TextBox();
-            this.textBox48 = new System.Windows.Forms.TextBox();
-            this.label58 = new System.Windows.Forms.Label();
-            this.textBox49 = new System.Windows.Forms.TextBox();
+            this.tbxChildTwoMotherName = new System.Windows.Forms.TextBox();
+            this.tbxChildTwoSurname = new System.Windows.Forms.TextBox();
+            this.tbxChildTwoName = new System.Windows.Forms.TextBox();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
-            this.textBox50 = new System.Windows.Forms.TextBox();
+            this.tbxChildTwoBirthday = new System.Windows.Forms.TextBox();
             this.label61 = new System.Windows.Forms.Label();
             this.gbxC5 = new System.Windows.Forms.GroupBox();
             this.label62 = new System.Windows.Forms.Label();
             this.textBox51 = new System.Windows.Forms.TextBox();
             this.label63 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
-            this.textBox52 = new System.Windows.Forms.TextBox();
-            this.textBox53 = new System.Windows.Forms.TextBox();
-            this.textBox54 = new System.Windows.Forms.TextBox();
-            this.textBox55 = new System.Windows.Forms.TextBox();
+            this.tbxChildFifthLocalId = new System.Windows.Forms.TextBox();
+            this.tbxChildFifthId = new System.Windows.Forms.TextBox();
+            this.tbxChildFifthBirthCity = new System.Windows.Forms.TextBox();
+            this.tbxChildFifthFatherName = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
-            this.textBox56 = new System.Windows.Forms.TextBox();
+            this.tbxChildFifthNationality = new System.Windows.Forms.TextBox();
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
-            this.textBox57 = new System.Windows.Forms.TextBox();
-            this.textBox58 = new System.Windows.Forms.TextBox();
+            this.tbxChildFifthMotherName = new System.Windows.Forms.TextBox();
+            this.tbxChildFifthSurname = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
-            this.textBox59 = new System.Windows.Forms.TextBox();
+            this.tbxChildFifthName = new System.Windows.Forms.TextBox();
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
-            this.textBox60 = new System.Windows.Forms.TextBox();
+            this.tbxChildFifthBirthday = new System.Windows.Forms.TextBox();
             this.label71 = new System.Windows.Forms.Label();
             this.gbxC4 = new System.Windows.Forms.GroupBox();
             this.label72 = new System.Windows.Forms.Label();
             this.textBox61 = new System.Windows.Forms.TextBox();
             this.label73 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
-            this.textBox62 = new System.Windows.Forms.TextBox();
-            this.textBox63 = new System.Windows.Forms.TextBox();
-            this.textBox64 = new System.Windows.Forms.TextBox();
-            this.textBox65 = new System.Windows.Forms.TextBox();
+            this.tbxChildForthLocalId = new System.Windows.Forms.TextBox();
+            this.tbxChildForthId = new System.Windows.Forms.TextBox();
+            this.tbxChildForthBirthCity = new System.Windows.Forms.TextBox();
+            this.tbxChildForthFatherName = new System.Windows.Forms.TextBox();
             this.label75 = new System.Windows.Forms.Label();
-            this.textBox66 = new System.Windows.Forms.TextBox();
+            this.tbxChildForthNationality = new System.Windows.Forms.TextBox();
             this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
-            this.textBox67 = new System.Windows.Forms.TextBox();
-            this.textBox68 = new System.Windows.Forms.TextBox();
+            this.tbxChildForthMotherName = new System.Windows.Forms.TextBox();
+            this.tbxChildForthSurname = new System.Windows.Forms.TextBox();
             this.label78 = new System.Windows.Forms.Label();
-            this.textBox69 = new System.Windows.Forms.TextBox();
+            this.tbxChildForthName = new System.Windows.Forms.TextBox();
             this.label79 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
-            this.textBox70 = new System.Windows.Forms.TextBox();
+            this.tbxChildForthBirthday = new System.Windows.Forms.TextBox();
             this.label81 = new System.Windows.Forms.Label();
             this.gbxC3 = new System.Windows.Forms.GroupBox();
             this.label82 = new System.Windows.Forms.Label();
             this.textBox71 = new System.Windows.Forms.TextBox();
             this.label83 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
-            this.textBox72 = new System.Windows.Forms.TextBox();
-            this.textBox73 = new System.Windows.Forms.TextBox();
-            this.textBox74 = new System.Windows.Forms.TextBox();
-            this.textBox75 = new System.Windows.Forms.TextBox();
+            this.tbxChildThreeLocalId = new System.Windows.Forms.TextBox();
+            this.tbxChildThreeId = new System.Windows.Forms.TextBox();
+            this.tbxChildThreeBirthCity = new System.Windows.Forms.TextBox();
+            this.tbxChildThreeFatherName = new System.Windows.Forms.TextBox();
             this.label85 = new System.Windows.Forms.Label();
-            this.textBox76 = new System.Windows.Forms.TextBox();
+            this.tbxChildThreeNationality = new System.Windows.Forms.TextBox();
             this.label86 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
-            this.textBox77 = new System.Windows.Forms.TextBox();
-            this.textBox78 = new System.Windows.Forms.TextBox();
+            this.tbxChildThreeMotherName = new System.Windows.Forms.TextBox();
+            this.tbxChildThreeSurname = new System.Windows.Forms.TextBox();
             this.label88 = new System.Windows.Forms.Label();
-            this.textBox79 = new System.Windows.Forms.TextBox();
+            this.tbxChildThreeName = new System.Windows.Forms.TextBox();
             this.label89 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
-            this.textBox80 = new System.Windows.Forms.TextBox();
+            this.tbxChildThreeBirthday = new System.Windows.Forms.TextBox();
             this.label91 = new System.Windows.Forms.Label();
             this.gbxC6 = new System.Windows.Forms.GroupBox();
             this.label92 = new System.Windows.Forms.Label();
             this.textBox81 = new System.Windows.Forms.TextBox();
             this.label93 = new System.Windows.Forms.Label();
             this.label94 = new System.Windows.Forms.Label();
-            this.textBox82 = new System.Windows.Forms.TextBox();
-            this.textBox83 = new System.Windows.Forms.TextBox();
-            this.textBox84 = new System.Windows.Forms.TextBox();
-            this.textBox85 = new System.Windows.Forms.TextBox();
+            this.tbxChildSixthLocalId = new System.Windows.Forms.TextBox();
+            this.tbxChildSixthId = new System.Windows.Forms.TextBox();
+            this.tbxChildSixthBirthCity = new System.Windows.Forms.TextBox();
+            this.tbxChildSixthFatherName = new System.Windows.Forms.TextBox();
             this.label95 = new System.Windows.Forms.Label();
-            this.textBox86 = new System.Windows.Forms.TextBox();
+            this.tbxChildSixthNationality = new System.Windows.Forms.TextBox();
             this.label96 = new System.Windows.Forms.Label();
             this.label97 = new System.Windows.Forms.Label();
-            this.textBox87 = new System.Windows.Forms.TextBox();
-            this.textBox88 = new System.Windows.Forms.TextBox();
+            this.tbxChildSixthMotherName = new System.Windows.Forms.TextBox();
+            this.tbxChildSixthSurname = new System.Windows.Forms.TextBox();
             this.label98 = new System.Windows.Forms.Label();
-            this.textBox89 = new System.Windows.Forms.TextBox();
+            this.tbxChildSixthName = new System.Windows.Forms.TextBox();
             this.label99 = new System.Windows.Forms.Label();
             this.label100 = new System.Windows.Forms.Label();
-            this.textBox90 = new System.Windows.Forms.TextBox();
+            this.tbxChildSixthBirthday = new System.Windows.Forms.TextBox();
             this.label101 = new System.Windows.Forms.Label();
-            this.tbxHowManyChildren = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gbxAdd.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.gbxC1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.gbxC2.SuspendLayout();
             this.gbxC5.SuspendLayout();
             this.gbxC4.SuspendLayout();
@@ -301,31 +302,31 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbxHometown);
+            this.groupBox1.Controls.Add(this.cbxCountry);
+            this.groupBox1.Controls.Add(this.cbxCity);
             this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.textBox12);
-            this.groupBox1.Controls.Add(this.textBox10);
-            this.groupBox1.Controls.Add(this.textBox11);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tbxPhoneTwo);
+            this.groupBox1.Controls.Add(this.tbxFullAddress);
+            this.groupBox1.Controls.Add(this.tbxPhoneOne);
+            this.groupBox1.Controls.Add(this.tbxAppealDate);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.tbxBuildNumber);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox9);
+            this.groupBox1.Controls.Add(this.tbxDistrict);
+            this.groupBox1.Controls.Add(this.tbxStreet);
+            this.groupBox1.Controls.Add(this.tbxBuild);
+            this.groupBox1.Controls.Add(this.tbxDetectDate);
             this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Location = new System.Drawing.Point(12, 788);
+            this.groupBox1.Location = new System.Drawing.Point(206, 793);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -333,6 +334,30 @@
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Adres Bilgileri";
+            // 
+            // cbxHometown
+            // 
+            this.cbxHometown.FormattingEnabled = true;
+            this.cbxHometown.Location = new System.Drawing.Point(177, 110);
+            this.cbxHometown.Name = "cbxHometown";
+            this.cbxHometown.Size = new System.Drawing.Size(133, 24);
+            this.cbxHometown.TabIndex = 58;
+            // 
+            // cbxCountry
+            // 
+            this.cbxCountry.FormattingEnabled = true;
+            this.cbxCountry.Location = new System.Drawing.Point(177, 52);
+            this.cbxCountry.Name = "cbxCountry";
+            this.cbxCountry.Size = new System.Drawing.Size(133, 24);
+            this.cbxCountry.TabIndex = 57;
+            // 
+            // cbxCity
+            // 
+            this.cbxCity.FormattingEnabled = true;
+            this.cbxCity.Location = new System.Drawing.Point(177, 82);
+            this.cbxCity.Name = "cbxCity";
+            this.cbxCity.Size = new System.Drawing.Size(133, 24);
+            this.cbxCity.TabIndex = 56;
             // 
             // label20
             // 
@@ -343,37 +368,37 @@
             this.label20.TabIndex = 39;
             this.label20.Text = "Telefon 1 / 2 :";
             // 
-            // textBox12
+            // tbxPhoneTwo
             // 
-            this.textBox12.Location = new System.Drawing.Point(516, 156);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(133, 22);
-            this.textBox12.TabIndex = 38;
+            this.tbxPhoneTwo.Location = new System.Drawing.Point(516, 156);
+            this.tbxPhoneTwo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxPhoneTwo.Name = "tbxPhoneTwo";
+            this.tbxPhoneTwo.Size = new System.Drawing.Size(133, 22);
+            this.tbxPhoneTwo.TabIndex = 38;
             // 
-            // textBox10
+            // tbxFullAddress
             // 
-            this.textBox10.Location = new System.Drawing.Point(177, 182);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(588, 22);
-            this.textBox10.TabIndex = 37;
+            this.tbxFullAddress.Location = new System.Drawing.Point(177, 188);
+            this.tbxFullAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxFullAddress.Name = "tbxFullAddress";
+            this.tbxFullAddress.Size = new System.Drawing.Size(588, 22);
+            this.tbxFullAddress.TabIndex = 37;
             // 
-            // textBox11
+            // tbxPhoneOne
             // 
-            this.textBox11.Location = new System.Drawing.Point(177, 156);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(133, 22);
-            this.textBox11.TabIndex = 36;
+            this.tbxPhoneOne.Location = new System.Drawing.Point(177, 162);
+            this.tbxPhoneOne.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxPhoneOne.Name = "tbxPhoneOne";
+            this.tbxPhoneOne.Size = new System.Drawing.Size(133, 22);
+            this.tbxPhoneOne.TabIndex = 36;
             // 
-            // textBox1
+            // tbxAppealDate
             // 
-            this.textBox1.Location = new System.Drawing.Point(177, 26);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 22);
-            this.textBox1.TabIndex = 35;
+            this.tbxAppealDate.Location = new System.Drawing.Point(177, 26);
+            this.tbxAppealDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxAppealDate.Name = "tbxAppealDate";
+            this.tbxAppealDate.Size = new System.Drawing.Size(133, 22);
+            this.tbxAppealDate.TabIndex = 35;
             // 
             // label9
             // 
@@ -420,14 +445,6 @@
             this.label13.TabIndex = 12;
             this.label13.Text = "Site / Bina :";
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(177, 104);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(133, 22);
-            this.textBox2.TabIndex = 11;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -446,13 +463,13 @@
             this.label15.TabIndex = 10;
             this.label15.Text = "Mahalle :";
             // 
-            // textBox3
+            // tbxBuildNumber
             // 
-            this.textBox3.Location = new System.Drawing.Point(516, 130);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(133, 22);
-            this.textBox3.TabIndex = 9;
+            this.tbxBuildNumber.Location = new System.Drawing.Point(516, 130);
+            this.tbxBuildNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxBuildNumber.Name = "tbxBuildNumber";
+            this.tbxBuildNumber.Size = new System.Drawing.Size(133, 22);
+            this.tbxBuildNumber.TabIndex = 9;
             // 
             // label16
             // 
@@ -472,22 +489,6 @@
             this.label17.TabIndex = 2;
             this.label17.Text = "Ülke :";
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(177, 52);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(133, 22);
-            this.textBox4.TabIndex = 3;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(177, 78);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(133, 22);
-            this.textBox5.TabIndex = 3;
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -497,37 +498,37 @@
             this.label18.TabIndex = 4;
             this.label18.Text = "Tespit Tarihi :";
             // 
-            // textBox6
+            // tbxDistrict
             // 
-            this.textBox6.Location = new System.Drawing.Point(516, 78);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(133, 22);
-            this.textBox6.TabIndex = 9;
+            this.tbxDistrict.Location = new System.Drawing.Point(516, 78);
+            this.tbxDistrict.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxDistrict.Name = "tbxDistrict";
+            this.tbxDistrict.Size = new System.Drawing.Size(133, 22);
+            this.tbxDistrict.TabIndex = 9;
             // 
-            // textBox7
+            // tbxStreet
             // 
-            this.textBox7.Location = new System.Drawing.Point(516, 104);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(133, 22);
-            this.textBox7.TabIndex = 5;
+            this.tbxStreet.Location = new System.Drawing.Point(516, 104);
+            this.tbxStreet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxStreet.Name = "tbxStreet";
+            this.tbxStreet.Size = new System.Drawing.Size(133, 22);
+            this.tbxStreet.TabIndex = 5;
             // 
-            // textBox8
+            // tbxBuild
             // 
-            this.textBox8.Location = new System.Drawing.Point(177, 130);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(133, 22);
-            this.textBox8.TabIndex = 7;
+            this.tbxBuild.Location = new System.Drawing.Point(177, 136);
+            this.tbxBuild.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxBuild.Name = "tbxBuild";
+            this.tbxBuild.Size = new System.Drawing.Size(133, 22);
+            this.tbxBuild.TabIndex = 7;
             // 
-            // textBox9
+            // tbxDetectDate
             // 
-            this.textBox9.Location = new System.Drawing.Point(516, 32);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(133, 22);
-            this.textBox9.TabIndex = 5;
+            this.tbxDetectDate.Location = new System.Drawing.Point(516, 32);
+            this.tbxDetectDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxDetectDate.Name = "tbxDetectDate";
+            this.tbxDetectDate.Size = new System.Drawing.Size(133, 22);
+            this.tbxDetectDate.TabIndex = 5;
             // 
             // label19
             // 
@@ -542,8 +543,8 @@
             // 
             this.groupBox3.AutoSize = true;
             this.groupBox3.Controls.Add(this.label52);
-            this.groupBox3.Controls.Add(this.richTextBox1);
-            this.groupBox3.Location = new System.Drawing.Point(12, 1032);
+            this.groupBox3.Controls.Add(this.rtbKnowledge);
+            this.groupBox3.Location = new System.Drawing.Point(206, 1027);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(786, 272);
             this.groupBox3.TabIndex = 56;
@@ -559,13 +560,14 @@
             this.label52.TabIndex = 1;
             this.label52.Text = "Bilgi Alanı :";
             // 
-            // richTextBox1
+            // rtbKnowledge
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(84, 33);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(681, 218);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.rtbKnowledge.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rtbKnowledge.Location = new System.Drawing.Point(84, 33);
+            this.rtbKnowledge.Name = "rtbKnowledge";
+            this.rtbKnowledge.Size = new System.Drawing.Size(681, 218);
+            this.rtbKnowledge.TabIndex = 0;
+            this.rtbKnowledge.Text = "";
             // 
             // panel1
             // 
@@ -573,7 +575,7 @@
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Location = new System.Drawing.Point(12, 1310);
+            this.panel1.Location = new System.Drawing.Point(206, 1305);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1070, 100);
             this.panel1.TabIndex = 57;
@@ -581,25 +583,25 @@
             // gbxAdd
             // 
             this.gbxAdd.Controls.Add(this.tbxHowManyChildren);
-            this.gbxAdd.Controls.Add(this.comboBox1);
+            this.gbxAdd.Controls.Add(this.cbxMarital);
             this.gbxAdd.Controls.Add(this.label22);
             this.gbxAdd.Controls.Add(this.label30);
-            this.gbxAdd.Controls.Add(this.textBox14);
+            this.gbxAdd.Controls.Add(this.tbxWork);
             this.gbxAdd.Controls.Add(this.label23);
             this.gbxAdd.Controls.Add(this.label24);
-            this.gbxAdd.Controls.Add(this.textBox15);
+            this.gbxAdd.Controls.Add(this.tbxStuff);
             this.gbxAdd.Controls.Add(this.label25);
             this.gbxAdd.Controls.Add(this.label26);
             this.gbxAdd.Controls.Add(this.label27);
-            this.gbxAdd.Controls.Add(this.textBox16);
-            this.gbxAdd.Controls.Add(this.textBox17);
+            this.gbxAdd.Controls.Add(this.tbxOutgoing);
+            this.gbxAdd.Controls.Add(this.tbxDebt);
             this.gbxAdd.Controls.Add(this.label28);
-            this.gbxAdd.Controls.Add(this.textBox18);
-            this.gbxAdd.Controls.Add(this.textBox19);
-            this.gbxAdd.Controls.Add(this.textBox20);
+            this.gbxAdd.Controls.Add(this.tbxAid);
+            this.gbxAdd.Controls.Add(this.tbxStudent);
+            this.gbxAdd.Controls.Add(this.tbxIncome);
             this.gbxAdd.Controls.Add(this.label29);
             this.gbxAdd.Controls.Add(this.label21);
-            this.gbxAdd.Controls.Add(this.textBox13);
+            this.gbxAdd.Controls.Add(this.tbxBlood);
             this.gbxAdd.Controls.Add(this.tbxId);
             this.gbxAdd.Controls.Add(this.label8);
             this.gbxAdd.Controls.Add(this.cbxCategoryId);
@@ -622,7 +624,7 @@
             this.gbxAdd.Controls.Add(this.tbxBirthCountry);
             this.gbxAdd.Controls.Add(this.tbxLocalIdNumber);
             this.gbxAdd.Controls.Add(this.label5);
-            this.gbxAdd.Location = new System.Drawing.Point(12, 11);
+            this.gbxAdd.Location = new System.Drawing.Point(206, 11);
             this.gbxAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbxAdd.Name = "gbxAdd";
             this.gbxAdd.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -631,13 +633,22 @@
             this.gbxAdd.TabStop = false;
             this.gbxAdd.Text = "Kişisel Bilgiler";
             // 
-            // comboBox1
+            // tbxHowManyChildren
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(529, 221);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(133, 24);
-            this.comboBox1.TabIndex = 54;
+            this.tbxHowManyChildren.Location = new System.Drawing.Point(529, 250);
+            this.tbxHowManyChildren.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxHowManyChildren.Name = "tbxHowManyChildren";
+            this.tbxHowManyChildren.Size = new System.Drawing.Size(133, 22);
+            this.tbxHowManyChildren.TabIndex = 55;
+            this.tbxHowManyChildren.TextChanged += new System.EventHandler(this.tbxHowManyChildren_TextChanged);
+            // 
+            // cbxMarital
+            // 
+            this.cbxMarital.FormattingEnabled = true;
+            this.cbxMarital.Location = new System.Drawing.Point(529, 221);
+            this.cbxMarital.Name = "cbxMarital";
+            this.cbxMarital.Size = new System.Drawing.Size(133, 24);
+            this.cbxMarital.TabIndex = 54;
             // 
             // label22
             // 
@@ -657,13 +668,13 @@
             this.label30.TabIndex = 52;
             this.label30.Text = "Medeni Durumu :";
             // 
-            // textBox14
+            // tbxWork
             // 
-            this.textBox14.Location = new System.Drawing.Point(529, 29);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(133, 22);
-            this.textBox14.TabIndex = 51;
+            this.tbxWork.Location = new System.Drawing.Point(529, 29);
+            this.tbxWork.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxWork.Name = "tbxWork";
+            this.tbxWork.Size = new System.Drawing.Size(133, 22);
+            this.tbxWork.TabIndex = 51;
             // 
             // label23
             // 
@@ -679,17 +690,17 @@
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(362, 200);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(98, 16);
+            this.label24.Size = new System.Drawing.Size(99, 16);
             this.label24.TabIndex = 49;
-            this.label24.Text = "Okuyan Bilgisi :";
+            this.label24.Text = "Okuyan Sayısı :";
             // 
-            // textBox15
+            // tbxStuff
             // 
-            this.textBox15.Location = new System.Drawing.Point(529, 168);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(133, 22);
-            this.textBox15.TabIndex = 47;
+            this.tbxStuff.Location = new System.Drawing.Point(529, 168);
+            this.tbxStuff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxStuff.Name = "tbxStuff";
+            this.tbxStuff.Size = new System.Drawing.Size(133, 22);
+            this.tbxStuff.TabIndex = 47;
             // 
             // label25
             // 
@@ -718,21 +729,21 @@
             this.label27.TabIndex = 38;
             this.label27.Text = "Toplam Gideri : ";
             // 
-            // textBox16
+            // tbxOutgoing
             // 
-            this.textBox16.Location = new System.Drawing.Point(529, 85);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(133, 22);
-            this.textBox16.TabIndex = 39;
+            this.tbxOutgoing.Location = new System.Drawing.Point(529, 85);
+            this.tbxOutgoing.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxOutgoing.Name = "tbxOutgoing";
+            this.tbxOutgoing.Size = new System.Drawing.Size(133, 22);
+            this.tbxOutgoing.TabIndex = 39;
             // 
-            // textBox17
+            // tbxDebt
             // 
-            this.textBox17.Location = new System.Drawing.Point(529, 114);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(133, 22);
-            this.textBox17.TabIndex = 40;
+            this.tbxDebt.Location = new System.Drawing.Point(529, 114);
+            this.tbxDebt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxDebt.Name = "tbxDebt";
+            this.tbxDebt.Size = new System.Drawing.Size(133, 22);
+            this.tbxDebt.TabIndex = 40;
             // 
             // label28
             // 
@@ -743,29 +754,29 @@
             this.label28.TabIndex = 41;
             this.label28.Text = "Toplam Geliri : ";
             // 
-            // textBox18
+            // tbxAid
             // 
-            this.textBox18.Location = new System.Drawing.Point(529, 142);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(133, 22);
-            this.textBox18.TabIndex = 45;
+            this.tbxAid.Location = new System.Drawing.Point(529, 142);
+            this.tbxAid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxAid.Name = "tbxAid";
+            this.tbxAid.Size = new System.Drawing.Size(133, 22);
+            this.tbxAid.TabIndex = 45;
             // 
-            // textBox19
+            // tbxStudent
             // 
-            this.textBox19.Location = new System.Drawing.Point(529, 194);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(133, 22);
-            this.textBox19.TabIndex = 42;
+            this.tbxStudent.Location = new System.Drawing.Point(529, 194);
+            this.tbxStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxStudent.Name = "tbxStudent";
+            this.tbxStudent.Size = new System.Drawing.Size(133, 22);
+            this.tbxStudent.TabIndex = 42;
             // 
-            // textBox20
+            // tbxIncome
             // 
-            this.textBox20.Location = new System.Drawing.Point(529, 56);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(133, 22);
-            this.textBox20.TabIndex = 43;
+            this.tbxIncome.Location = new System.Drawing.Point(529, 56);
+            this.tbxIncome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxIncome.Name = "tbxIncome";
+            this.tbxIncome.Size = new System.Drawing.Size(133, 22);
+            this.tbxIncome.TabIndex = 43;
             // 
             // label29
             // 
@@ -785,13 +796,13 @@
             this.label21.TabIndex = 37;
             this.label21.Text = "Kan Grubu :";
             // 
-            // textBox13
+            // tbxBlood
             // 
-            this.textBox13.Location = new System.Drawing.Point(177, 329);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(133, 22);
-            this.textBox13.TabIndex = 36;
+            this.tbxBlood.Location = new System.Drawing.Point(177, 329);
+            this.tbxBlood.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxBlood.Name = "tbxBlood";
+            this.tbxBlood.Size = new System.Drawing.Size(133, 22);
+            this.tbxBlood.TabIndex = 36;
             // 
             // tbxId
             // 
@@ -839,7 +850,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 197);
+            this.label1.Location = new System.Drawing.Point(6, 194);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 16);
             this.label1.TabIndex = 14;
@@ -856,7 +867,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 223);
+            this.label7.Location = new System.Drawing.Point(6, 223);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(87, 16);
             this.label7.TabIndex = 12;
@@ -873,16 +884,16 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(10, 249);
+            this.label6.Location = new System.Drawing.Point(6, 249);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 16);
+            this.label6.Size = new System.Drawing.Size(88, 16);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Birthday : ";
+            this.label6.Text = "Doğum Tarihi";
             // 
             // lblCategoryId
             // 
             this.lblCategoryId.AutoSize = true;
-            this.lblCategoryId.Location = new System.Drawing.Point(10, 171);
+            this.lblCategoryId.Location = new System.Drawing.Point(6, 171);
             this.lblCategoryId.Name = "lblCategoryId";
             this.lblCategoryId.Size = new System.Drawing.Size(63, 16);
             this.lblCategoryId.TabIndex = 10;
@@ -899,20 +910,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 117);
+            this.label2.Location = new System.Drawing.Point(6, 117);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 16);
+            this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Surname : ";
+            this.label2.Text = "Soyadı :";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
             this.lblName.Location = new System.Drawing.Point(10, 88);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(53, 16);
+            this.lblName.Size = new System.Drawing.Size(33, 16);
             this.lblName.TabIndex = 2;
-            this.lblName.Text = "Name : ";
+            this.lblName.Text = "Adı :";
             // 
             // tbxName
             // 
@@ -974,7 +985,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 145);
+            this.label5.Location = new System.Drawing.Point(6, 142);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 16);
             this.label5.TabIndex = 8;
@@ -984,7 +995,7 @@
             // 
             this.groupBox2.Controls.Add(this.gbxC1);
             this.groupBox2.Controls.Add(this.groupBox4);
-            this.groupBox2.Location = new System.Drawing.Point(12, 393);
+            this.groupBox2.Location = new System.Drawing.Point(206, 392);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -993,226 +1004,27 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Eş ve Çocuk Kaydı";
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label41);
-            this.groupBox4.Controls.Add(this.tbxPartnerJob);
-            this.groupBox4.Controls.Add(this.label51);
-            this.groupBox4.Controls.Add(this.label33);
-            this.groupBox4.Controls.Add(this.tbxPartnerLocalId);
-            this.groupBox4.Controls.Add(this.textBox29);
-            this.groupBox4.Controls.Add(this.tbxPartnerBirthCity);
-            this.groupBox4.Controls.Add(this.tbxPartnerFather);
-            this.groupBox4.Controls.Add(this.label44);
-            this.groupBox4.Controls.Add(this.tbxPartnerNationality);
-            this.groupBox4.Controls.Add(this.label45);
-            this.groupBox4.Controls.Add(this.label50);
-            this.groupBox4.Controls.Add(this.tbxPartnerMother);
-            this.groupBox4.Controls.Add(this.tbxPartnerSurname);
-            this.groupBox4.Controls.Add(this.label46);
-            this.groupBox4.Controls.Add(this.tbxPartnerName);
-            this.groupBox4.Controls.Add(this.label47);
-            this.groupBox4.Controls.Add(this.label49);
-            this.groupBox4.Controls.Add(this.tbxPartnerBirthday);
-            this.groupBox4.Controls.Add(this.label48);
-            this.groupBox4.Location = new System.Drawing.Point(13, 33);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(322, 332);
-            this.groupBox4.TabIndex = 52;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Eşinin";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(11, 126);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(70, 16);
-            this.label48.TabIndex = 13;
-            this.label48.Text = "Surname : ";
-            // 
-            // tbxPartnerBirthday
-            // 
-            this.tbxPartnerBirthday.Location = new System.Drawing.Point(178, 252);
-            this.tbxPartnerBirthday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxPartnerBirthday.Name = "tbxPartnerBirthday";
-            this.tbxPartnerBirthday.Size = new System.Drawing.Size(133, 22);
-            this.tbxPartnerBirthday.TabIndex = 9;
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(11, 97);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(53, 16);
-            this.label49.TabIndex = 2;
-            this.label49.Text = "Name : ";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(11, 180);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(63, 16);
-            this.label47.TabIndex = 10;
-            this.label47.Text = "Ana Adı : ";
-            // 
-            // tbxPartnerName
-            // 
-            this.tbxPartnerName.Location = new System.Drawing.Point(178, 91);
-            this.tbxPartnerName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxPartnerName.Name = "tbxPartnerName";
-            this.tbxPartnerName.Size = new System.Drawing.Size(133, 22);
-            this.tbxPartnerName.TabIndex = 3;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(11, 258);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(65, 16);
-            this.label46.TabIndex = 11;
-            this.label46.Text = "Birthday : ";
-            // 
-            // tbxPartnerSurname
-            // 
-            this.tbxPartnerSurname.Location = new System.Drawing.Point(178, 120);
-            this.tbxPartnerSurname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxPartnerSurname.Name = "tbxPartnerSurname";
-            this.tbxPartnerSurname.Size = new System.Drawing.Size(133, 22);
-            this.tbxPartnerSurname.TabIndex = 3;
-            // 
-            // tbxPartnerMother
-            // 
-            this.tbxPartnerMother.Location = new System.Drawing.Point(178, 174);
-            this.tbxPartnerMother.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxPartnerMother.Name = "tbxPartnerMother";
-            this.tbxPartnerMother.Size = new System.Drawing.Size(133, 22);
-            this.tbxPartnerMother.TabIndex = 11;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(11, 65);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(130, 16);
-            this.label50.TabIndex = 4;
-            this.label50.Text = "TC Kimlik Numarası :";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(11, 232);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(87, 16);
-            this.label45.TabIndex = 12;
-            this.label45.Text = "Doğum Yeri : ";
-            // 
-            // tbxPartnerNationality
-            // 
-            this.tbxPartnerNationality.Location = new System.Drawing.Point(178, 148);
-            this.tbxPartnerNationality.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxPartnerNationality.Name = "tbxPartnerNationality";
-            this.tbxPartnerNationality.Size = new System.Drawing.Size(133, 22);
-            this.tbxPartnerNationality.TabIndex = 9;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(11, 206);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(69, 16);
-            this.label44.TabIndex = 14;
-            this.label44.Text = "Baba Adı :";
-            // 
-            // tbxPartnerFather
-            // 
-            this.tbxPartnerFather.Location = new System.Drawing.Point(178, 200);
-            this.tbxPartnerFather.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxPartnerFather.Name = "tbxPartnerFather";
-            this.tbxPartnerFather.Size = new System.Drawing.Size(133, 22);
-            this.tbxPartnerFather.TabIndex = 5;
-            // 
-            // tbxPartnerBirthCity
-            // 
-            this.tbxPartnerBirthCity.Location = new System.Drawing.Point(178, 226);
-            this.tbxPartnerBirthCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxPartnerBirthCity.Name = "tbxPartnerBirthCity";
-            this.tbxPartnerBirthCity.Size = new System.Drawing.Size(133, 22);
-            this.tbxPartnerBirthCity.TabIndex = 7;
-            // 
-            // textBox29
-            // 
-            this.textBox29.Location = new System.Drawing.Point(178, 38);
-            this.textBox29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(133, 22);
-            this.textBox29.TabIndex = 35;
-            // 
-            // tbxPartnerLocalId
-            // 
-            this.tbxPartnerLocalId.Location = new System.Drawing.Point(178, 65);
-            this.tbxPartnerLocalId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxPartnerLocalId.Name = "tbxPartnerLocalId";
-            this.tbxPartnerLocalId.Size = new System.Drawing.Size(133, 22);
-            this.tbxPartnerLocalId.TabIndex = 5;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(11, 281);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(26, 16);
-            this.label33.TabIndex = 50;
-            this.label33.Text = "İşi :";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(11, 154);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(51, 16);
-            this.label51.TabIndex = 8;
-            this.label51.Text = "Uyruk : ";
-            // 
-            // tbxPartnerJob
-            // 
-            this.tbxPartnerJob.Location = new System.Drawing.Point(178, 278);
-            this.tbxPartnerJob.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxPartnerJob.Name = "tbxPartnerJob";
-            this.tbxPartnerJob.Size = new System.Drawing.Size(133, 22);
-            this.tbxPartnerJob.TabIndex = 51;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(11, 38);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(103, 16);
-            this.label41.TabIndex = 34;
-            this.label41.Text = "Kayıt Numarası :";
-            // 
             // gbxC1
             // 
+            this.gbxC1.Controls.Add(this.label102);
             this.gbxC1.Controls.Add(this.label31);
             this.gbxC1.Controls.Add(this.textBox22);
             this.gbxC1.Controls.Add(this.label32);
             this.gbxC1.Controls.Add(this.label34);
-            this.gbxC1.Controls.Add(this.txbChildLocalId);
-            this.gbxC1.Controls.Add(this.textBox24);
-            this.gbxC1.Controls.Add(this.tbxChildBirthCity);
-            this.gbxC1.Controls.Add(this.tbxChildFather);
+            this.gbxC1.Controls.Add(this.tbxChildOneLocalId);
+            this.gbxC1.Controls.Add(this.tbxChildOneId);
+            this.gbxC1.Controls.Add(this.tbxChildOneBirthCity);
+            this.gbxC1.Controls.Add(this.tbxChildOneFather);
             this.gbxC1.Controls.Add(this.label35);
-            this.gbxC1.Controls.Add(this.tbxChildNationality);
+            this.gbxC1.Controls.Add(this.tbxChildOneNationality);
             this.gbxC1.Controls.Add(this.label36);
             this.gbxC1.Controls.Add(this.label37);
-            this.gbxC1.Controls.Add(this.tbxChildMother);
-            this.gbxC1.Controls.Add(this.tbxChildSurname);
-            this.gbxC1.Controls.Add(this.label38);
-            this.gbxC1.Controls.Add(this.tbxChildName);
+            this.gbxC1.Controls.Add(this.tbxChildOneMother);
+            this.gbxC1.Controls.Add(this.tbxChildOneSurname);
+            this.gbxC1.Controls.Add(this.tbxChildOneName);
             this.gbxC1.Controls.Add(this.label39);
             this.gbxC1.Controls.Add(this.label40);
-            this.gbxC1.Controls.Add(this.tbxChildBirthday);
+            this.gbxC1.Controls.Add(this.tbxChildOneBirthday);
             this.gbxC1.Controls.Add(this.label42);
             this.gbxC1.Location = new System.Drawing.Point(352, 33);
             this.gbxC1.Name = "gbxC1";
@@ -1220,6 +1032,15 @@
             this.gbxC1.TabIndex = 53;
             this.gbxC1.TabStop = false;
             this.gbxC1.Text = "1. Çocuk";
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.Location = new System.Drawing.Point(10, 258);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(88, 16);
+            this.label102.TabIndex = 59;
+            this.label102.Text = "Doğum Tarihi";
             // 
             // label31
             // 
@@ -1256,37 +1077,37 @@
             this.label34.TabIndex = 50;
             this.label34.Text = "İşi :";
             // 
-            // txbChildLocalId
+            // tbxChildOneLocalId
             // 
-            this.txbChildLocalId.Location = new System.Drawing.Point(178, 65);
-            this.txbChildLocalId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txbChildLocalId.Name = "txbChildLocalId";
-            this.txbChildLocalId.Size = new System.Drawing.Size(133, 22);
-            this.txbChildLocalId.TabIndex = 5;
+            this.tbxChildOneLocalId.Location = new System.Drawing.Point(178, 65);
+            this.tbxChildOneLocalId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildOneLocalId.Name = "tbxChildOneLocalId";
+            this.tbxChildOneLocalId.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildOneLocalId.TabIndex = 5;
             // 
-            // textBox24
+            // tbxChildOneId
             // 
-            this.textBox24.Location = new System.Drawing.Point(178, 38);
-            this.textBox24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(133, 22);
-            this.textBox24.TabIndex = 35;
+            this.tbxChildOneId.Location = new System.Drawing.Point(178, 38);
+            this.tbxChildOneId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildOneId.Name = "tbxChildOneId";
+            this.tbxChildOneId.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildOneId.TabIndex = 35;
             // 
-            // tbxChildBirthCity
+            // tbxChildOneBirthCity
             // 
-            this.tbxChildBirthCity.Location = new System.Drawing.Point(178, 226);
-            this.tbxChildBirthCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxChildBirthCity.Name = "tbxChildBirthCity";
-            this.tbxChildBirthCity.Size = new System.Drawing.Size(133, 22);
-            this.tbxChildBirthCity.TabIndex = 7;
+            this.tbxChildOneBirthCity.Location = new System.Drawing.Point(178, 226);
+            this.tbxChildOneBirthCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildOneBirthCity.Name = "tbxChildOneBirthCity";
+            this.tbxChildOneBirthCity.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildOneBirthCity.TabIndex = 7;
             // 
-            // tbxChildFather
+            // tbxChildOneFather
             // 
-            this.tbxChildFather.Location = new System.Drawing.Point(178, 200);
-            this.tbxChildFather.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxChildFather.Name = "tbxChildFather";
-            this.tbxChildFather.Size = new System.Drawing.Size(133, 22);
-            this.tbxChildFather.TabIndex = 5;
+            this.tbxChildOneFather.Location = new System.Drawing.Point(178, 200);
+            this.tbxChildOneFather.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildOneFather.Name = "tbxChildOneFather";
+            this.tbxChildOneFather.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildOneFather.TabIndex = 5;
             // 
             // label35
             // 
@@ -1297,13 +1118,13 @@
             this.label35.TabIndex = 14;
             this.label35.Text = "Baba Adı :";
             // 
-            // tbxChildNationality
+            // tbxChildOneNationality
             // 
-            this.tbxChildNationality.Location = new System.Drawing.Point(178, 148);
-            this.tbxChildNationality.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxChildNationality.Name = "tbxChildNationality";
-            this.tbxChildNationality.Size = new System.Drawing.Size(133, 22);
-            this.tbxChildNationality.TabIndex = 9;
+            this.tbxChildOneNationality.Location = new System.Drawing.Point(178, 148);
+            this.tbxChildOneNationality.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildOneNationality.Name = "tbxChildOneNationality";
+            this.tbxChildOneNationality.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildOneNationality.TabIndex = 9;
             // 
             // label36
             // 
@@ -1323,38 +1144,29 @@
             this.label37.TabIndex = 4;
             this.label37.Text = "TC Kimlik Numarası :";
             // 
-            // tbxChildMother
+            // tbxChildOneMother
             // 
-            this.tbxChildMother.Location = new System.Drawing.Point(178, 174);
-            this.tbxChildMother.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxChildMother.Name = "tbxChildMother";
-            this.tbxChildMother.Size = new System.Drawing.Size(133, 22);
-            this.tbxChildMother.TabIndex = 11;
+            this.tbxChildOneMother.Location = new System.Drawing.Point(178, 174);
+            this.tbxChildOneMother.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildOneMother.Name = "tbxChildOneMother";
+            this.tbxChildOneMother.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildOneMother.TabIndex = 11;
             // 
-            // tbxChildSurname
+            // tbxChildOneSurname
             // 
-            this.tbxChildSurname.Location = new System.Drawing.Point(178, 120);
-            this.tbxChildSurname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxChildSurname.Name = "tbxChildSurname";
-            this.tbxChildSurname.Size = new System.Drawing.Size(133, 22);
-            this.tbxChildSurname.TabIndex = 3;
+            this.tbxChildOneSurname.Location = new System.Drawing.Point(178, 120);
+            this.tbxChildOneSurname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildOneSurname.Name = "tbxChildOneSurname";
+            this.tbxChildOneSurname.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildOneSurname.TabIndex = 3;
             // 
-            // label38
+            // tbxChildOneName
             // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(11, 258);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(65, 16);
-            this.label38.TabIndex = 11;
-            this.label38.Text = "Birthday : ";
-            // 
-            // tbxChildName
-            // 
-            this.tbxChildName.Location = new System.Drawing.Point(178, 91);
-            this.tbxChildName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxChildName.Name = "tbxChildName";
-            this.tbxChildName.Size = new System.Drawing.Size(133, 22);
-            this.tbxChildName.TabIndex = 3;
+            this.tbxChildOneName.Location = new System.Drawing.Point(178, 91);
+            this.tbxChildOneName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildOneName.Name = "tbxChildOneName";
+            this.tbxChildOneName.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildOneName.TabIndex = 3;
             // 
             // label39
             // 
@@ -1370,56 +1182,263 @@
             this.label40.AutoSize = true;
             this.label40.Location = new System.Drawing.Point(11, 97);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(53, 16);
+            this.label40.Size = new System.Drawing.Size(33, 16);
             this.label40.TabIndex = 2;
-            this.label40.Text = "Name : ";
+            this.label40.Text = "Adı :";
             // 
-            // tbxChildBirthday
+            // tbxChildOneBirthday
             // 
-            this.tbxChildBirthday.Location = new System.Drawing.Point(178, 252);
-            this.tbxChildBirthday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxChildBirthday.Name = "tbxChildBirthday";
-            this.tbxChildBirthday.Size = new System.Drawing.Size(133, 22);
-            this.tbxChildBirthday.TabIndex = 9;
+            this.tbxChildOneBirthday.Location = new System.Drawing.Point(178, 252);
+            this.tbxChildOneBirthday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildOneBirthday.Name = "tbxChildOneBirthday";
+            this.tbxChildOneBirthday.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildOneBirthday.TabIndex = 9;
             // 
             // label42
             // 
             this.label42.AutoSize = true;
             this.label42.Location = new System.Drawing.Point(11, 126);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(70, 16);
+            this.label42.Size = new System.Drawing.Size(56, 16);
             this.label42.TabIndex = 13;
-            this.label42.Text = "Surname : ";
+            this.label42.Text = "Soyadı :";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label103);
+            this.groupBox4.Controls.Add(this.label41);
+            this.groupBox4.Controls.Add(this.tbxPartnerJob);
+            this.groupBox4.Controls.Add(this.label51);
+            this.groupBox4.Controls.Add(this.label33);
+            this.groupBox4.Controls.Add(this.tbxPartnerLocalId);
+            this.groupBox4.Controls.Add(this.tbxPartnerId);
+            this.groupBox4.Controls.Add(this.tbxPartnerBirthCity);
+            this.groupBox4.Controls.Add(this.tbxPartnerFather);
+            this.groupBox4.Controls.Add(this.label44);
+            this.groupBox4.Controls.Add(this.tbxPartnerNationality);
+            this.groupBox4.Controls.Add(this.label45);
+            this.groupBox4.Controls.Add(this.label50);
+            this.groupBox4.Controls.Add(this.tbxPartnerMother);
+            this.groupBox4.Controls.Add(this.tbxPartnerSurname);
+            this.groupBox4.Controls.Add(this.tbxPartnerName);
+            this.groupBox4.Controls.Add(this.label47);
+            this.groupBox4.Controls.Add(this.label49);
+            this.groupBox4.Controls.Add(this.tbxPartnerBirthday);
+            this.groupBox4.Controls.Add(this.label48);
+            this.groupBox4.Location = new System.Drawing.Point(13, 33);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(322, 332);
+            this.groupBox4.TabIndex = 52;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Eşinin";
+            // 
+            // label103
+            // 
+            this.label103.AutoSize = true;
+            this.label103.Location = new System.Drawing.Point(12, 258);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(88, 16);
+            this.label103.TabIndex = 60;
+            this.label103.Text = "Doğum Tarihi";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(11, 38);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(103, 16);
+            this.label41.TabIndex = 34;
+            this.label41.Text = "Kayıt Numarası :";
+            // 
+            // tbxPartnerJob
+            // 
+            this.tbxPartnerJob.Location = new System.Drawing.Point(178, 278);
+            this.tbxPartnerJob.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxPartnerJob.Name = "tbxPartnerJob";
+            this.tbxPartnerJob.Size = new System.Drawing.Size(133, 22);
+            this.tbxPartnerJob.TabIndex = 51;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(11, 154);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(51, 16);
+            this.label51.TabIndex = 8;
+            this.label51.Text = "Uyruk : ";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(11, 281);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(26, 16);
+            this.label33.TabIndex = 50;
+            this.label33.Text = "İşi :";
+            // 
+            // tbxPartnerLocalId
+            // 
+            this.tbxPartnerLocalId.Location = new System.Drawing.Point(178, 65);
+            this.tbxPartnerLocalId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxPartnerLocalId.Name = "tbxPartnerLocalId";
+            this.tbxPartnerLocalId.Size = new System.Drawing.Size(133, 22);
+            this.tbxPartnerLocalId.TabIndex = 5;
+            // 
+            // tbxPartnerId
+            // 
+            this.tbxPartnerId.Location = new System.Drawing.Point(178, 38);
+            this.tbxPartnerId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxPartnerId.Name = "tbxPartnerId";
+            this.tbxPartnerId.Size = new System.Drawing.Size(133, 22);
+            this.tbxPartnerId.TabIndex = 35;
+            // 
+            // tbxPartnerBirthCity
+            // 
+            this.tbxPartnerBirthCity.Location = new System.Drawing.Point(178, 226);
+            this.tbxPartnerBirthCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxPartnerBirthCity.Name = "tbxPartnerBirthCity";
+            this.tbxPartnerBirthCity.Size = new System.Drawing.Size(133, 22);
+            this.tbxPartnerBirthCity.TabIndex = 7;
+            // 
+            // tbxPartnerFather
+            // 
+            this.tbxPartnerFather.Location = new System.Drawing.Point(178, 200);
+            this.tbxPartnerFather.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxPartnerFather.Name = "tbxPartnerFather";
+            this.tbxPartnerFather.Size = new System.Drawing.Size(133, 22);
+            this.tbxPartnerFather.TabIndex = 5;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(11, 206);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(69, 16);
+            this.label44.TabIndex = 14;
+            this.label44.Text = "Baba Adı :";
+            // 
+            // tbxPartnerNationality
+            // 
+            this.tbxPartnerNationality.Location = new System.Drawing.Point(178, 148);
+            this.tbxPartnerNationality.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxPartnerNationality.Name = "tbxPartnerNationality";
+            this.tbxPartnerNationality.Size = new System.Drawing.Size(133, 22);
+            this.tbxPartnerNationality.TabIndex = 9;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(11, 232);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(87, 16);
+            this.label45.TabIndex = 12;
+            this.label45.Text = "Doğum Yeri : ";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(11, 65);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(130, 16);
+            this.label50.TabIndex = 4;
+            this.label50.Text = "TC Kimlik Numarası :";
+            // 
+            // tbxPartnerMother
+            // 
+            this.tbxPartnerMother.Location = new System.Drawing.Point(178, 174);
+            this.tbxPartnerMother.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxPartnerMother.Name = "tbxPartnerMother";
+            this.tbxPartnerMother.Size = new System.Drawing.Size(133, 22);
+            this.tbxPartnerMother.TabIndex = 11;
+            // 
+            // tbxPartnerSurname
+            // 
+            this.tbxPartnerSurname.Location = new System.Drawing.Point(178, 120);
+            this.tbxPartnerSurname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxPartnerSurname.Name = "tbxPartnerSurname";
+            this.tbxPartnerSurname.Size = new System.Drawing.Size(133, 22);
+            this.tbxPartnerSurname.TabIndex = 3;
+            // 
+            // tbxPartnerName
+            // 
+            this.tbxPartnerName.Location = new System.Drawing.Point(178, 91);
+            this.tbxPartnerName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxPartnerName.Name = "tbxPartnerName";
+            this.tbxPartnerName.Size = new System.Drawing.Size(133, 22);
+            this.tbxPartnerName.TabIndex = 3;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(11, 180);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(63, 16);
+            this.label47.TabIndex = 10;
+            this.label47.Text = "Ana Adı : ";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(11, 97);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(33, 16);
+            this.label49.TabIndex = 2;
+            this.label49.Text = "Adı :";
+            // 
+            // tbxPartnerBirthday
+            // 
+            this.tbxPartnerBirthday.Location = new System.Drawing.Point(178, 252);
+            this.tbxPartnerBirthday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxPartnerBirthday.Name = "tbxPartnerBirthday";
+            this.tbxPartnerBirthday.Size = new System.Drawing.Size(133, 22);
+            this.tbxPartnerBirthday.TabIndex = 9;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(11, 126);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(56, 16);
+            this.label48.TabIndex = 13;
+            this.label48.Text = "Soyadı :";
             // 
             // gbxC2
             // 
+            this.gbxC2.Controls.Add(this.label46);
             this.gbxC2.Controls.Add(this.label43);
             this.gbxC2.Controls.Add(this.textBox41);
             this.gbxC2.Controls.Add(this.label53);
             this.gbxC2.Controls.Add(this.label54);
-            this.gbxC2.Controls.Add(this.textBox42);
-            this.gbxC2.Controls.Add(this.textBox43);
-            this.gbxC2.Controls.Add(this.textBox44);
-            this.gbxC2.Controls.Add(this.textBox45);
+            this.gbxC2.Controls.Add(this.tbxChildTwoLocalId);
+            this.gbxC2.Controls.Add(this.tbxChildTwoId);
+            this.gbxC2.Controls.Add(this.tbxChildTwoBirthCity);
+            this.gbxC2.Controls.Add(this.tbxChildTwoFatherName);
             this.gbxC2.Controls.Add(this.label55);
-            this.gbxC2.Controls.Add(this.textBox46);
+            this.gbxC2.Controls.Add(this.tbxChildTwoNationality);
             this.gbxC2.Controls.Add(this.label56);
             this.gbxC2.Controls.Add(this.label57);
-            this.gbxC2.Controls.Add(this.textBox47);
-            this.gbxC2.Controls.Add(this.textBox48);
-            this.gbxC2.Controls.Add(this.label58);
-            this.gbxC2.Controls.Add(this.textBox49);
+            this.gbxC2.Controls.Add(this.tbxChildTwoMotherName);
+            this.gbxC2.Controls.Add(this.tbxChildTwoSurname);
+            this.gbxC2.Controls.Add(this.tbxChildTwoName);
             this.gbxC2.Controls.Add(this.label59);
             this.gbxC2.Controls.Add(this.label60);
-            this.gbxC2.Controls.Add(this.textBox50);
+            this.gbxC2.Controls.Add(this.tbxChildTwoBirthday);
             this.gbxC2.Controls.Add(this.label61);
-            this.gbxC2.Location = new System.Drawing.Point(727, 426);
+            this.gbxC2.Location = new System.Drawing.Point(900, 425);
             this.gbxC2.Name = "gbxC2";
             this.gbxC2.Size = new System.Drawing.Size(322, 332);
             this.gbxC2.TabIndex = 54;
             this.gbxC2.TabStop = false;
             this.gbxC2.Text = "2. Çocuk";
-            this.gbxC2.Visible = false;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(10, 258);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(88, 16);
+            this.label46.TabIndex = 56;
+            this.label46.Text = "Doğum Tarihi";
             // 
             // label43
             // 
@@ -1456,37 +1475,37 @@
             this.label54.TabIndex = 50;
             this.label54.Text = "İşi :";
             // 
-            // textBox42
+            // tbxChildTwoLocalId
             // 
-            this.textBox42.Location = new System.Drawing.Point(178, 65);
-            this.textBox42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(133, 22);
-            this.textBox42.TabIndex = 5;
+            this.tbxChildTwoLocalId.Location = new System.Drawing.Point(178, 65);
+            this.tbxChildTwoLocalId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildTwoLocalId.Name = "tbxChildTwoLocalId";
+            this.tbxChildTwoLocalId.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildTwoLocalId.TabIndex = 5;
             // 
-            // textBox43
+            // tbxChildTwoId
             // 
-            this.textBox43.Location = new System.Drawing.Point(178, 38);
-            this.textBox43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(133, 22);
-            this.textBox43.TabIndex = 35;
+            this.tbxChildTwoId.Location = new System.Drawing.Point(178, 38);
+            this.tbxChildTwoId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildTwoId.Name = "tbxChildTwoId";
+            this.tbxChildTwoId.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildTwoId.TabIndex = 35;
             // 
-            // textBox44
+            // tbxChildTwoBirthCity
             // 
-            this.textBox44.Location = new System.Drawing.Point(178, 226);
-            this.textBox44.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(133, 22);
-            this.textBox44.TabIndex = 7;
+            this.tbxChildTwoBirthCity.Location = new System.Drawing.Point(178, 226);
+            this.tbxChildTwoBirthCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildTwoBirthCity.Name = "tbxChildTwoBirthCity";
+            this.tbxChildTwoBirthCity.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildTwoBirthCity.TabIndex = 7;
             // 
-            // textBox45
+            // tbxChildTwoFatherName
             // 
-            this.textBox45.Location = new System.Drawing.Point(178, 200);
-            this.textBox45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(133, 22);
-            this.textBox45.TabIndex = 5;
+            this.tbxChildTwoFatherName.Location = new System.Drawing.Point(178, 200);
+            this.tbxChildTwoFatherName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildTwoFatherName.Name = "tbxChildTwoFatherName";
+            this.tbxChildTwoFatherName.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildTwoFatherName.TabIndex = 5;
             // 
             // label55
             // 
@@ -1497,13 +1516,13 @@
             this.label55.TabIndex = 14;
             this.label55.Text = "Baba Adı :";
             // 
-            // textBox46
+            // tbxChildTwoNationality
             // 
-            this.textBox46.Location = new System.Drawing.Point(178, 148);
-            this.textBox46.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(133, 22);
-            this.textBox46.TabIndex = 9;
+            this.tbxChildTwoNationality.Location = new System.Drawing.Point(178, 148);
+            this.tbxChildTwoNationality.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildTwoNationality.Name = "tbxChildTwoNationality";
+            this.tbxChildTwoNationality.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildTwoNationality.TabIndex = 9;
             // 
             // label56
             // 
@@ -1523,38 +1542,29 @@
             this.label57.TabIndex = 4;
             this.label57.Text = "TC Kimlik Numarası :";
             // 
-            // textBox47
+            // tbxChildTwoMotherName
             // 
-            this.textBox47.Location = new System.Drawing.Point(178, 174);
-            this.textBox47.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(133, 22);
-            this.textBox47.TabIndex = 11;
+            this.tbxChildTwoMotherName.Location = new System.Drawing.Point(178, 174);
+            this.tbxChildTwoMotherName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildTwoMotherName.Name = "tbxChildTwoMotherName";
+            this.tbxChildTwoMotherName.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildTwoMotherName.TabIndex = 11;
             // 
-            // textBox48
+            // tbxChildTwoSurname
             // 
-            this.textBox48.Location = new System.Drawing.Point(178, 120);
-            this.textBox48.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(133, 22);
-            this.textBox48.TabIndex = 3;
+            this.tbxChildTwoSurname.Location = new System.Drawing.Point(178, 120);
+            this.tbxChildTwoSurname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildTwoSurname.Name = "tbxChildTwoSurname";
+            this.tbxChildTwoSurname.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildTwoSurname.TabIndex = 3;
             // 
-            // label58
+            // tbxChildTwoName
             // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(11, 258);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(65, 16);
-            this.label58.TabIndex = 11;
-            this.label58.Text = "Birthday : ";
-            // 
-            // textBox49
-            // 
-            this.textBox49.Location = new System.Drawing.Point(178, 91);
-            this.textBox49.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(133, 22);
-            this.textBox49.TabIndex = 3;
+            this.tbxChildTwoName.Location = new System.Drawing.Point(178, 91);
+            this.tbxChildTwoName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildTwoName.Name = "tbxChildTwoName";
+            this.tbxChildTwoName.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildTwoName.TabIndex = 3;
             // 
             // label59
             // 
@@ -1570,26 +1580,26 @@
             this.label60.AutoSize = true;
             this.label60.Location = new System.Drawing.Point(11, 97);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(53, 16);
+            this.label60.Size = new System.Drawing.Size(33, 16);
             this.label60.TabIndex = 2;
-            this.label60.Text = "Name : ";
+            this.label60.Text = "Adı :";
             // 
-            // textBox50
+            // tbxChildTwoBirthday
             // 
-            this.textBox50.Location = new System.Drawing.Point(178, 252);
-            this.textBox50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(133, 22);
-            this.textBox50.TabIndex = 9;
+            this.tbxChildTwoBirthday.Location = new System.Drawing.Point(178, 252);
+            this.tbxChildTwoBirthday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildTwoBirthday.Name = "tbxChildTwoBirthday";
+            this.tbxChildTwoBirthday.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildTwoBirthday.TabIndex = 9;
             // 
             // label61
             // 
             this.label61.AutoSize = true;
             this.label61.Location = new System.Drawing.Point(11, 126);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(70, 16);
+            this.label61.Size = new System.Drawing.Size(56, 16);
             this.label61.TabIndex = 13;
-            this.label61.Text = "Surname : ";
+            this.label61.Text = "Soyadı :";
             // 
             // gbxC5
             // 
@@ -1597,23 +1607,23 @@
             this.gbxC5.Controls.Add(this.textBox51);
             this.gbxC5.Controls.Add(this.label63);
             this.gbxC5.Controls.Add(this.label64);
-            this.gbxC5.Controls.Add(this.textBox52);
-            this.gbxC5.Controls.Add(this.textBox53);
-            this.gbxC5.Controls.Add(this.textBox54);
-            this.gbxC5.Controls.Add(this.textBox55);
+            this.gbxC5.Controls.Add(this.tbxChildFifthLocalId);
+            this.gbxC5.Controls.Add(this.tbxChildFifthId);
+            this.gbxC5.Controls.Add(this.tbxChildFifthBirthCity);
+            this.gbxC5.Controls.Add(this.tbxChildFifthFatherName);
             this.gbxC5.Controls.Add(this.label65);
-            this.gbxC5.Controls.Add(this.textBox56);
+            this.gbxC5.Controls.Add(this.tbxChildFifthNationality);
             this.gbxC5.Controls.Add(this.label66);
             this.gbxC5.Controls.Add(this.label67);
-            this.gbxC5.Controls.Add(this.textBox57);
-            this.gbxC5.Controls.Add(this.textBox58);
+            this.gbxC5.Controls.Add(this.tbxChildFifthMotherName);
+            this.gbxC5.Controls.Add(this.tbxChildFifthSurname);
             this.gbxC5.Controls.Add(this.label68);
-            this.gbxC5.Controls.Add(this.textBox59);
+            this.gbxC5.Controls.Add(this.tbxChildFifthName);
             this.gbxC5.Controls.Add(this.label69);
             this.gbxC5.Controls.Add(this.label70);
-            this.gbxC5.Controls.Add(this.textBox60);
+            this.gbxC5.Controls.Add(this.tbxChildFifthBirthday);
             this.gbxC5.Controls.Add(this.label71);
-            this.gbxC5.Location = new System.Drawing.Point(1783, 426);
+            this.gbxC5.Location = new System.Drawing.Point(1908, 428);
             this.gbxC5.Name = "gbxC5";
             this.gbxC5.Size = new System.Drawing.Size(322, 332);
             this.gbxC5.TabIndex = 54;
@@ -1656,37 +1666,37 @@
             this.label64.TabIndex = 50;
             this.label64.Text = "İşi :";
             // 
-            // textBox52
+            // tbxChildFifthLocalId
             // 
-            this.textBox52.Location = new System.Drawing.Point(178, 65);
-            this.textBox52.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox52.Name = "textBox52";
-            this.textBox52.Size = new System.Drawing.Size(133, 22);
-            this.textBox52.TabIndex = 5;
+            this.tbxChildFifthLocalId.Location = new System.Drawing.Point(178, 65);
+            this.tbxChildFifthLocalId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildFifthLocalId.Name = "tbxChildFifthLocalId";
+            this.tbxChildFifthLocalId.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildFifthLocalId.TabIndex = 5;
             // 
-            // textBox53
+            // tbxChildFifthId
             // 
-            this.textBox53.Location = new System.Drawing.Point(178, 38);
-            this.textBox53.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox53.Name = "textBox53";
-            this.textBox53.Size = new System.Drawing.Size(133, 22);
-            this.textBox53.TabIndex = 35;
+            this.tbxChildFifthId.Location = new System.Drawing.Point(178, 38);
+            this.tbxChildFifthId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildFifthId.Name = "tbxChildFifthId";
+            this.tbxChildFifthId.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildFifthId.TabIndex = 35;
             // 
-            // textBox54
+            // tbxChildFifthBirthCity
             // 
-            this.textBox54.Location = new System.Drawing.Point(178, 226);
-            this.textBox54.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox54.Name = "textBox54";
-            this.textBox54.Size = new System.Drawing.Size(133, 22);
-            this.textBox54.TabIndex = 7;
+            this.tbxChildFifthBirthCity.Location = new System.Drawing.Point(178, 226);
+            this.tbxChildFifthBirthCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildFifthBirthCity.Name = "tbxChildFifthBirthCity";
+            this.tbxChildFifthBirthCity.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildFifthBirthCity.TabIndex = 7;
             // 
-            // textBox55
+            // tbxChildFifthFatherName
             // 
-            this.textBox55.Location = new System.Drawing.Point(178, 200);
-            this.textBox55.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox55.Name = "textBox55";
-            this.textBox55.Size = new System.Drawing.Size(133, 22);
-            this.textBox55.TabIndex = 5;
+            this.tbxChildFifthFatherName.Location = new System.Drawing.Point(178, 200);
+            this.tbxChildFifthFatherName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildFifthFatherName.Name = "tbxChildFifthFatherName";
+            this.tbxChildFifthFatherName.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildFifthFatherName.TabIndex = 5;
             // 
             // label65
             // 
@@ -1697,13 +1707,13 @@
             this.label65.TabIndex = 14;
             this.label65.Text = "Baba Adı :";
             // 
-            // textBox56
+            // tbxChildFifthNationality
             // 
-            this.textBox56.Location = new System.Drawing.Point(178, 148);
-            this.textBox56.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox56.Name = "textBox56";
-            this.textBox56.Size = new System.Drawing.Size(133, 22);
-            this.textBox56.TabIndex = 9;
+            this.tbxChildFifthNationality.Location = new System.Drawing.Point(178, 148);
+            this.tbxChildFifthNationality.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildFifthNationality.Name = "tbxChildFifthNationality";
+            this.tbxChildFifthNationality.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildFifthNationality.TabIndex = 9;
             // 
             // label66
             // 
@@ -1723,38 +1733,38 @@
             this.label67.TabIndex = 4;
             this.label67.Text = "TC Kimlik Numarası :";
             // 
-            // textBox57
+            // tbxChildFifthMotherName
             // 
-            this.textBox57.Location = new System.Drawing.Point(178, 174);
-            this.textBox57.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox57.Name = "textBox57";
-            this.textBox57.Size = new System.Drawing.Size(133, 22);
-            this.textBox57.TabIndex = 11;
+            this.tbxChildFifthMotherName.Location = new System.Drawing.Point(178, 174);
+            this.tbxChildFifthMotherName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildFifthMotherName.Name = "tbxChildFifthMotherName";
+            this.tbxChildFifthMotherName.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildFifthMotherName.TabIndex = 11;
             // 
-            // textBox58
+            // tbxChildFifthSurname
             // 
-            this.textBox58.Location = new System.Drawing.Point(178, 120);
-            this.textBox58.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox58.Name = "textBox58";
-            this.textBox58.Size = new System.Drawing.Size(133, 22);
-            this.textBox58.TabIndex = 3;
+            this.tbxChildFifthSurname.Location = new System.Drawing.Point(178, 120);
+            this.tbxChildFifthSurname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildFifthSurname.Name = "tbxChildFifthSurname";
+            this.tbxChildFifthSurname.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildFifthSurname.TabIndex = 3;
             // 
             // label68
             // 
             this.label68.AutoSize = true;
             this.label68.Location = new System.Drawing.Point(11, 258);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(65, 16);
+            this.label68.Size = new System.Drawing.Size(94, 16);
             this.label68.TabIndex = 11;
-            this.label68.Text = "Birthday : ";
+            this.label68.Text = "Doğum Tarihi :";
             // 
-            // textBox59
+            // tbxChildFifthName
             // 
-            this.textBox59.Location = new System.Drawing.Point(178, 91);
-            this.textBox59.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox59.Name = "textBox59";
-            this.textBox59.Size = new System.Drawing.Size(133, 22);
-            this.textBox59.TabIndex = 3;
+            this.tbxChildFifthName.Location = new System.Drawing.Point(178, 91);
+            this.tbxChildFifthName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildFifthName.Name = "tbxChildFifthName";
+            this.tbxChildFifthName.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildFifthName.TabIndex = 3;
             // 
             // label69
             // 
@@ -1770,26 +1780,26 @@
             this.label70.AutoSize = true;
             this.label70.Location = new System.Drawing.Point(11, 97);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(53, 16);
+            this.label70.Size = new System.Drawing.Size(33, 16);
             this.label70.TabIndex = 2;
-            this.label70.Text = "Name : ";
+            this.label70.Text = "Adı :";
             // 
-            // textBox60
+            // tbxChildFifthBirthday
             // 
-            this.textBox60.Location = new System.Drawing.Point(178, 252);
-            this.textBox60.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox60.Name = "textBox60";
-            this.textBox60.Size = new System.Drawing.Size(133, 22);
-            this.textBox60.TabIndex = 9;
+            this.tbxChildFifthBirthday.Location = new System.Drawing.Point(178, 252);
+            this.tbxChildFifthBirthday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildFifthBirthday.Name = "tbxChildFifthBirthday";
+            this.tbxChildFifthBirthday.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildFifthBirthday.TabIndex = 9;
             // 
             // label71
             // 
             this.label71.AutoSize = true;
             this.label71.Location = new System.Drawing.Point(11, 126);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(70, 16);
+            this.label71.Size = new System.Drawing.Size(56, 16);
             this.label71.TabIndex = 13;
-            this.label71.Text = "Surname : ";
+            this.label71.Text = "Soyadı :";
             // 
             // gbxC4
             // 
@@ -1797,23 +1807,23 @@
             this.gbxC4.Controls.Add(this.textBox61);
             this.gbxC4.Controls.Add(this.label73);
             this.gbxC4.Controls.Add(this.label74);
-            this.gbxC4.Controls.Add(this.textBox62);
-            this.gbxC4.Controls.Add(this.textBox63);
-            this.gbxC4.Controls.Add(this.textBox64);
-            this.gbxC4.Controls.Add(this.textBox65);
+            this.gbxC4.Controls.Add(this.tbxChildForthLocalId);
+            this.gbxC4.Controls.Add(this.tbxChildForthId);
+            this.gbxC4.Controls.Add(this.tbxChildForthBirthCity);
+            this.gbxC4.Controls.Add(this.tbxChildForthFatherName);
             this.gbxC4.Controls.Add(this.label75);
-            this.gbxC4.Controls.Add(this.textBox66);
+            this.gbxC4.Controls.Add(this.tbxChildForthNationality);
             this.gbxC4.Controls.Add(this.label76);
             this.gbxC4.Controls.Add(this.label77);
-            this.gbxC4.Controls.Add(this.textBox67);
-            this.gbxC4.Controls.Add(this.textBox68);
+            this.gbxC4.Controls.Add(this.tbxChildForthMotherName);
+            this.gbxC4.Controls.Add(this.tbxChildForthSurname);
             this.gbxC4.Controls.Add(this.label78);
-            this.gbxC4.Controls.Add(this.textBox69);
+            this.gbxC4.Controls.Add(this.tbxChildForthName);
             this.gbxC4.Controls.Add(this.label79);
             this.gbxC4.Controls.Add(this.label80);
-            this.gbxC4.Controls.Add(this.textBox70);
+            this.gbxC4.Controls.Add(this.tbxChildForthBirthday);
             this.gbxC4.Controls.Add(this.label81);
-            this.gbxC4.Location = new System.Drawing.Point(1427, 426);
+            this.gbxC4.Location = new System.Drawing.Point(1580, 425);
             this.gbxC4.Name = "gbxC4";
             this.gbxC4.Size = new System.Drawing.Size(322, 332);
             this.gbxC4.TabIndex = 53;
@@ -1856,37 +1866,37 @@
             this.label74.TabIndex = 50;
             this.label74.Text = "İşi :";
             // 
-            // textBox62
+            // tbxChildForthLocalId
             // 
-            this.textBox62.Location = new System.Drawing.Point(178, 65);
-            this.textBox62.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox62.Name = "textBox62";
-            this.textBox62.Size = new System.Drawing.Size(133, 22);
-            this.textBox62.TabIndex = 5;
+            this.tbxChildForthLocalId.Location = new System.Drawing.Point(178, 65);
+            this.tbxChildForthLocalId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildForthLocalId.Name = "tbxChildForthLocalId";
+            this.tbxChildForthLocalId.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildForthLocalId.TabIndex = 5;
             // 
-            // textBox63
+            // tbxChildForthId
             // 
-            this.textBox63.Location = new System.Drawing.Point(178, 38);
-            this.textBox63.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox63.Name = "textBox63";
-            this.textBox63.Size = new System.Drawing.Size(133, 22);
-            this.textBox63.TabIndex = 35;
+            this.tbxChildForthId.Location = new System.Drawing.Point(178, 38);
+            this.tbxChildForthId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildForthId.Name = "tbxChildForthId";
+            this.tbxChildForthId.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildForthId.TabIndex = 35;
             // 
-            // textBox64
+            // tbxChildForthBirthCity
             // 
-            this.textBox64.Location = new System.Drawing.Point(178, 226);
-            this.textBox64.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox64.Name = "textBox64";
-            this.textBox64.Size = new System.Drawing.Size(133, 22);
-            this.textBox64.TabIndex = 7;
+            this.tbxChildForthBirthCity.Location = new System.Drawing.Point(178, 226);
+            this.tbxChildForthBirthCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildForthBirthCity.Name = "tbxChildForthBirthCity";
+            this.tbxChildForthBirthCity.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildForthBirthCity.TabIndex = 7;
             // 
-            // textBox65
+            // tbxChildForthFatherName
             // 
-            this.textBox65.Location = new System.Drawing.Point(178, 200);
-            this.textBox65.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox65.Name = "textBox65";
-            this.textBox65.Size = new System.Drawing.Size(133, 22);
-            this.textBox65.TabIndex = 5;
+            this.tbxChildForthFatherName.Location = new System.Drawing.Point(178, 200);
+            this.tbxChildForthFatherName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildForthFatherName.Name = "tbxChildForthFatherName";
+            this.tbxChildForthFatherName.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildForthFatherName.TabIndex = 5;
             // 
             // label75
             // 
@@ -1897,13 +1907,13 @@
             this.label75.TabIndex = 14;
             this.label75.Text = "Baba Adı :";
             // 
-            // textBox66
+            // tbxChildForthNationality
             // 
-            this.textBox66.Location = new System.Drawing.Point(178, 148);
-            this.textBox66.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox66.Name = "textBox66";
-            this.textBox66.Size = new System.Drawing.Size(133, 22);
-            this.textBox66.TabIndex = 9;
+            this.tbxChildForthNationality.Location = new System.Drawing.Point(178, 148);
+            this.tbxChildForthNationality.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildForthNationality.Name = "tbxChildForthNationality";
+            this.tbxChildForthNationality.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildForthNationality.TabIndex = 9;
             // 
             // label76
             // 
@@ -1923,38 +1933,38 @@
             this.label77.TabIndex = 4;
             this.label77.Text = "TC Kimlik Numarası :";
             // 
-            // textBox67
+            // tbxChildForthMotherName
             // 
-            this.textBox67.Location = new System.Drawing.Point(178, 174);
-            this.textBox67.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox67.Name = "textBox67";
-            this.textBox67.Size = new System.Drawing.Size(133, 22);
-            this.textBox67.TabIndex = 11;
+            this.tbxChildForthMotherName.Location = new System.Drawing.Point(178, 174);
+            this.tbxChildForthMotherName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildForthMotherName.Name = "tbxChildForthMotherName";
+            this.tbxChildForthMotherName.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildForthMotherName.TabIndex = 11;
             // 
-            // textBox68
+            // tbxChildForthSurname
             // 
-            this.textBox68.Location = new System.Drawing.Point(178, 120);
-            this.textBox68.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox68.Name = "textBox68";
-            this.textBox68.Size = new System.Drawing.Size(133, 22);
-            this.textBox68.TabIndex = 3;
+            this.tbxChildForthSurname.Location = new System.Drawing.Point(178, 120);
+            this.tbxChildForthSurname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildForthSurname.Name = "tbxChildForthSurname";
+            this.tbxChildForthSurname.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildForthSurname.TabIndex = 3;
             // 
             // label78
             // 
             this.label78.AutoSize = true;
-            this.label78.Location = new System.Drawing.Point(11, 258);
+            this.label78.Location = new System.Drawing.Point(11, 255);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(65, 16);
+            this.label78.Size = new System.Drawing.Size(94, 16);
             this.label78.TabIndex = 11;
-            this.label78.Text = "Birthday : ";
+            this.label78.Text = "Doğum Tarihi :";
             // 
-            // textBox69
+            // tbxChildForthName
             // 
-            this.textBox69.Location = new System.Drawing.Point(178, 91);
-            this.textBox69.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox69.Name = "textBox69";
-            this.textBox69.Size = new System.Drawing.Size(133, 22);
-            this.textBox69.TabIndex = 3;
+            this.tbxChildForthName.Location = new System.Drawing.Point(178, 91);
+            this.tbxChildForthName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildForthName.Name = "tbxChildForthName";
+            this.tbxChildForthName.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildForthName.TabIndex = 3;
             // 
             // label79
             // 
@@ -1970,26 +1980,26 @@
             this.label80.AutoSize = true;
             this.label80.Location = new System.Drawing.Point(11, 97);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(53, 16);
+            this.label80.Size = new System.Drawing.Size(33, 16);
             this.label80.TabIndex = 2;
-            this.label80.Text = "Name : ";
+            this.label80.Text = "Adı :";
             // 
-            // textBox70
+            // tbxChildForthBirthday
             // 
-            this.textBox70.Location = new System.Drawing.Point(178, 252);
-            this.textBox70.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox70.Name = "textBox70";
-            this.textBox70.Size = new System.Drawing.Size(133, 22);
-            this.textBox70.TabIndex = 9;
+            this.tbxChildForthBirthday.Location = new System.Drawing.Point(178, 252);
+            this.tbxChildForthBirthday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildForthBirthday.Name = "tbxChildForthBirthday";
+            this.tbxChildForthBirthday.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildForthBirthday.TabIndex = 9;
             // 
             // label81
             // 
             this.label81.AutoSize = true;
             this.label81.Location = new System.Drawing.Point(11, 126);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(70, 16);
+            this.label81.Size = new System.Drawing.Size(56, 16);
             this.label81.TabIndex = 13;
-            this.label81.Text = "Surname : ";
+            this.label81.Text = "Soyadı :";
             // 
             // gbxC3
             // 
@@ -1997,23 +2007,23 @@
             this.gbxC3.Controls.Add(this.textBox71);
             this.gbxC3.Controls.Add(this.label83);
             this.gbxC3.Controls.Add(this.label84);
-            this.gbxC3.Controls.Add(this.textBox72);
-            this.gbxC3.Controls.Add(this.textBox73);
-            this.gbxC3.Controls.Add(this.textBox74);
-            this.gbxC3.Controls.Add(this.textBox75);
+            this.gbxC3.Controls.Add(this.tbxChildThreeLocalId);
+            this.gbxC3.Controls.Add(this.tbxChildThreeId);
+            this.gbxC3.Controls.Add(this.tbxChildThreeBirthCity);
+            this.gbxC3.Controls.Add(this.tbxChildThreeFatherName);
             this.gbxC3.Controls.Add(this.label85);
-            this.gbxC3.Controls.Add(this.textBox76);
+            this.gbxC3.Controls.Add(this.tbxChildThreeNationality);
             this.gbxC3.Controls.Add(this.label86);
             this.gbxC3.Controls.Add(this.label87);
-            this.gbxC3.Controls.Add(this.textBox77);
-            this.gbxC3.Controls.Add(this.textBox78);
+            this.gbxC3.Controls.Add(this.tbxChildThreeMotherName);
+            this.gbxC3.Controls.Add(this.tbxChildThreeSurname);
             this.gbxC3.Controls.Add(this.label88);
-            this.gbxC3.Controls.Add(this.textBox79);
+            this.gbxC3.Controls.Add(this.tbxChildThreeName);
             this.gbxC3.Controls.Add(this.label89);
             this.gbxC3.Controls.Add(this.label90);
-            this.gbxC3.Controls.Add(this.textBox80);
+            this.gbxC3.Controls.Add(this.tbxChildThreeBirthday);
             this.gbxC3.Controls.Add(this.label91);
-            this.gbxC3.Location = new System.Drawing.Point(1076, 426);
+            this.gbxC3.Location = new System.Drawing.Point(1228, 425);
             this.gbxC3.Name = "gbxC3";
             this.gbxC3.Size = new System.Drawing.Size(322, 332);
             this.gbxC3.TabIndex = 52;
@@ -2056,37 +2066,37 @@
             this.label84.TabIndex = 50;
             this.label84.Text = "İşi :";
             // 
-            // textBox72
+            // tbxChildThreeLocalId
             // 
-            this.textBox72.Location = new System.Drawing.Point(178, 65);
-            this.textBox72.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox72.Name = "textBox72";
-            this.textBox72.Size = new System.Drawing.Size(133, 22);
-            this.textBox72.TabIndex = 5;
+            this.tbxChildThreeLocalId.Location = new System.Drawing.Point(178, 65);
+            this.tbxChildThreeLocalId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildThreeLocalId.Name = "tbxChildThreeLocalId";
+            this.tbxChildThreeLocalId.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildThreeLocalId.TabIndex = 5;
             // 
-            // textBox73
+            // tbxChildThreeId
             // 
-            this.textBox73.Location = new System.Drawing.Point(178, 38);
-            this.textBox73.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox73.Name = "textBox73";
-            this.textBox73.Size = new System.Drawing.Size(133, 22);
-            this.textBox73.TabIndex = 35;
+            this.tbxChildThreeId.Location = new System.Drawing.Point(178, 38);
+            this.tbxChildThreeId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildThreeId.Name = "tbxChildThreeId";
+            this.tbxChildThreeId.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildThreeId.TabIndex = 35;
             // 
-            // textBox74
+            // tbxChildThreeBirthCity
             // 
-            this.textBox74.Location = new System.Drawing.Point(178, 226);
-            this.textBox74.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox74.Name = "textBox74";
-            this.textBox74.Size = new System.Drawing.Size(133, 22);
-            this.textBox74.TabIndex = 7;
+            this.tbxChildThreeBirthCity.Location = new System.Drawing.Point(178, 226);
+            this.tbxChildThreeBirthCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildThreeBirthCity.Name = "tbxChildThreeBirthCity";
+            this.tbxChildThreeBirthCity.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildThreeBirthCity.TabIndex = 7;
             // 
-            // textBox75
+            // tbxChildThreeFatherName
             // 
-            this.textBox75.Location = new System.Drawing.Point(178, 200);
-            this.textBox75.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox75.Name = "textBox75";
-            this.textBox75.Size = new System.Drawing.Size(133, 22);
-            this.textBox75.TabIndex = 5;
+            this.tbxChildThreeFatherName.Location = new System.Drawing.Point(178, 200);
+            this.tbxChildThreeFatherName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildThreeFatherName.Name = "tbxChildThreeFatherName";
+            this.tbxChildThreeFatherName.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildThreeFatherName.TabIndex = 5;
             // 
             // label85
             // 
@@ -2097,13 +2107,13 @@
             this.label85.TabIndex = 14;
             this.label85.Text = "Baba Adı :";
             // 
-            // textBox76
+            // tbxChildThreeNationality
             // 
-            this.textBox76.Location = new System.Drawing.Point(178, 148);
-            this.textBox76.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox76.Name = "textBox76";
-            this.textBox76.Size = new System.Drawing.Size(133, 22);
-            this.textBox76.TabIndex = 9;
+            this.tbxChildThreeNationality.Location = new System.Drawing.Point(178, 148);
+            this.tbxChildThreeNationality.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildThreeNationality.Name = "tbxChildThreeNationality";
+            this.tbxChildThreeNationality.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildThreeNationality.TabIndex = 9;
             // 
             // label86
             // 
@@ -2123,38 +2133,38 @@
             this.label87.TabIndex = 4;
             this.label87.Text = "TC Kimlik Numarası :";
             // 
-            // textBox77
+            // tbxChildThreeMotherName
             // 
-            this.textBox77.Location = new System.Drawing.Point(178, 174);
-            this.textBox77.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox77.Name = "textBox77";
-            this.textBox77.Size = new System.Drawing.Size(133, 22);
-            this.textBox77.TabIndex = 11;
+            this.tbxChildThreeMotherName.Location = new System.Drawing.Point(178, 174);
+            this.tbxChildThreeMotherName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildThreeMotherName.Name = "tbxChildThreeMotherName";
+            this.tbxChildThreeMotherName.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildThreeMotherName.TabIndex = 11;
             // 
-            // textBox78
+            // tbxChildThreeSurname
             // 
-            this.textBox78.Location = new System.Drawing.Point(178, 120);
-            this.textBox78.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox78.Name = "textBox78";
-            this.textBox78.Size = new System.Drawing.Size(133, 22);
-            this.textBox78.TabIndex = 3;
+            this.tbxChildThreeSurname.Location = new System.Drawing.Point(178, 120);
+            this.tbxChildThreeSurname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildThreeSurname.Name = "tbxChildThreeSurname";
+            this.tbxChildThreeSurname.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildThreeSurname.TabIndex = 3;
             // 
             // label88
             // 
             this.label88.AutoSize = true;
             this.label88.Location = new System.Drawing.Point(11, 258);
             this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(65, 16);
+            this.label88.Size = new System.Drawing.Size(94, 16);
             this.label88.TabIndex = 11;
-            this.label88.Text = "Birthday : ";
+            this.label88.Text = "Doğum Tarihi :";
             // 
-            // textBox79
+            // tbxChildThreeName
             // 
-            this.textBox79.Location = new System.Drawing.Point(178, 91);
-            this.textBox79.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox79.Name = "textBox79";
-            this.textBox79.Size = new System.Drawing.Size(133, 22);
-            this.textBox79.TabIndex = 3;
+            this.tbxChildThreeName.Location = new System.Drawing.Point(178, 91);
+            this.tbxChildThreeName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildThreeName.Name = "tbxChildThreeName";
+            this.tbxChildThreeName.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildThreeName.TabIndex = 3;
             // 
             // label89
             // 
@@ -2170,26 +2180,26 @@
             this.label90.AutoSize = true;
             this.label90.Location = new System.Drawing.Point(11, 97);
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(53, 16);
+            this.label90.Size = new System.Drawing.Size(33, 16);
             this.label90.TabIndex = 2;
-            this.label90.Text = "Name : ";
+            this.label90.Text = "Adı :";
             // 
-            // textBox80
+            // tbxChildThreeBirthday
             // 
-            this.textBox80.Location = new System.Drawing.Point(178, 252);
-            this.textBox80.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox80.Name = "textBox80";
-            this.textBox80.Size = new System.Drawing.Size(133, 22);
-            this.textBox80.TabIndex = 9;
+            this.tbxChildThreeBirthday.Location = new System.Drawing.Point(178, 252);
+            this.tbxChildThreeBirthday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildThreeBirthday.Name = "tbxChildThreeBirthday";
+            this.tbxChildThreeBirthday.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildThreeBirthday.TabIndex = 9;
             // 
             // label91
             // 
             this.label91.AutoSize = true;
             this.label91.Location = new System.Drawing.Point(11, 126);
             this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(70, 16);
+            this.label91.Size = new System.Drawing.Size(56, 16);
             this.label91.TabIndex = 13;
-            this.label91.Text = "Surname : ";
+            this.label91.Text = "Soyadı :";
             // 
             // gbxC6
             // 
@@ -2197,23 +2207,23 @@
             this.gbxC6.Controls.Add(this.textBox81);
             this.gbxC6.Controls.Add(this.label93);
             this.gbxC6.Controls.Add(this.label94);
-            this.gbxC6.Controls.Add(this.textBox82);
-            this.gbxC6.Controls.Add(this.textBox83);
-            this.gbxC6.Controls.Add(this.textBox84);
-            this.gbxC6.Controls.Add(this.textBox85);
+            this.gbxC6.Controls.Add(this.tbxChildSixthLocalId);
+            this.gbxC6.Controls.Add(this.tbxChildSixthId);
+            this.gbxC6.Controls.Add(this.tbxChildSixthBirthCity);
+            this.gbxC6.Controls.Add(this.tbxChildSixthFatherName);
             this.gbxC6.Controls.Add(this.label95);
-            this.gbxC6.Controls.Add(this.textBox86);
+            this.gbxC6.Controls.Add(this.tbxChildSixthNationality);
             this.gbxC6.Controls.Add(this.label96);
             this.gbxC6.Controls.Add(this.label97);
-            this.gbxC6.Controls.Add(this.textBox87);
-            this.gbxC6.Controls.Add(this.textBox88);
+            this.gbxC6.Controls.Add(this.tbxChildSixthMotherName);
+            this.gbxC6.Controls.Add(this.tbxChildSixthSurname);
             this.gbxC6.Controls.Add(this.label98);
-            this.gbxC6.Controls.Add(this.textBox89);
+            this.gbxC6.Controls.Add(this.tbxChildSixthName);
             this.gbxC6.Controls.Add(this.label99);
             this.gbxC6.Controls.Add(this.label100);
-            this.gbxC6.Controls.Add(this.textBox90);
+            this.gbxC6.Controls.Add(this.tbxChildSixthBirthday);
             this.gbxC6.Controls.Add(this.label101);
-            this.gbxC6.Location = new System.Drawing.Point(2132, 426);
+            this.gbxC6.Location = new System.Drawing.Point(2247, 428);
             this.gbxC6.Name = "gbxC6";
             this.gbxC6.Size = new System.Drawing.Size(322, 332);
             this.gbxC6.TabIndex = 55;
@@ -2256,37 +2266,37 @@
             this.label94.TabIndex = 50;
             this.label94.Text = "İşi :";
             // 
-            // textBox82
+            // tbxChildSixthLocalId
             // 
-            this.textBox82.Location = new System.Drawing.Point(178, 65);
-            this.textBox82.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox82.Name = "textBox82";
-            this.textBox82.Size = new System.Drawing.Size(133, 22);
-            this.textBox82.TabIndex = 5;
+            this.tbxChildSixthLocalId.Location = new System.Drawing.Point(178, 65);
+            this.tbxChildSixthLocalId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildSixthLocalId.Name = "tbxChildSixthLocalId";
+            this.tbxChildSixthLocalId.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildSixthLocalId.TabIndex = 5;
             // 
-            // textBox83
+            // tbxChildSixthId
             // 
-            this.textBox83.Location = new System.Drawing.Point(178, 38);
-            this.textBox83.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox83.Name = "textBox83";
-            this.textBox83.Size = new System.Drawing.Size(133, 22);
-            this.textBox83.TabIndex = 35;
+            this.tbxChildSixthId.Location = new System.Drawing.Point(178, 38);
+            this.tbxChildSixthId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildSixthId.Name = "tbxChildSixthId";
+            this.tbxChildSixthId.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildSixthId.TabIndex = 35;
             // 
-            // textBox84
+            // tbxChildSixthBirthCity
             // 
-            this.textBox84.Location = new System.Drawing.Point(178, 226);
-            this.textBox84.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox84.Name = "textBox84";
-            this.textBox84.Size = new System.Drawing.Size(133, 22);
-            this.textBox84.TabIndex = 7;
+            this.tbxChildSixthBirthCity.Location = new System.Drawing.Point(178, 226);
+            this.tbxChildSixthBirthCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildSixthBirthCity.Name = "tbxChildSixthBirthCity";
+            this.tbxChildSixthBirthCity.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildSixthBirthCity.TabIndex = 7;
             // 
-            // textBox85
+            // tbxChildSixthFatherName
             // 
-            this.textBox85.Location = new System.Drawing.Point(178, 200);
-            this.textBox85.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox85.Name = "textBox85";
-            this.textBox85.Size = new System.Drawing.Size(133, 22);
-            this.textBox85.TabIndex = 5;
+            this.tbxChildSixthFatherName.Location = new System.Drawing.Point(178, 200);
+            this.tbxChildSixthFatherName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildSixthFatherName.Name = "tbxChildSixthFatherName";
+            this.tbxChildSixthFatherName.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildSixthFatherName.TabIndex = 5;
             // 
             // label95
             // 
@@ -2297,13 +2307,13 @@
             this.label95.TabIndex = 14;
             this.label95.Text = "Baba Adı :";
             // 
-            // textBox86
+            // tbxChildSixthNationality
             // 
-            this.textBox86.Location = new System.Drawing.Point(178, 148);
-            this.textBox86.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox86.Name = "textBox86";
-            this.textBox86.Size = new System.Drawing.Size(133, 22);
-            this.textBox86.TabIndex = 9;
+            this.tbxChildSixthNationality.Location = new System.Drawing.Point(178, 148);
+            this.tbxChildSixthNationality.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildSixthNationality.Name = "tbxChildSixthNationality";
+            this.tbxChildSixthNationality.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildSixthNationality.TabIndex = 9;
             // 
             // label96
             // 
@@ -2323,38 +2333,38 @@
             this.label97.TabIndex = 4;
             this.label97.Text = "TC Kimlik Numarası :";
             // 
-            // textBox87
+            // tbxChildSixthMotherName
             // 
-            this.textBox87.Location = new System.Drawing.Point(178, 174);
-            this.textBox87.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox87.Name = "textBox87";
-            this.textBox87.Size = new System.Drawing.Size(133, 22);
-            this.textBox87.TabIndex = 11;
+            this.tbxChildSixthMotherName.Location = new System.Drawing.Point(178, 174);
+            this.tbxChildSixthMotherName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildSixthMotherName.Name = "tbxChildSixthMotherName";
+            this.tbxChildSixthMotherName.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildSixthMotherName.TabIndex = 11;
             // 
-            // textBox88
+            // tbxChildSixthSurname
             // 
-            this.textBox88.Location = new System.Drawing.Point(178, 120);
-            this.textBox88.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox88.Name = "textBox88";
-            this.textBox88.Size = new System.Drawing.Size(133, 22);
-            this.textBox88.TabIndex = 3;
+            this.tbxChildSixthSurname.Location = new System.Drawing.Point(178, 120);
+            this.tbxChildSixthSurname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildSixthSurname.Name = "tbxChildSixthSurname";
+            this.tbxChildSixthSurname.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildSixthSurname.TabIndex = 3;
             // 
             // label98
             // 
             this.label98.AutoSize = true;
             this.label98.Location = new System.Drawing.Point(11, 258);
             this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(65, 16);
+            this.label98.Size = new System.Drawing.Size(94, 16);
             this.label98.TabIndex = 11;
-            this.label98.Text = "Birthday : ";
+            this.label98.Text = "Doğum Tarihi :";
             // 
-            // textBox89
+            // tbxChildSixthName
             // 
-            this.textBox89.Location = new System.Drawing.Point(178, 91);
-            this.textBox89.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox89.Name = "textBox89";
-            this.textBox89.Size = new System.Drawing.Size(133, 22);
-            this.textBox89.TabIndex = 3;
+            this.tbxChildSixthName.Location = new System.Drawing.Point(178, 91);
+            this.tbxChildSixthName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildSixthName.Name = "tbxChildSixthName";
+            this.tbxChildSixthName.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildSixthName.TabIndex = 3;
             // 
             // label99
             // 
@@ -2370,42 +2380,42 @@
             this.label100.AutoSize = true;
             this.label100.Location = new System.Drawing.Point(11, 97);
             this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(53, 16);
+            this.label100.Size = new System.Drawing.Size(33, 16);
             this.label100.TabIndex = 2;
-            this.label100.Text = "Name : ";
+            this.label100.Text = "Adı :";
             // 
-            // textBox90
+            // tbxChildSixthBirthday
             // 
-            this.textBox90.Location = new System.Drawing.Point(178, 252);
-            this.textBox90.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox90.Name = "textBox90";
-            this.textBox90.Size = new System.Drawing.Size(133, 22);
-            this.textBox90.TabIndex = 9;
+            this.tbxChildSixthBirthday.Location = new System.Drawing.Point(178, 252);
+            this.tbxChildSixthBirthday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxChildSixthBirthday.Name = "tbxChildSixthBirthday";
+            this.tbxChildSixthBirthday.Size = new System.Drawing.Size(133, 22);
+            this.tbxChildSixthBirthday.TabIndex = 9;
             // 
             // label101
             // 
             this.label101.AutoSize = true;
             this.label101.Location = new System.Drawing.Point(11, 126);
             this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(70, 16);
+            this.label101.Size = new System.Drawing.Size(56, 16);
             this.label101.TabIndex = 13;
-            this.label101.Text = "Surname : ";
+            this.label101.Text = "Soyadı :";
             // 
-            // tbxHowManyChildren
+            // panel2
             // 
-            this.tbxHowManyChildren.Location = new System.Drawing.Point(529, 250);
-            this.tbxHowManyChildren.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxHowManyChildren.Name = "tbxHowManyChildren";
-            this.tbxHowManyChildren.Size = new System.Drawing.Size(133, 22);
-            this.tbxHowManyChildren.TabIndex = 55;
-            this.tbxHowManyChildren.TextChanged += new System.EventHandler(this.tbxHowManyChildren_TextChanged);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 1405);
+            this.panel2.TabIndex = 59;
             // 
             // ActionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1115, 657);
+            this.ClientSize = new System.Drawing.Size(1290, 559);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.gbxC6);
             this.Controls.Add(this.gbxC2);
             this.Controls.Add(this.gbxC5);
@@ -2417,7 +2427,9 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Name = "ActionForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Action Form";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ActionForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -2427,10 +2439,10 @@
             this.gbxAdd.ResumeLayout(false);
             this.gbxAdd.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.gbxC1.ResumeLayout(false);
             this.gbxC1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.gbxC2.ResumeLayout(false);
             this.gbxC2.PerformLayout();
             this.gbxC5.ResumeLayout(false);
@@ -2452,54 +2464,51 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.GroupBox groupBox1;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox tbxAppealDate;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        public System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox tbxBuildNumber;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        public System.Windows.Forms.TextBox textBox4;
-        public System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label18;
-        public System.Windows.Forms.TextBox textBox6;
-        public System.Windows.Forms.TextBox textBox7;
-        public System.Windows.Forms.TextBox textBox8;
-        public System.Windows.Forms.TextBox textBox9;
+        public System.Windows.Forms.TextBox tbxDistrict;
+        public System.Windows.Forms.TextBox tbxStreet;
+        public System.Windows.Forms.TextBox tbxBuild;
+        public System.Windows.Forms.TextBox tbxDetectDate;
         private System.Windows.Forms.Label label19;
-        public System.Windows.Forms.TextBox textBox10;
-        public System.Windows.Forms.TextBox textBox11;
-        public System.Windows.Forms.TextBox textBox12;
+        public System.Windows.Forms.TextBox tbxFullAddress;
+        public System.Windows.Forms.TextBox tbxPhoneOne;
+        public System.Windows.Forms.TextBox tbxPhoneTwo;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtbKnowledge;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox gbxAdd;
-        public System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.ComboBox cbxMarital;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label30;
-        public System.Windows.Forms.TextBox textBox14;
+        public System.Windows.Forms.TextBox tbxWork;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        public System.Windows.Forms.TextBox textBox15;
+        public System.Windows.Forms.TextBox tbxStuff;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
-        public System.Windows.Forms.TextBox textBox16;
-        public System.Windows.Forms.TextBox textBox17;
+        public System.Windows.Forms.TextBox tbxOutgoing;
+        public System.Windows.Forms.TextBox tbxDebt;
         private System.Windows.Forms.Label label28;
-        public System.Windows.Forms.TextBox textBox18;
-        public System.Windows.Forms.TextBox textBox19;
-        public System.Windows.Forms.TextBox textBox20;
+        public System.Windows.Forms.TextBox tbxAid;
+        public System.Windows.Forms.TextBox tbxStudent;
+        public System.Windows.Forms.TextBox tbxIncome;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label21;
-        public System.Windows.Forms.TextBox textBox13;
+        public System.Windows.Forms.TextBox tbxBlood;
         public System.Windows.Forms.TextBox tbxId;
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.ComboBox cbxCategoryId;
@@ -2528,42 +2537,40 @@
         public System.Windows.Forms.TextBox textBox41;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
-        public System.Windows.Forms.TextBox textBox42;
-        public System.Windows.Forms.TextBox textBox43;
-        public System.Windows.Forms.TextBox textBox44;
-        public System.Windows.Forms.TextBox textBox45;
+        public System.Windows.Forms.TextBox tbxChildTwoLocalId;
+        public System.Windows.Forms.TextBox tbxChildTwoId;
+        public System.Windows.Forms.TextBox tbxChildTwoBirthCity;
+        public System.Windows.Forms.TextBox tbxChildTwoFatherName;
         private System.Windows.Forms.Label label55;
-        public System.Windows.Forms.TextBox textBox46;
+        public System.Windows.Forms.TextBox tbxChildTwoNationality;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
-        public System.Windows.Forms.TextBox textBox47;
-        public System.Windows.Forms.TextBox textBox48;
-        private System.Windows.Forms.Label label58;
-        public System.Windows.Forms.TextBox textBox49;
+        public System.Windows.Forms.TextBox tbxChildTwoMotherName;
+        public System.Windows.Forms.TextBox tbxChildTwoSurname;
+        public System.Windows.Forms.TextBox tbxChildTwoName;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
-        public System.Windows.Forms.TextBox textBox50;
+        public System.Windows.Forms.TextBox tbxChildTwoBirthday;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.GroupBox gbxC1;
         private System.Windows.Forms.Label label31;
         public System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label34;
-        public System.Windows.Forms.TextBox txbChildLocalId;
-        public System.Windows.Forms.TextBox textBox24;
-        public System.Windows.Forms.TextBox tbxChildBirthCity;
-        public System.Windows.Forms.TextBox tbxChildFather;
+        public System.Windows.Forms.TextBox tbxChildOneLocalId;
+        public System.Windows.Forms.TextBox tbxChildOneId;
+        public System.Windows.Forms.TextBox tbxChildOneBirthCity;
+        public System.Windows.Forms.TextBox tbxChildOneFather;
         private System.Windows.Forms.Label label35;
-        public System.Windows.Forms.TextBox tbxChildNationality;
+        public System.Windows.Forms.TextBox tbxChildOneNationality;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
-        public System.Windows.Forms.TextBox tbxChildMother;
-        public System.Windows.Forms.TextBox tbxChildSurname;
-        private System.Windows.Forms.Label label38;
-        public System.Windows.Forms.TextBox tbxChildName;
+        public System.Windows.Forms.TextBox tbxChildOneMother;
+        public System.Windows.Forms.TextBox tbxChildOneSurname;
+        public System.Windows.Forms.TextBox tbxChildOneName;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
-        public System.Windows.Forms.TextBox tbxChildBirthday;
+        public System.Windows.Forms.TextBox tbxChildOneBirthday;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label41;
@@ -2571,7 +2578,7 @@
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label33;
         public System.Windows.Forms.TextBox tbxPartnerLocalId;
-        public System.Windows.Forms.TextBox textBox29;
+        public System.Windows.Forms.TextBox tbxPartnerId;
         public System.Windows.Forms.TextBox tbxPartnerBirthCity;
         public System.Windows.Forms.TextBox tbxPartnerFather;
         private System.Windows.Forms.Label label44;
@@ -2580,7 +2587,6 @@
         private System.Windows.Forms.Label label50;
         public System.Windows.Forms.TextBox tbxPartnerMother;
         public System.Windows.Forms.TextBox tbxPartnerSurname;
-        private System.Windows.Forms.Label label46;
         public System.Windows.Forms.TextBox tbxPartnerName;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label49;
@@ -2591,85 +2597,92 @@
         public System.Windows.Forms.TextBox textBox51;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label64;
-        public System.Windows.Forms.TextBox textBox52;
-        public System.Windows.Forms.TextBox textBox53;
-        public System.Windows.Forms.TextBox textBox54;
-        public System.Windows.Forms.TextBox textBox55;
+        public System.Windows.Forms.TextBox tbxChildFifthLocalId;
+        public System.Windows.Forms.TextBox tbxChildFifthId;
+        public System.Windows.Forms.TextBox tbxChildFifthBirthCity;
+        public System.Windows.Forms.TextBox tbxChildFifthFatherName;
         private System.Windows.Forms.Label label65;
-        public System.Windows.Forms.TextBox textBox56;
+        public System.Windows.Forms.TextBox tbxChildFifthNationality;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
-        public System.Windows.Forms.TextBox textBox57;
-        public System.Windows.Forms.TextBox textBox58;
+        public System.Windows.Forms.TextBox tbxChildFifthMotherName;
+        public System.Windows.Forms.TextBox tbxChildFifthSurname;
         private System.Windows.Forms.Label label68;
-        public System.Windows.Forms.TextBox textBox59;
+        public System.Windows.Forms.TextBox tbxChildFifthName;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label70;
-        public System.Windows.Forms.TextBox textBox60;
+        public System.Windows.Forms.TextBox tbxChildFifthBirthday;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.GroupBox gbxC4;
         private System.Windows.Forms.Label label72;
         public System.Windows.Forms.TextBox textBox61;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label74;
-        public System.Windows.Forms.TextBox textBox62;
-        public System.Windows.Forms.TextBox textBox63;
-        public System.Windows.Forms.TextBox textBox64;
-        public System.Windows.Forms.TextBox textBox65;
+        public System.Windows.Forms.TextBox tbxChildForthLocalId;
+        public System.Windows.Forms.TextBox tbxChildForthId;
+        public System.Windows.Forms.TextBox tbxChildForthBirthCity;
+        public System.Windows.Forms.TextBox tbxChildForthFatherName;
         private System.Windows.Forms.Label label75;
-        public System.Windows.Forms.TextBox textBox66;
+        public System.Windows.Forms.TextBox tbxChildForthNationality;
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Label label77;
-        public System.Windows.Forms.TextBox textBox67;
-        public System.Windows.Forms.TextBox textBox68;
+        public System.Windows.Forms.TextBox tbxChildForthMotherName;
+        public System.Windows.Forms.TextBox tbxChildForthSurname;
         private System.Windows.Forms.Label label78;
-        public System.Windows.Forms.TextBox textBox69;
+        public System.Windows.Forms.TextBox tbxChildForthName;
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label80;
-        public System.Windows.Forms.TextBox textBox70;
+        public System.Windows.Forms.TextBox tbxChildForthBirthday;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.GroupBox gbxC3;
         private System.Windows.Forms.Label label82;
         public System.Windows.Forms.TextBox textBox71;
         private System.Windows.Forms.Label label83;
         private System.Windows.Forms.Label label84;
-        public System.Windows.Forms.TextBox textBox72;
-        public System.Windows.Forms.TextBox textBox73;
-        public System.Windows.Forms.TextBox textBox74;
-        public System.Windows.Forms.TextBox textBox75;
+        public System.Windows.Forms.TextBox tbxChildThreeLocalId;
+        public System.Windows.Forms.TextBox tbxChildThreeId;
+        public System.Windows.Forms.TextBox tbxChildThreeBirthCity;
+        public System.Windows.Forms.TextBox tbxChildThreeFatherName;
         private System.Windows.Forms.Label label85;
-        public System.Windows.Forms.TextBox textBox76;
+        public System.Windows.Forms.TextBox tbxChildThreeNationality;
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.Label label87;
-        public System.Windows.Forms.TextBox textBox77;
-        public System.Windows.Forms.TextBox textBox78;
+        public System.Windows.Forms.TextBox tbxChildThreeMotherName;
+        public System.Windows.Forms.TextBox tbxChildThreeSurname;
         private System.Windows.Forms.Label label88;
-        public System.Windows.Forms.TextBox textBox79;
+        public System.Windows.Forms.TextBox tbxChildThreeName;
         private System.Windows.Forms.Label label89;
         private System.Windows.Forms.Label label90;
-        public System.Windows.Forms.TextBox textBox80;
+        public System.Windows.Forms.TextBox tbxChildThreeBirthday;
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.GroupBox gbxC6;
         private System.Windows.Forms.Label label92;
         public System.Windows.Forms.TextBox textBox81;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Label label94;
-        public System.Windows.Forms.TextBox textBox82;
-        public System.Windows.Forms.TextBox textBox83;
-        public System.Windows.Forms.TextBox textBox84;
-        public System.Windows.Forms.TextBox textBox85;
+        public System.Windows.Forms.TextBox tbxChildSixthLocalId;
+        public System.Windows.Forms.TextBox tbxChildSixthId;
+        public System.Windows.Forms.TextBox tbxChildSixthBirthCity;
+        public System.Windows.Forms.TextBox tbxChildSixthFatherName;
         private System.Windows.Forms.Label label95;
-        public System.Windows.Forms.TextBox textBox86;
+        public System.Windows.Forms.TextBox tbxChildSixthNationality;
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.Label label97;
-        public System.Windows.Forms.TextBox textBox87;
-        public System.Windows.Forms.TextBox textBox88;
+        public System.Windows.Forms.TextBox tbxChildSixthMotherName;
+        public System.Windows.Forms.TextBox tbxChildSixthSurname;
         private System.Windows.Forms.Label label98;
-        public System.Windows.Forms.TextBox textBox89;
+        public System.Windows.Forms.TextBox tbxChildSixthName;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.Label label100;
-        public System.Windows.Forms.TextBox textBox90;
+        public System.Windows.Forms.TextBox tbxChildSixthBirthday;
         private System.Windows.Forms.Label label101;
         public System.Windows.Forms.TextBox tbxHowManyChildren;
+        private System.Windows.Forms.Label label102;
+        private System.Windows.Forms.Label label103;
+        private System.Windows.Forms.Label label46;
+        public System.Windows.Forms.ComboBox cbxCountry;
+        public System.Windows.Forms.ComboBox cbxCity;
+        public System.Windows.Forms.ComboBox cbxHometown;
+        private System.Windows.Forms.Panel panel2;
     }
 }
