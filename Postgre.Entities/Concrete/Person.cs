@@ -67,6 +67,10 @@ namespace Postgre.Entities.Concrete
         public int KnowledgeId { get; set; }
 
 
+        //buraları gözden geçirmemiz gerek...
+        public virtual List<PersonKnowledge> PersonKnowledges { get; set; }
+        public virtual List<Address> Addresses { get; set; }
+
 
 
         //other connection tables...

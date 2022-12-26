@@ -16,14 +16,20 @@ namespace Postgre.Business.DependencyResolvers
         public override void Load()
         {
             Bind<IPersonService>().To<PersonManager>();
-            Bind<ICategoryService>().To<CategoryManager>();
-            Bind<ICategoryDal>().To<CategoryDal>();
             Bind<IPersonDal>().To<PersonDal>();
 
+            Bind<ICategoryService>().To<CategoryManager>();
+            Bind<ICategoryDal>().To<CategoryDal>();
+           
+
             Bind<IAddressService>().To<AddressManager>();
-            Bind<IUrgencyService>().To<UrgencyManager>();
             Bind<IAddressDal>().To<AddressDal>();
+
+            Bind<IUrgencyService>().To<UrgencyManager>();        
             Bind<IUrgencyDal>().To<UrgencyDal>();
+
+            Bind<IPersonKnowledgeService>().To<PersonKnowledgeManager>();
+            Bind<IPersonKnowledgeDal>().To<PersonKnowledgeDal>();
 
         }
     }

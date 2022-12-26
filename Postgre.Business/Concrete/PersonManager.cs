@@ -21,7 +21,9 @@ namespace Postgre.Business.Concrete
 
         public void Add(Person person)
         {
-            ValidationTool.Validate(new PersonValidator(),person);
+            PersonValidator personValidation=new PersonValidator();
+            personValidation.Validate(person);
+            //ValidationTool.Validate(new PersonValidator(),person);
             _personDal.Add(person);
         }
 

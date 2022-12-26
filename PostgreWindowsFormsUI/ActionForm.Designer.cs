@@ -51,7 +51,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.tbxDistrict = new System.Windows.Forms.TextBox();
             this.tbxStreet = new System.Windows.Forms.TextBox();
             this.tbxBuild = new System.Windows.Forms.TextBox();
             this.tbxDetectDate = new System.Windows.Forms.TextBox();
@@ -252,6 +251,7 @@
             this.tbxChildSixthBirthday = new System.Windows.Forms.TextBox();
             this.label101 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cbxDistrict = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -302,6 +302,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbxDistrict);
             this.groupBox1.Controls.Add(this.cbxHometown);
             this.groupBox1.Controls.Add(this.cbxCountry);
             this.groupBox1.Controls.Add(this.cbxCity);
@@ -321,7 +322,6 @@
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.tbxDistrict);
             this.groupBox1.Controls.Add(this.tbxStreet);
             this.groupBox1.Controls.Add(this.tbxBuild);
             this.groupBox1.Controls.Add(this.tbxDetectDate);
@@ -497,14 +497,6 @@
             this.label18.Size = new System.Drawing.Size(88, 16);
             this.label18.TabIndex = 4;
             this.label18.Text = "Tespit Tarihi :";
-            // 
-            // tbxDistrict
-            // 
-            this.tbxDistrict.Location = new System.Drawing.Point(516, 78);
-            this.tbxDistrict.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxDistrict.Name = "tbxDistrict";
-            this.tbxDistrict.Size = new System.Drawing.Size(133, 22);
-            this.tbxDistrict.TabIndex = 9;
             // 
             // tbxStreet
             // 
@@ -2409,12 +2401,20 @@
             this.panel2.Size = new System.Drawing.Size(200, 1405);
             this.panel2.TabIndex = 59;
             // 
+            // cbxDistrict
+            // 
+            this.cbxDistrict.FormattingEnabled = true;
+            this.cbxDistrict.Location = new System.Drawing.Point(516, 76);
+            this.cbxDistrict.Name = "cbxDistrict";
+            this.cbxDistrict.Size = new System.Drawing.Size(133, 24);
+            this.cbxDistrict.TabIndex = 59;
+            // 
             // ActionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1290, 559);
+            this.ClientSize = new System.Drawing.Size(1311, 580);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.gbxC6);
             this.Controls.Add(this.gbxC2);
@@ -2476,7 +2476,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        public System.Windows.Forms.TextBox tbxDistrict;
         public System.Windows.Forms.TextBox tbxStreet;
         public System.Windows.Forms.TextBox tbxBuild;
         public System.Windows.Forms.TextBox tbxDetectDate;
@@ -2684,5 +2683,6 @@
         public System.Windows.Forms.ComboBox cbxCity;
         public System.Windows.Forms.ComboBox cbxHometown;
         private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.ComboBox cbxDistrict;
     }
 }
