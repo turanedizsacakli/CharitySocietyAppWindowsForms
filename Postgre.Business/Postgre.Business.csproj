@@ -95,12 +95,14 @@
   <ItemGroup>
     <Compile Include="Abstract\IAddressService.cs" />
     <Compile Include="Abstract\ICategoryService.cs" />
+    <Compile Include="Abstract\IControlService.cs" />
     <Compile Include="Abstract\IPersonKnowledgeService.cs" />
     <Compile Include="Abstract\IServiceRepository.cs" />
     <Compile Include="Abstract\IPersonService.cs" />
     <Compile Include="Abstract\IUrgencyService.cs" />
     <Compile Include="Concrete\AddressManager.cs" />
     <Compile Include="Concrete\CategoryManager.cs" />
+    <Compile Include="Concrete\ControlManager.cs" />
     <Compile Include="Concrete\PersonKnowledgeManager.cs" />
     <Compile Include="Concrete\PersonManager.cs" />
     <Compile Include="Concrete\UrgencyManager.cs" />
