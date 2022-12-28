@@ -32,6 +32,7 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbxDistrict = new System.Windows.Forms.ComboBox();
             this.cbxHometown = new System.Windows.Forms.ComboBox();
             this.cbxCountry = new System.Windows.Forms.ComboBox();
             this.cbxCity = new System.Windows.Forms.ComboBox();
@@ -251,7 +252,9 @@
             this.tbxChildSixthBirthday = new System.Windows.Forms.TextBox();
             this.label101 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.cbxDistrict = new System.Windows.Forms.ComboBox();
+            this.tbxAddressId = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.lblKnowledge = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -302,6 +305,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.tbxAddressId);
+            this.groupBox1.Controls.Add(this.label38);
             this.groupBox1.Controls.Add(this.cbxDistrict);
             this.groupBox1.Controls.Add(this.cbxHometown);
             this.groupBox1.Controls.Add(this.cbxCountry);
@@ -330,15 +335,23 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(786, 229);
+            this.groupBox1.Size = new System.Drawing.Size(786, 267);
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Adres Bilgileri";
             // 
+            // cbxDistrict
+            // 
+            this.cbxDistrict.FormattingEnabled = true;
+            this.cbxDistrict.Location = new System.Drawing.Point(520, 109);
+            this.cbxDistrict.Name = "cbxDistrict";
+            this.cbxDistrict.Size = new System.Drawing.Size(133, 24);
+            this.cbxDistrict.TabIndex = 59;
+            // 
             // cbxHometown
             // 
             this.cbxHometown.FormattingEnabled = true;
-            this.cbxHometown.Location = new System.Drawing.Point(177, 110);
+            this.cbxHometown.Location = new System.Drawing.Point(181, 143);
             this.cbxHometown.Name = "cbxHometown";
             this.cbxHometown.Size = new System.Drawing.Size(133, 24);
             this.cbxHometown.TabIndex = 58;
@@ -346,7 +359,7 @@
             // cbxCountry
             // 
             this.cbxCountry.FormattingEnabled = true;
-            this.cbxCountry.Location = new System.Drawing.Point(177, 52);
+            this.cbxCountry.Location = new System.Drawing.Point(181, 85);
             this.cbxCountry.Name = "cbxCountry";
             this.cbxCountry.Size = new System.Drawing.Size(133, 24);
             this.cbxCountry.TabIndex = 57;
@@ -354,7 +367,7 @@
             // cbxCity
             // 
             this.cbxCity.FormattingEnabled = true;
-            this.cbxCity.Location = new System.Drawing.Point(177, 82);
+            this.cbxCity.Location = new System.Drawing.Point(181, 115);
             this.cbxCity.Name = "cbxCity";
             this.cbxCity.Size = new System.Drawing.Size(133, 24);
             this.cbxCity.TabIndex = 56;
@@ -362,7 +375,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(349, 159);
+            this.label20.Location = new System.Drawing.Point(353, 192);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(86, 16);
             this.label20.TabIndex = 39;
@@ -370,7 +383,7 @@
             // 
             // tbxPhoneTwo
             // 
-            this.tbxPhoneTwo.Location = new System.Drawing.Point(516, 156);
+            this.tbxPhoneTwo.Location = new System.Drawing.Point(520, 189);
             this.tbxPhoneTwo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxPhoneTwo.Name = "tbxPhoneTwo";
             this.tbxPhoneTwo.Size = new System.Drawing.Size(133, 22);
@@ -378,7 +391,7 @@
             // 
             // tbxFullAddress
             // 
-            this.tbxFullAddress.Location = new System.Drawing.Point(177, 188);
+            this.tbxFullAddress.Location = new System.Drawing.Point(181, 221);
             this.tbxFullAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxFullAddress.Name = "tbxFullAddress";
             this.tbxFullAddress.Size = new System.Drawing.Size(588, 22);
@@ -386,7 +399,7 @@
             // 
             // tbxPhoneOne
             // 
-            this.tbxPhoneOne.Location = new System.Drawing.Point(177, 162);
+            this.tbxPhoneOne.Location = new System.Drawing.Point(181, 195);
             this.tbxPhoneOne.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxPhoneOne.Name = "tbxPhoneOne";
             this.tbxPhoneOne.Size = new System.Drawing.Size(133, 22);
@@ -394,7 +407,7 @@
             // 
             // tbxAppealDate
             // 
-            this.tbxAppealDate.Location = new System.Drawing.Point(177, 26);
+            this.tbxAppealDate.Location = new System.Drawing.Point(181, 59);
             this.tbxAppealDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxAppealDate.Name = "tbxAppealDate";
             this.tbxAppealDate.Size = new System.Drawing.Size(133, 22);
@@ -403,7 +416,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 32);
+            this.label9.Location = new System.Drawing.Point(10, 65);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(99, 16);
             this.label9.TabIndex = 34;
@@ -412,7 +425,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 162);
+            this.label10.Location = new System.Drawing.Point(10, 195);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(86, 16);
             this.label10.TabIndex = 32;
@@ -421,7 +434,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(10, 188);
+            this.label11.Location = new System.Drawing.Point(14, 221);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(52, 16);
             this.label11.TabIndex = 31;
@@ -430,7 +443,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(349, 110);
+            this.label12.Location = new System.Drawing.Point(353, 143);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(103, 16);
             this.label12.TabIndex = 14;
@@ -439,7 +452,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(10, 136);
+            this.label13.Location = new System.Drawing.Point(14, 169);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(73, 16);
             this.label13.TabIndex = 12;
@@ -448,7 +461,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(349, 136);
+            this.label14.Location = new System.Drawing.Point(353, 169);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(34, 16);
             this.label14.TabIndex = 11;
@@ -457,7 +470,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(10, 110);
+            this.label15.Location = new System.Drawing.Point(14, 143);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(61, 16);
             this.label15.TabIndex = 10;
@@ -465,7 +478,7 @@
             // 
             // tbxBuildNumber
             // 
-            this.tbxBuildNumber.Location = new System.Drawing.Point(516, 130);
+            this.tbxBuildNumber.Location = new System.Drawing.Point(520, 163);
             this.tbxBuildNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxBuildNumber.Name = "tbxBuildNumber";
             this.tbxBuildNumber.Size = new System.Drawing.Size(133, 22);
@@ -474,7 +487,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(10, 84);
+            this.label16.Location = new System.Drawing.Point(14, 117);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(19, 16);
             this.label16.TabIndex = 13;
@@ -483,7 +496,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(6, 58);
+            this.label17.Location = new System.Drawing.Point(10, 91);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(41, 16);
             this.label17.TabIndex = 2;
@@ -492,7 +505,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(349, 32);
+            this.label18.Location = new System.Drawing.Point(353, 65);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(88, 16);
             this.label18.TabIndex = 4;
@@ -500,7 +513,7 @@
             // 
             // tbxStreet
             // 
-            this.tbxStreet.Location = new System.Drawing.Point(516, 104);
+            this.tbxStreet.Location = new System.Drawing.Point(520, 137);
             this.tbxStreet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxStreet.Name = "tbxStreet";
             this.tbxStreet.Size = new System.Drawing.Size(133, 22);
@@ -508,7 +521,7 @@
             // 
             // tbxBuild
             // 
-            this.tbxBuild.Location = new System.Drawing.Point(177, 136);
+            this.tbxBuild.Location = new System.Drawing.Point(181, 169);
             this.tbxBuild.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxBuild.Name = "tbxBuild";
             this.tbxBuild.Size = new System.Drawing.Size(133, 22);
@@ -516,7 +529,7 @@
             // 
             // tbxDetectDate
             // 
-            this.tbxDetectDate.Location = new System.Drawing.Point(516, 32);
+            this.tbxDetectDate.Location = new System.Drawing.Point(520, 65);
             this.tbxDetectDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxDetectDate.Name = "tbxDetectDate";
             this.tbxDetectDate.Size = new System.Drawing.Size(133, 22);
@@ -525,7 +538,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(349, 78);
+            this.label19.Location = new System.Drawing.Point(353, 111);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(34, 16);
             this.label19.TabIndex = 8;
@@ -534,11 +547,12 @@
             // groupBox3
             // 
             this.groupBox3.AutoSize = true;
+            this.groupBox3.Controls.Add(this.lblKnowledge);
             this.groupBox3.Controls.Add(this.label52);
             this.groupBox3.Controls.Add(this.rtbKnowledge);
-            this.groupBox3.Location = new System.Drawing.Point(206, 1027);
+            this.groupBox3.Location = new System.Drawing.Point(206, 1065);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(786, 272);
+            this.groupBox3.Size = new System.Drawing.Size(786, 332);
             this.groupBox3.TabIndex = 56;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Bilgi Alanı";
@@ -546,7 +560,7 @@
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(6, 33);
+            this.label52.Location = new System.Drawing.Point(6, 63);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(72, 16);
             this.label52.TabIndex = 1;
@@ -555,7 +569,7 @@
             // rtbKnowledge
             // 
             this.rtbKnowledge.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rtbKnowledge.Location = new System.Drawing.Point(84, 33);
+            this.rtbKnowledge.Location = new System.Drawing.Point(84, 93);
             this.rtbKnowledge.Name = "rtbKnowledge";
             this.rtbKnowledge.Size = new System.Drawing.Size(681, 218);
             this.rtbKnowledge.TabIndex = 0;
@@ -567,7 +581,7 @@
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Location = new System.Drawing.Point(206, 1305);
+            this.panel1.Location = new System.Drawing.Point(206, 1372);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1070, 100);
             this.panel1.TabIndex = 57;
@@ -641,6 +655,7 @@
             this.cbxMarital.Name = "cbxMarital";
             this.cbxMarital.Size = new System.Drawing.Size(133, 24);
             this.cbxMarital.TabIndex = 54;
+            this.cbxMarital.SelectedIndexChanged += new System.EventHandler(this.cbxMarital_SelectedIndexChanged);
             // 
             // label22
             // 
@@ -2398,16 +2413,34 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 1405);
+            this.panel2.Size = new System.Drawing.Size(200, 1472);
             this.panel2.TabIndex = 59;
             // 
-            // cbxDistrict
+            // tbxAddressId
             // 
-            this.cbxDistrict.FormattingEnabled = true;
-            this.cbxDistrict.Location = new System.Drawing.Point(516, 76);
-            this.cbxDistrict.Name = "cbxDistrict";
-            this.cbxDistrict.Size = new System.Drawing.Size(133, 24);
-            this.cbxDistrict.TabIndex = 59;
+            this.tbxAddressId.Location = new System.Drawing.Point(181, 33);
+            this.tbxAddressId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxAddressId.Name = "tbxAddressId";
+            this.tbxAddressId.Size = new System.Drawing.Size(133, 22);
+            this.tbxAddressId.TabIndex = 61;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(10, 39);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(110, 16);
+            this.label38.TabIndex = 60;
+            this.label38.Text = "Adres Numarası :";
+            // 
+            // lblKnowledge
+            // 
+            this.lblKnowledge.AutoSize = true;
+            this.lblKnowledge.Location = new System.Drawing.Point(704, 18);
+            this.lblKnowledge.Name = "lblKnowledge";
+            this.lblKnowledge.Size = new System.Drawing.Size(72, 16);
+            this.lblKnowledge.TabIndex = 2;
+            this.lblKnowledge.Text = "Bilgi Alanı :";
             // 
             // ActionForm
             // 
@@ -2684,5 +2717,8 @@
         public System.Windows.Forms.ComboBox cbxHometown;
         private System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.ComboBox cbxDistrict;
+        public System.Windows.Forms.TextBox tbxAddressId;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label lblKnowledge;
     }
 }

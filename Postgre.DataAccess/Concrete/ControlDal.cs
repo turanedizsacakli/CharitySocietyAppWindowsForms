@@ -8,14 +8,8 @@ using System.Threading.Tasks;
 
 namespace Postgre.DataAccess.Concrete
 {
-    public class ControlDal : IControlDal
+    public class ControlDal : PostgreEntityRepositoryBase<Control, PostgreContext>, IControlDal
     {
-        public List<Control> GetAll()
-        {
-            using (PostgreContext postgreContext = new PostgreContext())
-            {
-                return postgreContext.Controls.ToList();
-            }
-        }
+        
     }
 }

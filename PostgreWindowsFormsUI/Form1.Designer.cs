@@ -37,7 +37,9 @@ namespace PostgreWindowsFormsUI
             this.CharityButton = new System.Windows.Forms.Button();
             this.AddButton = new System.Windows.Forms.Button();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.MainPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,10 +106,22 @@ namespace PostgreWindowsFormsUI
             // MainPanel
             // 
             this.MainPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MainPanel.Controls.Add(this.btnAdd);
             this.MainPanel.Location = new System.Drawing.Point(0, 0);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(1357, 624);
             this.MainPanel.TabIndex = 44;
+
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(617, 238);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(203, 117);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "ADD";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panel1
             // 
@@ -134,6 +148,7 @@ namespace PostgreWindowsFormsUI
             this.Name = "Form1";
             this.Text = "CHARITY SOCIETY APP";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.MainPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -153,6 +168,7 @@ namespace PostgreWindowsFormsUI
         private System.Windows.Forms.Button CharityButton;
         private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnAdd;
     }
 }
 

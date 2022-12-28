@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Postgre.DataAccess.Abstract
 {
-    public interface IControlDal
+    public interface IControlDal : IEntityRepository<Control>
     {
-        List<Control> GetAll();
+        
     }
 }

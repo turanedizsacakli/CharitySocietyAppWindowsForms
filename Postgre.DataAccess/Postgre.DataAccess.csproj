@@ -102,13 +102,9 @@
     <Compile Include="Concrete\PostgreContext.cs" />
     <Compile Include="Concrete\PostgreEntityRepositoryBase.cs" />
     <Compile Include="Concrete\UrgencyDal.cs" />
-    <Compile Include="Migrations\202212250521564_personknowledgeadded.cs" />
-    <Compile Include="Migrations\202212250521564_personknowledgeadded.designer.cs">
-      <DependentUpon>202212250521564_personknowledgeadded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202212270931321_controlEntity.cs" />
-    <Compile Include="Migrations\202212270931321_controlEntity.designer.cs">
-      <DependentUpon>202212270931321_controlEntity.cs</DependentUpon>
+    <Compile Include="Migrations\202212271314087_madeAgain.cs" />
+    <Compile Include="Migrations\202212271314087_madeAgain.designer.cs">
+      <DependentUpon>202212271314087_madeAgain.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -124,11 +120,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202212250521564_personknowledgeadded.resx">
-      <DependentUpon>202212250521564_personknowledgeadded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202212270931321_controlEntity.resx">
-      <DependentUpon>202212270931321_controlEntity.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202212271314087_madeAgain.resx">
+      <DependentUpon>202212271314087_madeAgain.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

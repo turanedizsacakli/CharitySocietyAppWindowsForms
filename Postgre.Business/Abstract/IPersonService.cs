@@ -8,7 +8,6 @@ namespace Postgre.Business.Concrete
     {
         List<Person> GetByCategoryId(int categoryID);
         List<Person> GetByCategoryName(string searchKey);
-
         List<Person> GetByUrgencyId(int urgencyId);
        //List<Person> GetByUrgencyName(string searchKey);
     }

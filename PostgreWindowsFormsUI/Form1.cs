@@ -8,9 +8,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Control = Postgre.Entities.Concrete.Control;
 
 namespace PostgreWindowsFormsUI
 {
@@ -21,9 +23,11 @@ namespace PostgreWindowsFormsUI
             InitializeComponent();
             //_personService = new PersonManager(new PersonDal());
             //_categoryService = new CategoryManager(new CategoryDal());
+            
         }
         //private IPersonService _personService;
         //private ICategoryService _categoryService;
+
         private void Form1_Load(object sender, EventArgs e)
         {
             //LoadCategories();
@@ -93,6 +97,12 @@ namespace PostgreWindowsFormsUI
             MessageBox.Show("yakında eklenecek...");
         }
 
+        
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            
+        }
 
+       
     }
 }

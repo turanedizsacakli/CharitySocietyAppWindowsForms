@@ -12,11 +12,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Control = Postgre.Entities.Concrete.Control;
 
 namespace PostgreWindowsFormsUI
 {
     public partial class ActionForm : Form
     {
+        private IPersonService _personService;
+        private ICategoryService _categoryService;
+        private IAddressService _addressService;
+        private IUrgencyService _urgencyService;
+        private IPersonKnowledgeService _personKnowledgeService;
+
+        private IControlService _controlService;
         public ActionForm()
         {
             InitializeComponent();
@@ -28,22 +36,16 @@ namespace PostgreWindowsFormsUI
             _addressService = InstanceFactory.GetInstance<IAddressService>();
             _urgencyService = InstanceFactory.GetInstance<IUrgencyService>();
             _personKnowledgeService = InstanceFactory.GetInstance<IPersonKnowledgeService>();
-
+            _controlService = new ControlManager(new ControlDal());
         }
-
-        private IPersonService _personService;
-        private ICategoryService _categoryService;
-        private IAddressService _addressService;
-        private IUrgencyService _urgencyService;
-        private IPersonKnowledgeService _personKnowledgeService;
-
         private void ActionForm_Load(object sender, EventArgs e)
         {
             LoadUrgencyAndCategory();
+            Ids();
         }
         private void LoadUrgencyAndCategory()
         {
-            SearchForm searchForm= new SearchForm();
+            SearchForm searchForm = new SearchForm();
             cbxUrgency.Items.Add("A");
             cbxUrgency.Items.Add("B");
             cbxUrgency.Items.Add("C");
@@ -76,12 +78,35 @@ namespace PostgreWindowsFormsUI
             tbxId.Text = Convert.ToString(1);
             var rowCount = searchForm.dgwPerson.Rows.Count;
             //id numarası...
-            var realId= Convert.ToString(rowCount + 1);
+            var realId = Convert.ToString(rowCount + 1);
             //this line will open after first id...
             //tbxId.Text = (string)searchForm.dgwPerson.Rows[rowCount].Cells[0].Value;
 
             Console.WriteLine(realId);
             //tbxId.Text = Convert.ToString(rowCount + 1);
+        }
+        private void Ids()
+        {
+            tbxId.Enabled = false;
+            tbxAddressId.Enabled = false;
+            tbxPartnerId.Enabled = false;
+            tbxChildFifthId.Enabled = false;
+            tbxChildOneId.Enabled = false;
+            tbxChildTwoId.Enabled = false;
+            tbxChildThreeId.Enabled = false;
+            tbxChildForthId.Enabled = false;
+            tbxChildSixthId.Enabled = false;
+            List<Control> myControls = _controlService.GetAll();
+            var address = 0;
+            var person = 0;
+            var knowledge = 0;
+            foreach (Control control in myControls)
+            {
+                tbxId.Text = Convert.ToString(control.PersonId + 1);
+                tbxAddressId.Text = Convert.ToString(control.AddressId + 1);
+                lblKnowledge.Text = Convert.ToString(control.KnowledgeId + 1);
+            }
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -98,14 +123,14 @@ namespace PostgreWindowsFormsUI
                     FatherName = tbxFatherName.Text,
                     Birthday = tbxBirthday.Text,
                     BirthCountry = tbxBirthCountry.Text,
-                    Blood=tbxBlood.Text,
-                    Work=tbxWork.Text,
-                    Income=tbxIncome.Text,
-                    Outgoing=tbxOutgoing.Text,
-                    Debt=tbxDebt.Text,
-                    Aid=tbxAid.Text,
-                    Stuff=tbxStuff.Text,
-                    Student=tbxStudent.Text,
+                    Blood = tbxBlood.Text,
+                    Work = tbxWork.Text,
+                    Income = tbxIncome.Text,
+                    Outgoing = tbxOutgoing.Text,
+                    Debt = tbxDebt.Text,
+                    Aid = tbxAid.Text,
+                    Stuff = tbxStuff.Text,
+                    Student = tbxStudent.Text,
 
                     CategoryId = cbxCategoryId.SelectedIndex + 1,
                     AddressId = Convert.ToInt32(tbxId.Text),
@@ -131,9 +156,16 @@ namespace PostgreWindowsFormsUI
 
                 _personKnowledgeService.Add(new PersonKnowledge
                 {
-                    Knowledge=rtbKnowledge.Text,
+                    Knowledge = rtbKnowledge.Text,
                 });
 
+                _controlService.Update(new Control
+                {
+                    ControlId = 2,
+                    PersonId = Convert.ToInt32(tbxId.Text),
+                    AddressId = Convert.ToInt32(tbxAddressId.Text),
+                    KnowledgeId = Convert.ToInt32(lblKnowledge.Text),
+                });
                 ClearAll();
                 MessageBox.Show("KİŞİ EKLENDİ...");
             }
@@ -194,21 +226,48 @@ namespace PostgreWindowsFormsUI
 
         private void tbxHowManyChildren_TextChanged(object sender, EventArgs e)
         {
-            //i couldnt find a way to do that...
-            try
+            if (cbxMarital.SelectedIndex!=2)
             {
+                //i couldnt find a way to do that...
+                try
+                {
                 if (Convert.ToInt32(tbxHowManyChildren.Text) == 1 || tbxHowManyChildren.Text == null || tbxHowManyChildren.Text == "0") { gbxC2.Visible = false; gbxC3.Visible = false; gbxC4.Visible = false; gbxC5.Visible = false; gbxC6.Visible = false; }
                 if (Convert.ToInt32(tbxHowManyChildren.Text) == 2) { gbxC2.Visible = true; gbxC3.Visible = false; gbxC4.Visible = false; gbxC5.Visible = false; gbxC6.Visible = false; }
                 if (Convert.ToInt32(tbxHowManyChildren.Text) == 3) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = false; gbxC5.Visible = false; gbxC6.Visible = false; }
                 if (Convert.ToInt32(tbxHowManyChildren.Text) == 4) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = true; gbxC5.Visible = false; gbxC6.Visible = false; }
                 if (Convert.ToInt32(tbxHowManyChildren.Text) == 5) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = true; gbxC5.Visible = true; gbxC6.Visible = false; }
                 if (Convert.ToInt32(tbxHowManyChildren.Text) == 6) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = true; gbxC5.Visible = true; gbxC6.Visible = true; }
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("lütfen çocuk sayısını giriniz ya da boş bırakınız...");
+                }
+            }
+
+        }
+
+
+        //to add partnerId... 
+        private void cbxMarital_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Console.WriteLine(cbxMarital.SelectedIndex);
+                if (cbxMarital.SelectedIndex == 0 || cbxMarital.SelectedIndex == 3)
+                {
+                    var partnerId = Convert.ToInt32(tbxId.Text) + 1;
+                    //var partnerIdText = Convert.ToString(partnerId);
+                    //tbxPartnerId.Text = partnerIdText;
+                    tbxPartnerId.Text= Convert.ToString(partnerId);
+                }
+                else
+                {
+                    tbxPartnerId.Text = "";
+                }
             }
             catch (Exception)
             {
-                //exception.Message = "lütfen çocuk sayısını giriniz ya da boş bırakınız...";
-                //MessageBox.Show(exception.Message);
-                MessageBox.Show("lütfen çocuk sayısını giriniz ya da boş bırakınız...");
+                MessageBox.Show("lütfen medeni halini giriniz...");
             }
 
         }

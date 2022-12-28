@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace Postgre.Business.Abstract
 {
-    public interface IControlService
+    public interface IControlService:IServiceRepository<Control>
     {
-        List<Control> GetAll();
+        //List<Control> GetAll();
+        //void Update(Control control);
     }
 }

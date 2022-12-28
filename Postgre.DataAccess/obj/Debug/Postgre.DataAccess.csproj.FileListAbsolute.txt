@@ -117,6 +117,5 @@ C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\obj\Debug\Postgre.DataAcce
 C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.Migrations.AddressAndUrgency.resources
 C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.csproj.GenerateResource.cache
 C:\Users\ASUS\Desktop\Yeni klasör\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.Migrations.EntityPersonUpdate.resources
-D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.Migrations.personknowledgeadded.resources
+D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.Migrations.madeAgain.resources
 D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.csproj.GenerateResource.cache
-D:\myRepo\CharitySocietyAppWindowsForms\CharitySocietyAppWindowsFrorms\Postgre.DataAccess\obj\Debug\Postgre.DataAccess.Migrations.controlEntity.resources
