@@ -97,9 +97,6 @@ namespace PostgreWindowsFormsUI
             tbxChildForthId.Enabled = false;
             tbxChildSixthId.Enabled = false;
             List<Control> myControls = _controlService.GetAll();
-            var address = 0;
-            var person = 0;
-            var knowledge = 0;
             foreach (Control control in myControls)
             {
                 tbxId.Text = Convert.ToString(control.PersonId + 1);
@@ -174,6 +171,8 @@ namespace PostgreWindowsFormsUI
                 MessageBox.Show(exception.Message);
             }
         }
+        
+        //to make clear all from...
         private void ClearAll()
         {
             tbxName.Text = "";
@@ -187,6 +186,7 @@ namespace PostgreWindowsFormsUI
         }
 
         SearchForm _searchForm = new SearchForm();
+
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             try
@@ -223,7 +223,8 @@ namespace PostgreWindowsFormsUI
             MessageBox.Show("Kişi Silindi...");
             _searchForm.Show();
         }
-
+        
+        //to make visible true or false children...
         private void tbxHowManyChildren_TextChanged(object sender, EventArgs e)
         {
             if (cbxMarital.SelectedIndex!=2)
@@ -244,9 +245,47 @@ namespace PostgreWindowsFormsUI
                 }
             }
 
+            IdsForChildren();
         }
+        
+        //to add childrenId... 
+        private void IdsForChildren()
+        {
+            if (gbxC1.Visible==true)
+            {
+                var newIdForChild= Convert.ToInt32(tbxPartnerId.Text) + 1;
+                tbxChildOneId.Text = Convert.ToString(newIdForChild);
+            }
+            //it is not necessary because if Visible is true we will save it...
+            //else{tbxChildOneId.Text = "";tbxChildTwoId.Text = "";tbxChildThreeId.Text = "";tbxChildForthId.Text = "";tbxChildFifthId.Text = "";tbxChildSixthId.Text = "";}
+            if (gbxC2.Visible == true)
+            {
+                var newIdForChild = Convert.ToInt32(tbxChildOneId.Text) + 1;
+                tbxChildTwoId.Text = Convert.ToString(newIdForChild);
+            }
+            if (gbxC3.Visible == true)
+            {
+                var newIdForChild = Convert.ToInt32(tbxChildTwoId.Text) + 1;
+                tbxChildThreeId.Text = Convert.ToString(newIdForChild);
+            }
+            if (gbxC4.Visible == true)
+            {
+                var newIdForChild = Convert.ToInt32(tbxChildThreeId.Text) + 1;
+                tbxChildForthId.Text = Convert.ToString(newIdForChild);
+            }
+            if (gbxC5.Visible == true)
+            {
+                var newIdForChild = Convert.ToInt32(tbxChildForthId.Text) + 1;
+                tbxChildFifthId.Text = Convert.ToString(newIdForChild);
+            }
+            if (gbxC6.Visible == true)
+            {
+                var newIdForChild = Convert.ToInt32(tbxChildFifthId.Text) + 1;
+                tbxChildSixthId.Text = Convert.ToString(newIdForChild);
+            }
 
-
+        }
+        
         //to add partnerId... 
         private void cbxMarital_SelectedIndexChanged(object sender, EventArgs e)
         {

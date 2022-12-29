@@ -97,12 +97,6 @@ namespace PostgreWindowsFormsUI
             MessageBox.Show("yakında eklenecek...");
         }
 
-        
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-       
+          
     }
 }
