@@ -102,11 +102,6 @@
     <Compile Include="Concrete\PostgreContext.cs" />
     <Compile Include="Concrete\PostgreEntityRepositoryBase.cs" />
     <Compile Include="Concrete\UrgencyDal.cs" />
-    <Compile Include="Migrations\202212271314087_madeAgain.cs" />
-    <Compile Include="Migrations\202212271314087_madeAgain.designer.cs">
-      <DependentUpon>202212271314087_madeAgain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -118,11 +113,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202212271314087_madeAgain.resx">
-      <DependentUpon>202212271314087_madeAgain.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

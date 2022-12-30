@@ -8,7 +8,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -97,17 +100,27 @@ namespace PostgreWindowsFormsUI
             tbxChildForthId.Enabled = false;
             tbxChildSixthId.Enabled = false;
             List<Control> myControls = _controlService.GetAll();
-            foreach (Control control in myControls)
+            if (myControls != null)
             {
-                tbxId.Text = Convert.ToString(control.PersonId + 1);
-                tbxAddressId.Text = Convert.ToString(control.AddressId + 1);
-                lblKnowledge.Text = Convert.ToString(control.KnowledgeId + 1);
+                foreach (Control control in myControls)
+                {
+                    tbxId.Text = Convert.ToString(control.PersonId + 1);
+                    tbxAddressId.Text = Convert.ToString(control.AddressId + 1);
+                    lblKnowledge.Text = Convert.ToString(control.KnowledgeId + 1);
+                }
+            }
+            else
+            {
+                tbxId.Text = Convert.ToString(1);
+                tbxAddressId.Text = Convert.ToString(1);
+                lblKnowledge.Text = Convert.ToString(1);
             }
 
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+
             try
             {
                 _personService.Add(new Person
@@ -130,10 +143,9 @@ namespace PostgreWindowsFormsUI
                     Student = tbxStudent.Text,
 
                     CategoryId = cbxCategoryId.SelectedIndex + 1,
-                    AddressId = Convert.ToInt32(tbxId.Text),
+                    AddressId = Convert.ToInt32(lblKnowledge.Text),
                     KnowledgeId = Convert.ToInt32(tbxId.Text),
                     UrgencyId = cbxUrgency.SelectedIndex + 1,
-
                 });
 
                 _addressService.Add(new Address
@@ -158,7 +170,7 @@ namespace PostgreWindowsFormsUI
 
                 _controlService.Update(new Control
                 {
-                    ControlId = 2,
+                    ControlId = 1,
                     PersonId = Convert.ToInt32(tbxId.Text),
                     AddressId = Convert.ToInt32(tbxAddressId.Text),
                     KnowledgeId = Convert.ToInt32(lblKnowledge.Text),
@@ -171,7 +183,7 @@ namespace PostgreWindowsFormsUI
                 MessageBox.Show(exception.Message);
             }
         }
-        
+
         //to make clear all from...
         private void ClearAll()
         {
@@ -183,6 +195,29 @@ namespace PostgreWindowsFormsUI
             tbxFatherName.Text = "";
             tbxBirthday.Text = "";
             tbxBirthCountry.Text = "";
+            tbxBlood.Text = "";
+            tbxWork.Text = "";
+            tbxIncome.Text = "";
+            tbxOutgoing.Text = "";
+            tbxDebt.Text = "";
+            tbxAid.Text = "";
+            tbxStuff.Text = "";
+            tbxStudent.Text = "";
+            lblKnowledge.Text = "";
+            tbxId.Text= "";
+            tbxAppealDate.Text = "";
+            tbxDetectDate.Text = "";
+            cbxCountry.SelectedText = "";
+            cbxCity.SelectedText = "";
+            cbxDistrict.Text = "";
+            cbxHometown.SelectedText = "";
+            tbxPhoneOne.Text = "";
+            tbxPhoneTwo.Text = "";
+            tbxStreet.Text = "";
+            tbxBuild.Text = "";
+            tbxBuildNumber.Text = "";
+            rtbKnowledge.Text = "";
+
         }
 
         SearchForm _searchForm = new SearchForm();
@@ -194,15 +229,45 @@ namespace PostgreWindowsFormsUI
                 _personService.Update(new Person
                 {
                     PersonId = Convert.ToInt32(tbxId.Text),
+
                     Name = tbxName.Text,
                     Surname = tbxSurname.Text,
                     Nationality = tbxNationality.Text,
-                    FatherName = tbxFatherName.Text,
+                    LocalId = tbxLocalIdNumber.Text,
                     MotherName = tbxMotherName.Text,
+                    FatherName = tbxFatherName.Text,
                     Birthday = tbxBirthday.Text,
                     BirthCountry = tbxBirthCountry.Text,
-                    LocalId = tbxLocalIdNumber.Text,
-                    CategoryId = cbxCategoryId.SelectedIndex + 1,
+                    Blood = tbxBlood.Text,
+                    Work = tbxWork.Text,
+                    Income = tbxIncome.Text,
+                    Outgoing = tbxOutgoing.Text,
+                    Debt = tbxDebt.Text,
+                    Aid = tbxAid.Text,
+                    Stuff = tbxStuff.Text,
+                    Student = tbxStudent.Text,
+                });
+                _addressService.Update(new Address
+                {
+                    //for id 
+
+                    AppealDate = tbxAppealDate.Text,
+                    DetectDate = tbxDetectDate.Text,
+                    Country = cbxCountry.SelectedText,
+                    City = cbxCity.SelectedText,
+                    District = cbxDistrict.Text,
+                    Hometown = cbxHometown.SelectedText,
+                    PhoneNumberTwo = tbxPhoneOne.Text,
+                    PhoneNumberOne = tbxPhoneTwo.Text,
+                    Street = tbxStreet.Text,
+                    Build = tbxBuild.Text,
+                    BuildNumber = tbxBuildNumber.Text
+                });
+
+                _personKnowledgeService.Update(new PersonKnowledge
+                {
+                    //for id...
+                    Knowledge = rtbKnowledge.Text,
                 });
 
                 MessageBox.Show("KİŞİ GÜNCELLENDİ...");
@@ -223,21 +288,21 @@ namespace PostgreWindowsFormsUI
             MessageBox.Show("Kişi Silindi...");
             _searchForm.Show();
         }
-        
+
         //to make visible true or false children...
         private void tbxHowManyChildren_TextChanged(object sender, EventArgs e)
         {
-            if (cbxMarital.SelectedIndex!=2)
+            if (cbxMarital.SelectedIndex != 2)
             {
                 //i couldnt find a way to do that...
                 try
                 {
-                if (Convert.ToInt32(tbxHowManyChildren.Text) == 1 || tbxHowManyChildren.Text == null || tbxHowManyChildren.Text == "0") { gbxC2.Visible = false; gbxC3.Visible = false; gbxC4.Visible = false; gbxC5.Visible = false; gbxC6.Visible = false; }
-                if (Convert.ToInt32(tbxHowManyChildren.Text) == 2) { gbxC2.Visible = true; gbxC3.Visible = false; gbxC4.Visible = false; gbxC5.Visible = false; gbxC6.Visible = false; }
-                if (Convert.ToInt32(tbxHowManyChildren.Text) == 3) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = false; gbxC5.Visible = false; gbxC6.Visible = false; }
-                if (Convert.ToInt32(tbxHowManyChildren.Text) == 4) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = true; gbxC5.Visible = false; gbxC6.Visible = false; }
-                if (Convert.ToInt32(tbxHowManyChildren.Text) == 5) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = true; gbxC5.Visible = true; gbxC6.Visible = false; }
-                if (Convert.ToInt32(tbxHowManyChildren.Text) == 6) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = true; gbxC5.Visible = true; gbxC6.Visible = true; }
+                    if (Convert.ToInt32(tbxHowManyChildren.Text) == 1 || tbxHowManyChildren.Text == null || tbxHowManyChildren.Text == "0") { gbxC2.Visible = false; gbxC3.Visible = false; gbxC4.Visible = false; gbxC5.Visible = false; gbxC6.Visible = false; }
+                    if (Convert.ToInt32(tbxHowManyChildren.Text) == 2) { gbxC2.Visible = true; gbxC3.Visible = false; gbxC4.Visible = false; gbxC5.Visible = false; gbxC6.Visible = false; }
+                    if (Convert.ToInt32(tbxHowManyChildren.Text) == 3) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = false; gbxC5.Visible = false; gbxC6.Visible = false; }
+                    if (Convert.ToInt32(tbxHowManyChildren.Text) == 4) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = true; gbxC5.Visible = false; gbxC6.Visible = false; }
+                    if (Convert.ToInt32(tbxHowManyChildren.Text) == 5) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = true; gbxC5.Visible = true; gbxC6.Visible = false; }
+                    if (Convert.ToInt32(tbxHowManyChildren.Text) == 6) { gbxC2.Visible = true; gbxC3.Visible = true; gbxC4.Visible = true; gbxC5.Visible = true; gbxC6.Visible = true; }
                 }
                 catch (Exception)
                 {
@@ -247,13 +312,13 @@ namespace PostgreWindowsFormsUI
 
             IdsForChildren();
         }
-        
+
         //to add childrenId... 
         private void IdsForChildren()
         {
-            if (gbxC1.Visible==true)
+            if (gbxC1.Visible == true)
             {
-                var newIdForChild= Convert.ToInt32(tbxPartnerId.Text) + 1;
+                var newIdForChild = Convert.ToInt32(tbxPartnerId.Text) + 1;
                 tbxChildOneId.Text = Convert.ToString(newIdForChild);
             }
             //it is not necessary because if Visible is true we will save it...
@@ -285,7 +350,7 @@ namespace PostgreWindowsFormsUI
             }
 
         }
-        
+
         //to add partnerId... 
         private void cbxMarital_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -297,7 +362,7 @@ namespace PostgreWindowsFormsUI
                     var partnerId = Convert.ToInt32(tbxId.Text) + 1;
                     //var partnerIdText = Convert.ToString(partnerId);
                     //tbxPartnerId.Text = partnerIdText;
-                    tbxPartnerId.Text= Convert.ToString(partnerId);
+                    tbxPartnerId.Text = Convert.ToString(partnerId);
                 }
                 else
                 {

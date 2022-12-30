@@ -62,15 +62,14 @@ namespace Postgre.Entities.Concrete
         [Column("childSixthLocalId")]
         public string ChildSixthLocalId { get; set; }
         public int CategoryId { get; set; }
-        public int AddressId { get; set; }
         public int UrgencyId { get; set; }
+        public int AddressId { get; set; }
         public int KnowledgeId { get; set; }
 
 
         //buraları gözden geçirmemiz gerek...
         public virtual List<PersonKnowledge> PersonKnowledges { get; set; }
         public virtual List<Address> Addresses { get; set; }
-
 
 
         //other connection tables...
