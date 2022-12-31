@@ -99,6 +99,7 @@ namespace PostgreWindowsFormsUI
             tbxChildThreeId.Enabled = false;
             tbxChildForthId.Enabled = false;
             tbxChildSixthId.Enabled = false;
+
             List<Control> myControls = _controlService.GetAll();
             if (myControls != null)
             {

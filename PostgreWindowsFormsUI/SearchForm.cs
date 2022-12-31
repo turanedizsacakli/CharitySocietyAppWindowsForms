@@ -103,6 +103,8 @@ namespace PostgreWindowsFormsUI
 
         private void dgwPerson_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            //var SelectedAddress;
+            //var SelectedKnowledge;
             ActionForm form = new ActionForm();
             var Row = dgwPerson.CurrentRow;
 
