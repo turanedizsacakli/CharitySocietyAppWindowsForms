@@ -251,7 +251,6 @@ namespace PostgreWindowsFormsUI
                 _addressService.Update(new Address
                 {
                     //for id 
-
                     AppealDate = tbxAppealDate.Text,
                     DetectDate = tbxDetectDate.Text,
                     Country = cbxCountry.SelectedText,
@@ -277,7 +276,6 @@ namespace PostgreWindowsFormsUI
             {
                 MessageBox.Show(exception.Message);
             }
-
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

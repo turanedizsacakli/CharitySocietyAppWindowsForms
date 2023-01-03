@@ -32,6 +32,8 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbxAddressId = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
             this.cbxDistrict = new System.Windows.Forms.ComboBox();
             this.cbxHometown = new System.Windows.Forms.ComboBox();
             this.cbxCountry = new System.Windows.Forms.ComboBox();
@@ -57,6 +59,7 @@
             this.tbxDetectDate = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblKnowledge = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.rtbKnowledge = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -252,9 +255,6 @@
             this.tbxChildSixthBirthday = new System.Windows.Forms.TextBox();
             this.label101 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tbxAddressId = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.lblKnowledge = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -339,6 +339,23 @@
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Adres Bilgileri";
+            // 
+            // tbxAddressId
+            // 
+            this.tbxAddressId.Location = new System.Drawing.Point(181, 33);
+            this.tbxAddressId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbxAddressId.Name = "tbxAddressId";
+            this.tbxAddressId.Size = new System.Drawing.Size(133, 22);
+            this.tbxAddressId.TabIndex = 61;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(10, 39);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(110, 16);
+            this.label38.TabIndex = 60;
+            this.label38.Text = "Adres Numarası :";
             // 
             // cbxDistrict
             // 
@@ -556,6 +573,15 @@
             this.groupBox3.TabIndex = 56;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Bilgi Alanı";
+            // 
+            // lblKnowledge
+            // 
+            this.lblKnowledge.AutoSize = true;
+            this.lblKnowledge.Location = new System.Drawing.Point(704, 18);
+            this.lblKnowledge.Name = "lblKnowledge";
+            this.lblKnowledge.Size = new System.Drawing.Size(72, 16);
+            this.lblKnowledge.TabIndex = 2;
+            this.lblKnowledge.Text = "Bilgi Alanı :";
             // 
             // label52
             // 
@@ -2416,32 +2442,6 @@
             this.panel2.Size = new System.Drawing.Size(200, 1472);
             this.panel2.TabIndex = 59;
             // 
-            // tbxAddressId
-            // 
-            this.tbxAddressId.Location = new System.Drawing.Point(181, 33);
-            this.tbxAddressId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbxAddressId.Name = "tbxAddressId";
-            this.tbxAddressId.Size = new System.Drawing.Size(133, 22);
-            this.tbxAddressId.TabIndex = 61;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(10, 39);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(110, 16);
-            this.label38.TabIndex = 60;
-            this.label38.Text = "Adres Numarası :";
-            // 
-            // lblKnowledge
-            // 
-            this.lblKnowledge.AutoSize = true;
-            this.lblKnowledge.Location = new System.Drawing.Point(704, 18);
-            this.lblKnowledge.Name = "lblKnowledge";
-            this.lblKnowledge.Size = new System.Drawing.Size(72, 16);
-            this.lblKnowledge.TabIndex = 2;
-            this.lblKnowledge.Text = "Bilgi Alanı :";
-            // 
             // ActionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2519,7 +2519,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.RichTextBox rtbKnowledge;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox gbxAdd;
         public System.Windows.Forms.ComboBox cbxMarital;
@@ -2719,6 +2718,7 @@
         public System.Windows.Forms.ComboBox cbxDistrict;
         public System.Windows.Forms.TextBox tbxAddressId;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label lblKnowledge;
+        public System.Windows.Forms.RichTextBox rtbKnowledge;
+        public System.Windows.Forms.Label lblKnowledge;
     }
 }

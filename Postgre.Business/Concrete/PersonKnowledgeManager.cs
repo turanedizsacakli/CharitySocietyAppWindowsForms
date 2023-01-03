@@ -12,6 +12,11 @@ namespace Postgre.Business.Concrete
     public class PersonKnowledgeManager : IPersonKnowledgeService
     {
         PersonKnowledgeDal _personKnowledgeDal= new PersonKnowledgeDal();
+
+        public PersonKnowledgeManager(PersonKnowledgeDal personKnowledgeDal)
+        {
+        }
+
         public void Add(PersonKnowledge entity)
         {
             _personKnowledgeDal.Add(entity);
