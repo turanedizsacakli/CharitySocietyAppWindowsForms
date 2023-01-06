@@ -50,7 +50,7 @@
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(765, 47);
+            this.lblSearch.Location = new System.Drawing.Point(772, 40);
             this.lblSearch.Name = "lblSearch";
             this.lblSearch.Size = new System.Drawing.Size(59, 16);
             this.lblSearch.TabIndex = 47;
@@ -58,10 +58,10 @@
             // 
             // tbxSearch
             // 
-            this.tbxSearch.Location = new System.Drawing.Point(837, 41);
+            this.tbxSearch.Location = new System.Drawing.Point(837, 35);
             this.tbxSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxSearch.Name = "tbxSearch";
-            this.tbxSearch.Size = new System.Drawing.Size(138, 22);
+            this.tbxSearch.Size = new System.Drawing.Size(406, 22);
             this.tbxSearch.TabIndex = 46;
             this.tbxSearch.TextChanged += new System.EventHandler(this.tbxSearch_TextChanged);
             // 

@@ -104,6 +104,7 @@ namespace PostgreWindowsFormsUI
             // MainPanel
             // 
             this.MainPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MainPanel.AutoSize = true;
             this.MainPanel.Location = new System.Drawing.Point(0, 0);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(1357, 624);
@@ -136,6 +137,7 @@ namespace PostgreWindowsFormsUI
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

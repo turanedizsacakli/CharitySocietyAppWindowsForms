@@ -284,6 +284,14 @@ namespace PostgreWindowsFormsUI
             {
                 PersonId = Convert.ToInt32(tbxId.Text)
             });
+            _addressService.Delete(new Address
+            {
+                AddressId = Convert.ToInt32(tbxAddressId.Text)
+            }) ;
+            _personKnowledgeService.Delete(new PersonKnowledge 
+            { 
+              KnowledgeId= Convert.ToInt32(lblKnowledge.Text)  
+            });
             MessageBox.Show("Kişi Silindi...");
             _searchForm.Show();
         }
