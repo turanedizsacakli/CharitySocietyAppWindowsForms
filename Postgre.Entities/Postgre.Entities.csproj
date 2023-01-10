@@ -90,7 +90,9 @@
     <Compile Include="Abstract\IEntity.cs" />
     <Compile Include="Concrete\Address.cs" />
     <Compile Include="Concrete\Category.cs" />
+    <Compile Include="Concrete\City.cs" />
     <Compile Include="Concrete\Control.cs" />
+    <Compile Include="Concrete\Country.cs" />
     <Compile Include="Concrete\PersonKnowledge.cs" />
     <Compile Include="Concrete\Person.cs" />
     <Compile Include="Concrete\Urgency.cs" />
