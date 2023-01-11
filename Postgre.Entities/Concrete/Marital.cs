@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Postgre.Entities.Concrete
 {
-    public class Country:IEntity
+    public class Marital:IEntity
     {
-        public int CountryId { get; set; }
-        public string CountryName { get; set; }
+        public int MaritalId { get; set; }
+        public string MaritalName { get; set; }
     }
 }

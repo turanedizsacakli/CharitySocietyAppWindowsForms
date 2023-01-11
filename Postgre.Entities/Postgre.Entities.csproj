@@ -93,9 +93,12 @@
     <Compile Include="Concrete\City.cs" />
     <Compile Include="Concrete\Control.cs" />
     <Compile Include="Concrete\Country.cs" />
+    <Compile Include="Concrete\District.cs" />
+    <Compile Include="Concrete\Marital.cs" />
     <Compile Include="Concrete\PersonKnowledge.cs" />
     <Compile Include="Concrete\Person.cs" />
     <Compile Include="Concrete\Urgency.cs" />
+    <Compile Include="Concrete\Hometown.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
